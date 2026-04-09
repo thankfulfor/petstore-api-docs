@@ -1,17 +1,29 @@
-# Welcome to MkDocs
+# TaskFlow API Docs
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Портфолио-кейс техписа: документация REST API для сервиса управления задачами.
 
-## Commands
+## О проекте
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+TaskFlow API позволяет:
+- создавать задачи;
+- получать список задач;
+- интегрировать клиентские приложения с бэкендом TaskFlow.
 
-## Project layout
+Документация собрана так, чтобы разработчик мог сделать первый успешный запрос за несколько минут.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Для кого эта документация
+
+- Frontend-разработчики, подключающие UI к API;
+- Backend-разработчики, проверяющие контракт;
+- QA и интеграторы, которым нужны воспроизводимые примеры запросов.
+
+## Структура документации
+
+- **Getting Started**: быстрый старт, базовые принципы, примеры `curl`;
+- **API Reference**: описание эндпоинтов и интерактивная спецификация OpenAPI.
+
+## Что демонстрирует кейс
+
+- построение понятной IA (information architecture) для API docs;
+- сочетание narrative-документации и формального OpenAPI-контракта;
+- автоматический деплой документации через GitHub Actions и GitHub Pages.
