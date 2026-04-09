@@ -42,6 +42,32 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal current" href="#">API Reference</a>
 <ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#endpoints">Endpoints</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#get-tasks">GET /tasks</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#_1">Пример запроса</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#200-ok">Пример ответа (200 OK)</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#post-tasks">POST /tasks</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#_2">Пример запроса</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#_3">Тело запроса</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#201-created">Пример ответа (201 Created)</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#openapi-spec-redoc">OpenAPI Spec (ReDoc)</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -66,6 +92,45 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="api-reference">API Reference</h1>
+<h2 id="overview">Overview</h2>
+<p>Текущая версия API: <code>v1</code>.</p>
+<h3 id="endpoints">Endpoints</h3>
+<ul>
+<li><code>GET /tasks</code> - получить список задач;</li>
+<li><code>POST /tasks</code> - создать новую задачу.</li>
+</ul>
+<h2 id="get-tasks">GET /tasks</h2>
+<p>Возвращает массив задач.</p>
+<h3 id="_1">Пример запроса</h3>
+<pre><code class="language-bash">curl -X GET "https://api.taskflow.example/v1/tasks"
+</code></pre>
+<h3 id="200-ok">Пример ответа (<code>200 OK</code>)</h3>
+<pre><code class="language-json">[
+  {
+    "id": 1,
+    "title": "Write docs"
+  }
+]
+</code></pre>
+<h2 id="post-tasks">POST /tasks</h2>
+<p>Создает задачу по переданному <code>title</code>.</p>
+<h3 id="_2">Пример запроса</h3>
+<pre><code class="language-bash">curl -X POST "https://api.taskflow.example/v1/tasks" \
+  -H "Content-Type: application/json" \
+  -d '{"title":"Update API examples"}'
+</code></pre>
+<h3 id="_3">Тело запроса</h3>
+<pre><code class="language-json">{
+  "title": "string"
+}
+</code></pre>
+<h3 id="201-created">Пример ответа (<code>201 Created</code>)</h3>
+<p>Пустое тело ответа или объект задачи (в зависимости от реализации сервера).</p>
+<h2 id="openapi-spec-redoc">OpenAPI Spec (ReDoc)</h2>
+<p>Ниже встроена спецификация OpenAPI для полного контрактного референса.</p>
+<p>{% redoc %}
+spec-url: ../openapi/openapi.yaml
+{% endredoc %}</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">

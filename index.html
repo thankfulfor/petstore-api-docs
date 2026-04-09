@@ -34,9 +34,13 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal current" href="#">Home</a>
 <ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a>
+<li class="toctree-l2"><a class="reference internal" href="#_1">О проекте</a>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#project-layout">Project layout</a>
+<li class="toctree-l2"><a class="reference internal" href="#_2">Для кого эта документация</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#_3">Структура документации</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#_4">Что демонстрирует кейс</a>
 </li>
 </ul>
 </li>
@@ -69,21 +73,31 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<h1 id="taskflow-api-docs">TaskFlow API Docs</h1>
+<p>Портфолио-кейс техписа: документация REST API для сервиса управления задачами.</p>
+<h2 id="_1">О проекте</h2>
+<p>TaskFlow API позволяет:
+- создавать задачи;
+- получать список задач;
+- интегрировать клиентские приложения с бэкендом TaskFlow.</p>
+<p>Документация собрана так, чтобы разработчик мог сделать первый успешный запрос за несколько минут.</p>
+<h2 id="_2">Для кого эта документация</h2>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>Frontend-разработчики, подключающие UI к API;</li>
+<li>Backend-разработчики, проверяющие контракт;</li>
+<li>QA и интеграторы, которым нужны воспроизводимые примеры запросов.</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+<h2 id="_3">Структура документации</h2>
+<ul>
+<li><strong>Getting Started</strong>: быстрый старт, базовые принципы, примеры <code>curl</code>;</li>
+<li><strong>API Reference</strong>: описание эндпоинтов и интерактивная спецификация OpenAPI.</li>
+</ul>
+<h2 id="_4">Что демонстрирует кейс</h2>
+<ul>
+<li>построение понятной IA (information architecture) для API docs;</li>
+<li>сочетание narrative-документации и формального OpenAPI-контракта;</li>
+<li>автоматический деплой документации через GitHub Actions и GitHub Pages.</li>
+</ul>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
@@ -118,5 +132,5 @@ docs/
 </html>
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2026-04-09 17:37:49.106567+00:00
+Build Date UTC : 2026-04-09 18:05:36.810042+00:00
 -->

@@ -38,6 +38,24 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal current" href="#">Getting Started</a>
 <ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#base-url">Base URL</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#_1">Формат данных</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#3">Быстрый старт за 3 шага</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#1-api">1. Проверить доступность API</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#2">2. Создать задачу</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#3_1">3. Повторно запросить список задач</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#_2">Аутентификация</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#_3">Ошибки и диагностика</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -66,6 +84,46 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="getting-started">Getting Started</h1>
+<h2 id="base-url">Base URL</h2>
+<p>Все примеры в документации используют:</p>
+<p><code>https://api.taskflow.example/v1</code></p>
+<h2 id="_1">Формат данных</h2>
+<ul>
+<li>Контент-тип запросов: <code>application/json</code></li>
+<li>Контент-тип ответов: <code>application/json</code></li>
+<li>Кодировка: <code>UTF-8</code></li>
+</ul>
+<h2 id="3">Быстрый старт за 3 шага</h2>
+<h3 id="1-api">1. Проверить доступность API</h3>
+<pre><code class="language-bash">curl -X GET "https://api.taskflow.example/v1/tasks"
+</code></pre>
+<p>Ожидаемый ответ <code>200 OK</code>:</p>
+<pre><code class="language-json">[
+  {
+    "id": 1,
+    "title": "Prepare release notes"
+  }
+]
+</code></pre>
+<h3 id="2">2. Создать задачу</h3>
+<pre><code class="language-bash">curl -X POST "https://api.taskflow.example/v1/tasks" \
+  -H "Content-Type: application/json" \
+  -d '{"title":"Write API documentation"}'
+</code></pre>
+<p>Ожидаемый ответ <code>201 Created</code>.</p>
+<h3 id="3_1">3. Повторно запросить список задач</h3>
+<p>Убедитесь, что созданная задача появилась в <code>GET /tasks</code>.</p>
+<h2 id="_2">Аутентификация</h2>
+<p>В текущем демо-контракте аутентификация не требуется.<br/>
+В production-версии обычно добавляется <code>Bearer</code> токен в заголовок <code>Authorization</code>.</p>
+<h2 id="_3">Ошибки и диагностика</h2>
+<p>Типичные HTTP-коды:
+- <code>200</code>: успешный запрос;
+- <code>201</code>: ресурс создан;
+- <code>400</code>: ошибка валидации входных данных;
+- <code>401</code>: отсутствует или невалидный токен;
+- <code>500</code>: внутренняя ошибка сервера.</p>
+<p>Рекомендация для клиентов: логировать <code>status code</code>, <code>request id</code> (если есть) и тело ошибки.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
