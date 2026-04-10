@@ -10,6 +10,7 @@
 <link href="../css/theme.css" rel="stylesheet"/>
 <link href="../css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
+<link href="../stylesheets/extra.css" rel="stylesheet"/>
 <script>
         // Current page data
         var mkdocs_page_name = "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a API";
@@ -28,7 +29,11 @@
 <div class="wy-side-scroll">
 <div class="wy-side-nav-search">
 <a class="icon icon-home" href=".."> Swagger Petstore API Docs
-        </a>
+        </a><div role="search">
+<form action="../search.html" class="wy-form" id="rtd-search-form" method="get">
+<input aria-label="Search docs" name="q" placeholder="Search docs" title="Type search term here" type="text"/>
+</form>
+</div>
 </div>
 <div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
 <ul>
@@ -44,13 +49,21 @@
 <ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
 <ul>
-<li class="toctree-l3"><a class="reference internal" href="#endpoints">Endpoints</a>
+<li class="toctree-l3"><a class="reference internal" href="#endpoints-by-resource">Endpoints By Resource</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#pet">Pet</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#store">Store</a>
 </li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#_1">Поиск и фильтрация</a>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#get-petfindbystatus">GET /pet/findByStatus</a>
 <ul>
-<li class="toctree-l3"><a class="reference internal" href="#_1">Пример запроса</a>
+<li class="toctree-l3"><a class="reference internal" href="#_2">Пример запроса</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#200-ok">Пример ответа (200 OK)</a>
 </li>
@@ -58,21 +71,29 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#get-petpetid">GET /pet/{petId}</a>
 <ul>
-<li class="toctree-l3"><a class="reference internal" href="#_2">Пример запроса</a>
+<li class="toctree-l3"><a class="reference internal" href="#_3">Пример запроса</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#_3">Ответы</a>
+<li class="toctree-l3"><a class="reference internal" href="#_4">Ответы</a>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#get-storeinventory">GET /store/inventory</a>
 <ul>
-<li class="toctree-l3"><a class="reference internal" href="#_4">Пример запроса</a>
+<li class="toctree-l3"><a class="reference internal" href="#_5">Пример запроса</a>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#openapi-spec-redoc">OpenAPI Spec (ReDoc)</a>
 </li>
 </ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../versions/">Версии API</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../changelog/">Changelog</a>
 </li>
 </ul>
 </div>
@@ -98,15 +119,24 @@
 <h1 id="api-reference">API Reference</h1>
 <h2 id="overview">Overview</h2>
 <p>Текущая версия API в этом кейсе: <code>v2</code>.</p>
-<h3 id="endpoints">Endpoints</h3>
+<h3 id="endpoints-by-resource">Endpoints By Resource</h3>
+<h4 id="pet">Pet</h4>
 <ul>
 <li><code>GET /pet/findByStatus</code> - получить питомцев по статусу;</li>
-<li><code>GET /pet/{petId}</code> - получить питомца по ID;</li>
+<li><code>GET /pet/{petId}</code> - получить питомца по ID.</li>
+</ul>
+<h4 id="store">Store</h4>
+<ul>
 <li><code>GET /store/inventory</code> - получить статистику инвентаря.</li>
+</ul>
+<h2 id="_1">Поиск и фильтрация</h2>
+<ul>
+<li>Используйте глобальный поиск MkDocs (поле поиска в шапке/сайдбаре) для быстрого перехода по терминам и endpoint-ам.</li>
+<li>В ReDoc используйте встроенный поиск по операциям и параметрам спецификации.</li>
 </ul>
 <h2 id="get-petfindbystatus">GET /pet/findByStatus</h2>
 <p>Возвращает массив питомцев по статусу.</p>
-<h3 id="_1">Пример запроса</h3>
+<h3 id="_2">Пример запроса</h3>
 <pre><code class="language-bash">curl -X GET "https://petstore.swagger.io/v2/pet/findByStatus?status=available"
 </code></pre>
 <h3 id="200-ok">Пример ответа (<code>200 OK</code>)</h3>
@@ -120,17 +150,17 @@
 </code></pre>
 <h2 id="get-petpetid">GET /pet/{petId}</h2>
 <p>Возвращает одного питомца по идентификатору.</p>
-<h3 id="_2">Пример запроса</h3>
+<h3 id="_3">Пример запроса</h3>
 <pre><code class="language-bash">curl -X GET "https://petstore.swagger.io/v2/pet/1"
 </code></pre>
-<h3 id="_3">Ответы</h3>
+<h3 id="_4">Ответы</h3>
 <ul>
 <li><code>200</code> - питомец найден;</li>
 <li><code>404</code> - питомец не найден.</li>
 </ul>
 <h2 id="get-storeinventory">GET /store/inventory</h2>
 <p>Возвращает количество питомцев по статусам.</p>
-<h3 id="_4">Пример запроса</h3>
+<h3 id="_5">Пример запроса</h3>
 <pre><code class="language-bash">curl -X GET "https://petstore.swagger.io/v2/store/inventory"
 </code></pre>
 <h2 id="openapi-spec-redoc">OpenAPI Spec (ReDoc)</h2>
@@ -142,6 +172,7 @@ spec-url: ../openapi/openapi.yaml
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
 <a class="btn btn-neutral float-left" href="../getting-started/" title="Быстрый старт"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+<a class="btn btn-neutral float-right" href="../versions/" title="Версии API">Next <span class="icon icon-circle-arrow-right"></span></a>
 </div>
 <hr/>
 <div role="contentinfo">
@@ -157,6 +188,7 @@ spec-url: ../openapi/openapi.yaml
 <div aria-label="Versions" class="rst-versions" role="note">
 <span class="rst-current-version" data-toggle="rst-current-version">
 <span><a href="../getting-started/" style="color: #fcfcfc">« Previous</a></span>
+<span><a href="../versions/" style="color: #fcfcfc">Next »</a></span>
 </span>
 </div>
 <script src="../js/jquery-3.6.0.min.js"></script>
@@ -164,6 +196,7 @@ spec-url: ../openapi/openapi.yaml
 <script src="../js/theme_extra.js"></script>
 <script src="../js/theme.js"></script>
 <script src="../javascripts/i18n-nav.js"></script>
+<script src="../search/main.js"></script>
 <script>
         jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);

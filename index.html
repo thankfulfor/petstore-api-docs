@@ -10,6 +10,7 @@
 <link href="css/theme.css" rel="stylesheet"/>
 <link href="css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
+<link href="stylesheets/extra.css" rel="stylesheet"/>
 <script>
         // Current page data
         var mkdocs_page_name = "\u0413\u043b\u0430\u0432\u043d\u0430\u044f";
@@ -28,7 +29,11 @@
 <div class="wy-side-scroll">
 <div class="wy-side-nav-search">
 <a class="icon icon-home" href="."> Swagger Petstore API Docs
-        </a>
+        </a><div role="search">
+<form action="./search.html" class="wy-form" id="rtd-search-form" method="get">
+<input aria-label="Search docs" name="q" placeholder="Search docs" title="Type search term here" type="text"/>
+</form>
+</div>
 </div>
 <div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
 <ul class="current">
@@ -55,6 +60,14 @@
 <li class="toctree-l1"><a class="reference internal" href="api/">Справочник API</a>
 </li>
 </ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="versions/">Версии API</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="changelog/">Changelog</a>
+</li>
+</ul>
 </div>
 </div>
 </nav>
@@ -78,10 +91,12 @@
 <h1 id="swagger-petstore-api-docs">Swagger Petstore API Docs</h1>
 <p>Портфолио-кейс техписа: документация публичного REST API Swagger Petstore.</p>
 <h2 id="_1">О проекте</h2>
-<p>Swagger Petstore API позволяет:
-- получать список питомцев по статусу;
-- получать питомца по идентификатору;
-- смотреть инвентарь магазина.</p>
+<p>Swagger Petstore API позволяет:</p>
+<ul>
+<li>получать список питомцев по статусу;</li>
+<li>получать питомца по идентификатору;</li>
+<li>смотреть инвентарь магазина.</li>
+</ul>
 <p>Документация собрана так, чтобы разработчик мог сделать первый успешный запрос за несколько минут.</p>
 <h2 id="_2">Для кого эта документация</h2>
 <ul>
@@ -128,6 +143,7 @@
 <script src="js/theme_extra.js"></script>
 <script src="js/theme.js"></script>
 <script src="javascripts/i18n-nav.js"></script>
+<script src="search/main.js"></script>
 <script>
         jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
@@ -137,5 +153,5 @@
 </html>
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2026-04-10 21:08:43.614086+00:00
+Build Date UTC : 2026-04-10 21:22:28.693822+00:00
 -->
