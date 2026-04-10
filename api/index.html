@@ -6,7 +6,7 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://github.com/thankfulfor/taskflow-api-docs/api/" rel="canonical"/>
 <link href="../img/favicon.ico" rel="shortcut icon"/>
-<title>Справочник API - TaskFlow API</title>
+<title>Справочник API - Swagger Petstore API Docs</title>
 <link href="../css/theme.css" rel="stylesheet"/>
 <link href="../css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
@@ -27,7 +27,7 @@
 <nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
 <div class="wy-side-scroll">
 <div class="wy-side-nav-search">
-<a class="icon icon-home" href=".."> TaskFlow API
+<a class="icon icon-home" href=".."> Swagger Petstore API Docs
         </a>
 </div>
 <div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
@@ -48,7 +48,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#get-tasks">GET /tasks</a>
+<li class="toctree-l2"><a class="reference internal" href="#get-petfindbystatus">GET /pet/findByStatus</a>
 <ul>
 <li class="toctree-l3"><a class="reference internal" href="#_1">Пример запроса</a>
 </li>
@@ -56,13 +56,17 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#post-tasks">POST /tasks</a>
+<li class="toctree-l2"><a class="reference internal" href="#get-petpetid">GET /pet/{petId}</a>
 <ul>
 <li class="toctree-l3"><a class="reference internal" href="#_2">Пример запроса</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#_3">Тело запроса</a>
+<li class="toctree-l3"><a class="reference internal" href="#_3">Ответы</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#201-created">Пример ответа (201 Created)</a>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#get-storeinventory">GET /store/inventory</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#_4">Пример запроса</a>
 </li>
 </ul>
 </li>
@@ -77,7 +81,7 @@
 <section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
 <nav aria-label="Mobile navigation menu" class="wy-nav-top" role="navigation">
 <i class="fa fa-bars" data-toggle="wy-nav-top"></i>
-<a href="..">TaskFlow API</a>
+<a href="..">Swagger Petstore API Docs</a>
 </nav>
 <div class="wy-nav-content">
 <div class="rst-content"><div aria-label="breadcrumbs navigation" role="navigation">
@@ -93,39 +97,42 @@
 <div class="section" itemprop="articleBody">
 <h1 id="api-reference">API Reference</h1>
 <h2 id="overview">Overview</h2>
-<p>Текущая версия API: <code>v1</code>.</p>
+<p>Текущая версия API в этом кейсе: <code>v2</code>.</p>
 <h3 id="endpoints">Endpoints</h3>
 <ul>
-<li><code>GET /tasks</code> - получить список задач;</li>
-<li><code>POST /tasks</code> - создать новую задачу.</li>
+<li><code>GET /pet/findByStatus</code> - получить питомцев по статусу;</li>
+<li><code>GET /pet/{petId}</code> - получить питомца по ID;</li>
+<li><code>GET /store/inventory</code> - получить статистику инвентаря.</li>
 </ul>
-<h2 id="get-tasks">GET /tasks</h2>
-<p>Возвращает массив задач.</p>
+<h2 id="get-petfindbystatus">GET /pet/findByStatus</h2>
+<p>Возвращает массив питомцев по статусу.</p>
 <h3 id="_1">Пример запроса</h3>
-<pre><code class="language-bash">curl -X GET "https://api.taskflow.example/v1/tasks"
+<pre><code class="language-bash">curl -X GET "https://petstore.swagger.io/v2/pet/findByStatus?status=available"
 </code></pre>
 <h3 id="200-ok">Пример ответа (<code>200 OK</code>)</h3>
 <pre><code class="language-json">[
   {
     "id": 1,
-    "title": "Write docs"
+    "name": "doggie",
+    "status": "available"
   }
 ]
 </code></pre>
-<h2 id="post-tasks">POST /tasks</h2>
-<p>Создает задачу по переданному <code>title</code>.</p>
+<h2 id="get-petpetid">GET /pet/{petId}</h2>
+<p>Возвращает одного питомца по идентификатору.</p>
 <h3 id="_2">Пример запроса</h3>
-<pre><code class="language-bash">curl -X POST "https://api.taskflow.example/v1/tasks" \
-  -H "Content-Type: application/json" \
-  -d '{"title":"Update API examples"}'
+<pre><code class="language-bash">curl -X GET "https://petstore.swagger.io/v2/pet/1"
 </code></pre>
-<h3 id="_3">Тело запроса</h3>
-<pre><code class="language-json">{
-  "title": "string"
-}
+<h3 id="_3">Ответы</h3>
+<ul>
+<li><code>200</code> - питомец найден;</li>
+<li><code>404</code> - питомец не найден.</li>
+</ul>
+<h2 id="get-storeinventory">GET /store/inventory</h2>
+<p>Возвращает количество питомцев по статусам.</p>
+<h3 id="_4">Пример запроса</h3>
+<pre><code class="language-bash">curl -X GET "https://petstore.swagger.io/v2/store/inventory"
 </code></pre>
-<h3 id="201-created">Пример ответа (<code>201 Created</code>)</h3>
-<p>Пустое тело ответа или объект задачи (в зависимости от реализации сервера).</p>
 <h2 id="openapi-spec-redoc">OpenAPI Spec (ReDoc)</h2>
 <p>Ниже встроена спецификация OpenAPI для полного контрактного референса.</p>
 <p>{% redoc %}
