@@ -2,21 +2,22 @@
 
 ## Overview
 
-Текущая версия API: `v1`.
+Текущая версия API в этом кейсе: `v2`.
 
 ### Endpoints
 
-- `GET /tasks` - получить список задач;
-- `POST /tasks` - создать новую задачу.
+- `GET /pet/findByStatus` - получить питомцев по статусу;
+- `GET /pet/{petId}` - получить питомца по ID;
+- `GET /store/inventory` - получить статистику инвентаря.
 
-## GET /tasks
+## GET /pet/findByStatus
 
-Возвращает массив задач.
+Возвращает массив питомцев по статусу.
 
 ### Пример запроса
 
 ```bash
-curl -X GET "https://api.taskflow.example/v1/tasks"
+curl -X GET "https://petstore.swagger.io/v2/pet/findByStatus?status=available"
 ```
 
 ### Пример ответа (`200 OK`)
@@ -25,34 +26,36 @@ curl -X GET "https://api.taskflow.example/v1/tasks"
 [
   {
     "id": 1,
-    "title": "Write docs"
+    "name": "doggie",
+    "status": "available"
   }
 ]
 ```
 
-## POST /tasks
+## GET /pet/{petId}
 
-Создает задачу по переданному `title`.
+Возвращает одного питомца по идентификатору.
 
 ### Пример запроса
 
 ```bash
-curl -X POST "https://api.taskflow.example/v1/tasks" \
-  -H "Content-Type: application/json" \
-  -d '{"title":"Update API examples"}'
+curl -X GET "https://petstore.swagger.io/v2/pet/1"
 ```
 
-### Тело запроса
+### Ответы
 
-```json
-{
-  "title": "string"
-}
+- `200` - питомец найден;
+- `404` - питомец не найден.
+
+## GET /store/inventory
+
+Возвращает количество питомцев по статусам.
+
+### Пример запроса
+
+```bash
+curl -X GET "https://petstore.swagger.io/v2/store/inventory"
 ```
-
-### Пример ответа (`201 Created`)
-
-Пустое тело ответа или объект задачи (в зависимости от реализации сервера).
 
 ## OpenAPI Spec (ReDoc)
 
