@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://github.com/thankfulfor/taskflow-api-docs/</loc>
-         <lastmod>2026-04-10</lastmod>
+         <loc>https://thankfulfor.github.io/petstore-api-docs/</loc>
+         <lastmod>2026-04-11</lastmod>
     </url>
     <url>
-         <loc>https://github.com/thankfulfor/taskflow-api-docs/api/</loc>
-         <lastmod>2026-04-10</lastmod>
+         <loc>https://thankfulfor.github.io/petstore-api-docs/api/</loc>
+         <lastmod>2026-04-11</lastmod>
     </url>
     <url>
-         <loc>https://github.com/thankfulfor/taskflow-api-docs/changelog/</loc>
-         <lastmod>2026-04-10</lastmod>
+         <loc>https://thankfulfor.github.io/petstore-api-docs/changelog/</loc>
+         <lastmod>2026-04-11</lastmod>
     </url>
     <url>
-         <loc>https://github.com/thankfulfor/taskflow-api-docs/getting-started/</loc>
-         <lastmod>2026-04-10</lastmod>
+         <loc>https://thankfulfor.github.io/petstore-api-docs/getting-started/</loc>
+         <lastmod>2026-04-11</lastmod>
     </url>
     <url>
-         <loc>https://github.com/thankfulfor/taskflow-api-docs/versions/</loc>
-         <lastmod>2026-04-10</lastmod>
+         <loc>https://thankfulfor.github.io/petstore-api-docs/versions/</loc>
+         <lastmod>2026-04-11</lastmod>
     </url>
 </urlset>
