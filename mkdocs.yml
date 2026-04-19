@@ -20,15 +20,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: teal
-      accent: amber
+      primary: grey
+      accent: grey
       toggle:
         icon: material/weather-night
         name: Переключить тёмную тему
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: teal
-      accent: amber
+      primary: grey
+      accent: grey
       toggle:
         icon: material/weather-sunny
         name: Переключить светлую тему

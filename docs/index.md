@@ -7,14 +7,22 @@
 [Смотреть API кейс](cases/api-payment-case.md){ .md-button }
 </div>
 
+## Выше сгиба: ключевая ценность
+
+- Ищу роль технического писателя в продуктовой команде.
+- Веду документацию от бизнес-сценария до API-контракта.
+- Закрываю цикл Docs as Code: контент, валидация, CI, релиз.
+
 ## Ключевой стек
 
-- API Reference: OpenAPI, Swagger UI
-- Архитектурные документы: C4, UML, BPMN
-- Руководства: onboarding, troubleshooting, how-to
-- Инструменты: MkDocs Material, GitHub Actions, GitHub Pages, Git
+<div class="skill-chips">
+  <span>API Reference · OpenAPI · Swagger UI</span>
+  <span>Архитектура · C4 · UML · BPMN</span>
+  <span>How-to · Onboarding · Troubleshooting</span>
+  <span>MkDocs Material · GitHub Actions · GitHub Pages · Git</span>
+</div>
 
-## Кейсы (фильтр)
+## Примеры работ (живой фильтр)
 
 <div data-case-filter-root>
   <div class="case-filter-controls">
@@ -27,48 +35,34 @@
     </div>
   </div>
 
-  <div class="grid cards case-grid" markdown>
+  <div class="case-grid">
+    <article class="case-card" data-case-card data-case-tags="api платежи" data-case-text="API Reference Payment Gateway v2 OpenAPI Swagger ошибки интеграции">
+      <h3>API Reference: Payment Gateway v2</h3>
+      <p><strong>Задача:</strong> сократить время первого успешного запроса и снизить ошибки интеграции.</p>
+      <p><strong>Сложность:</strong> разнородные примеры и неполный контракт ошибок.</p>
+      <a class="case-link" href="cases/api-payment-case.md">Смотреть пример</a>
+    </article>
 
-- :material-api: **API Reference: Payment Gateway v2**
+    <article class="case-card" data-case-card data-case-tags="архитектура" data-case-text="C4 UML архитектура sequence внешние системы">
+      <h3>C4 + UML: Документация архитектуры</h3>
+      <p><strong>Задача:</strong> объяснить взаимодействие доменных сервисов и внешних интеграций.</p>
+      <p><strong>Сложность:</strong> согласовать один язык между аналитиками и разработкой.</p>
+      <a class="case-link" href="developers/architecture-c4.md">Открыть раздел</a>
+    </article>
 
-  ---
+    <article class="case-card" data-case-card data-case-tags="инструкции" data-case-text="онбординг оператор user guide FAQ оформление заказа">
+      <h3>Онбординг оператора зоомагазина</h3>
+      <p><strong>Задача:</strong> снизить нагрузку на поддержку по базовым операциям.</p>
+      <p><strong>Сложность:</strong> объяснить процесс без жаргона и лишней теории.</p>
+      <a class="case-link" href="users/onboarding.md">Открыть раздел</a>
+    </article>
 
-  Интерактивный контракт, примеры запросов и обработка ошибок.
-
-  <div data-case-card data-case-tags="api платежи" data-case-text="API Reference Payment Gateway v2 OpenAPI Swagger ошибки интеграции"></div>
-
-  [Смотреть пример](cases/api-payment-case.md)
-
-- :material-sitemap: **C4 + UML: Документация архитектуры**
-
-  ---
-
-  Контекст системы, взаимодействие с внешними сервисами, sequence потоки.
-
-  <div data-case-card data-case-tags="архитектура" data-case-text="C4 UML архитектура sequence внешние системы"></div>
-
-  [Открыть раздел](developers/architecture-c4.md)
-
-- :material-book-open-page-variant: **Онбординг оператора зоомагазина**
-
-  ---
-
-  Регистрация, добавление питомца, оформление заказа и FAQ.
-
-  <div data-case-card data-case-tags="инструкции" data-case-text="онбординг оператор user guide FAQ оформление заказа"></div>
-
-  [Открыть раздел](users/onboarding.md)
-
-- :material-timeline-check: **Сквозной сценарий: Инцидент оплаты**
-
-  ---
-
-  BPMN + API + Dev tasks + User guide + KPI в одном документе.
-
-  <div data-case-card data-case-tags="api архитектура инструкции" data-case-text="инцидент сбой оплаты BPMN API Dev User KPI"></div>
-
-  [Открыть сценарий](scenario-payment-incident.md)
-
+    <article class="case-card" data-case-card data-case-tags="api архитектура инструкции" data-case-text="инцидент сбой оплаты BPMN API Dev User KPI">
+      <h3>Сквозной сценарий: Инцидент оплаты</h3>
+      <p><strong>Задача:</strong> описать единый процесс реакции от алерта до пост‑мортема.</p>
+      <p><strong>Сложность:</strong> связать BPMN, контракт API, Dev-задачи и KPI в одном документе.</p>
+      <a class="case-link" href="scenario-payment-incident.md">Открыть сценарий</a>
+    </article>
   </div>
 </div>
 
