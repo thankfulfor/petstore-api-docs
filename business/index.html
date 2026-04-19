@@ -5,12 +5,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://thankfulfor.github.io/petstore-api-docs/interactive-api/" rel="canonical"/>
-<link href="../api/" rel="prev"/>
-<link href="../business/" rel="next"/>
+<link href="https://thankfulfor.github.io/petstore-api-docs/business/" rel="canonical"/>
+<link href="../interactive-api/" rel="prev"/>
+<link href="bpmn-order-flow/" rel="next"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.14" name="generator"/>
-<title>Interactive API - Swagger Petstore API Docs</title>
+<title>Обзор - Swagger Petstore API Docs</title>
 <link href="../assets/stylesheets/main.342714a4.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -24,7 +24,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#interactive-api">
+<a class="md-skip" href="#-">
           Перейти к содержанию
         </a>
 </div>
@@ -48,7 +48,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Interactive API
+              Обзор
             
           </span>
 </div>
@@ -145,8 +145,8 @@
 
       </a>
 </li>
-<li class="md-tabs__item md-tabs__item--active">
-<a class="md-tabs__link" href="./">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../interactive-api/">
         
   
   
@@ -156,8 +156,8 @@
 
       </a>
 </li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../business/">
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="./">
           
   
   
@@ -264,32 +264,32 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../interactive-api/">
 <span class="md-ellipsis">
     Interactive API
     
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
 <span class="md-ellipsis">
     Бизнес-аналитика
     
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="true" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_5">
 <span class="md-nav__icon md-icon"></span>
             Бизнес-аналитика
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../business/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     Обзор
     
@@ -297,7 +297,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../business/bpmn-order-flow/">
+<a class="md-nav__link" href="bpmn-order-flow/">
 <span class="md-ellipsis">
     BPMN процесса заказа
     
@@ -305,7 +305,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../business/sales-dashboard/">
+<a class="md-nav__link" href="sales-dashboard/">
 <span class="md-ellipsis">
     Дашборд продаж
     
@@ -472,22 +472,8 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="interactive-api">Interactive API</h1>
-<p>Интерактивная версия API-спецификации Swagger Petstore для быстрого тестирования запросов.</p>
-<div id="swagger-ui"></div>
-<p><link href="https://unpkg.com/swagger-ui-dist@5/swagger-ui.css" rel="stylesheet"/></p>
-<script src="https://unpkg.com/swagger-ui-dist@5/swagger-ui-bundle.js"></script>
-<script>
-  window.addEventListener('load', function () {
-    window.ui = SwaggerUIBundle({
-      url: '../openapi/openapi.yaml',
-      dom_id: '#swagger-ui',
-      deepLinking: true,
-      docExpansion: 'list',
-      presets: [SwaggerUIBundle.presets.apis],
-    });
-  });
-</script>
+<h1 id="-">Бизнес-аналитика</h1>
+<p>Раздел для бизнес-процессов, KPI и дашбордов.</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>

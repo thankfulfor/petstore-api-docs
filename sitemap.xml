@@ -24,4 +24,52 @@
          <loc>https://thankfulfor.github.io/petstore-api-docs/versions/</loc>
          <lastmod>2026-04-19</lastmod>
     </url>
+    <url>
+         <loc>https://thankfulfor.github.io/petstore-api-docs/about/</loc>
+         <lastmod>2026-04-19</lastmod>
+    </url>
+    <url>
+         <loc>https://thankfulfor.github.io/petstore-api-docs/about/docs-as-code/</loc>
+         <lastmod>2026-04-19</lastmod>
+    </url>
+    <url>
+         <loc>https://thankfulfor.github.io/petstore-api-docs/business/</loc>
+         <lastmod>2026-04-19</lastmod>
+    </url>
+    <url>
+         <loc>https://thankfulfor.github.io/petstore-api-docs/business/bpmn-order-flow/</loc>
+         <lastmod>2026-04-19</lastmod>
+    </url>
+    <url>
+         <loc>https://thankfulfor.github.io/petstore-api-docs/business/sales-dashboard/</loc>
+         <lastmod>2026-04-19</lastmod>
+    </url>
+    <url>
+         <loc>https://thankfulfor.github.io/petstore-api-docs/developers/</loc>
+         <lastmod>2026-04-19</lastmod>
+    </url>
+    <url>
+         <loc>https://thankfulfor.github.io/petstore-api-docs/developers/architecture-c4/</loc>
+         <lastmod>2026-04-19</lastmod>
+    </url>
+    <url>
+         <loc>https://thankfulfor.github.io/petstore-api-docs/developers/sequence-create-order/</loc>
+         <lastmod>2026-04-19</lastmod>
+    </url>
+    <url>
+         <loc>https://thankfulfor.github.io/petstore-api-docs/developers/uml-class-model/</loc>
+         <lastmod>2026-04-19</lastmod>
+    </url>
+    <url>
+         <loc>https://thankfulfor.github.io/petstore-api-docs/users/</loc>
+         <lastmod>2026-04-19</lastmod>
+    </url>
+    <url>
+         <loc>https://thankfulfor.github.io/petstore-api-docs/users/onboarding/</loc>
+         <lastmod>2026-04-19</lastmod>
+    </url>
+    <url>
+         <loc>https://thankfulfor.github.io/petstore-api-docs/users/troubleshooting/</loc>
+         <lastmod>2026-04-19</lastmod>
+    </url>
 </urlset>

@@ -1,0 +1,22 @@
+@startuml
+class Pet {
+  +id: int
+  +name: string
+  +status: string
+}
+
+class Order {
+  +id: int
+  +petId: int
+  +quantity: int
+  +status: string
+}
+
+class User {
+  +id: int
+  +username: string
+  +email: string
+}
+
+Order --> Pet : references
+@enduml
