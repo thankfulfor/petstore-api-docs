@@ -1,84 +1,76 @@
-# Swagger Petstore API Docs
+# Технический писатель, экс-разработчик
 
-Портфолио-кейс техписа: документация публичного REST API Swagger Petstore.
+Пишу сложные вещи понятным языком: API Reference, архитектурные документы, пошаговые руководства.
 
-<div class="grid cards" markdown>
+<div class="hero-actions" markdown>
+[Связаться](about/resume.md){ .md-button .md-button--primary }
+[Смотреть API кейс](cases/api-payment-case.md){ .md-button }
+</div>
 
-- :material-briefcase-outline:{ .lg .middle } **Бизнес-аналитика**
+## Ключевой стек
+
+- API Reference: OpenAPI, Swagger UI
+- Архитектурные документы: C4, UML, BPMN
+- Руководства: onboarding, troubleshooting, how-to
+- Инструменты: MkDocs Material, GitHub Actions, GitHub Pages, Git
+
+## Кейсы (фильтр)
+
+<div data-case-filter-root>
+  <div class="case-filter-controls">
+    <input type="search" placeholder="Поиск по названию и описанию..." data-case-search>
+    <div class="case-tags">
+      <button class="is-active" data-case-tag="all" type="button">Все</button>
+      <button data-case-tag="api" type="button">API Reference</button>
+      <button data-case-tag="архитектура" type="button">Архитектурные документы</button>
+      <button data-case-tag="инструкции" type="button">Пошаговые руководства</button>
+    </div>
+  </div>
+
+  <div class="grid cards case-grid" markdown>
+
+- :material-api: **API Reference: Payment Gateway v2**
 
   ---
 
-  BPMN, KPI и дашборды для продуктовых и операционных решений.
+  Интерактивный контракт, примеры запросов и обработка ошибок.
 
-  [Открыть раздел](business/bpmn-order-flow.md)
+  <div data-case-card data-case-tags="api платежи" data-case-text="API Reference Payment Gateway v2 OpenAPI Swagger ошибки интеграции"></div>
 
-- :material-code-tags:{ .lg .middle } **Разработчикам**
+  [Смотреть пример](cases/api-payment-case.md)
+
+- :material-sitemap: **C4 + UML: Документация архитектуры**
 
   ---
 
-  API-контракт, C4/UML/Sequence и практики интеграции.
+  Контекст системы, взаимодействие с внешними сервисами, sequence потоки.
+
+  <div data-case-card data-case-tags="архитектура" data-case-text="C4 UML архитектура sequence внешние системы"></div>
 
   [Открыть раздел](developers/architecture-c4.md)
 
-- :material-account-group-outline:{ .lg .middle } **Пользователям**
+- :material-book-open-page-variant: **Онбординг оператора зоомагазина**
 
   ---
 
-  Онбординг, инструкции и troubleshooting для операторов.
+  Регистрация, добавление питомца, оформление заказа и FAQ.
+
+  <div data-case-card data-case-tags="инструкции" data-case-text="онбординг оператор user guide FAQ оформление заказа"></div>
 
   [Открыть раздел](users/onboarding.md)
 
-- :material-source-branch:{ .lg .middle } **Сквозные сценарии**
+- :material-timeline-check: **Сквозной сценарий: Инцидент оплаты**
 
   ---
 
-  От бизнес-процесса до API, задач разработки и метрик эффекта.
+  BPMN + API + Dev tasks + User guide + KPI в одном документе.
 
-  [Открыть раздел](scenario-order.md)
+  <div data-case-card data-case-tags="api архитектура инструкции" data-case-text="инцидент сбой оплаты BPMN API Dev User KPI"></div>
 
+  [Открыть сценарий](scenario-payment-incident.md)
+
+  </div>
 </div>
-
-## О проекте
-
-Swagger Petstore API позволяет:
-
-- получать список питомцев по статусу;
-- получать питомца по идентификатору;
-- смотреть инвентарь магазина.
-
-Документация собрана так, чтобы разработчик мог сделать первый успешный запрос за несколько минут.
-
-## Для кого эта документация
-
-- Frontend-разработчики, подключающие UI к API;
-- Backend-разработчики, проверяющие контракт;
-- QA и интеграторы, которым нужны воспроизводимые примеры запросов.
-
-## Структура документации
-
-- **Getting Started**: быстрый старт, базовые принципы, примеры `curl`.
-- **API Reference**: описание эндпоинтов и интерактивная спецификация OpenAPI.
-- **Сквозные сценарии**: единый вид на процесс, контракт, изменения в системе и KPI.
-
-## Что демонстрирует кейс
-
-- построение понятной IA (information architecture) для API docs;
-- сочетание narrative-документации и формального OpenAPI-контракта;
-- автоматический деплой документации через GitHub Actions и GitHub Pages.
-
-## Что улучшено относительно оригинального Petstore
-
-- Добавлен сценарный `Quick Start` с шагами "проверить API -> получить список -> получить сущность по ID".
-- Добавлены copy-paste примеры (`curl` + `JavaScript`) для быстрого старта интеграции.
-- Добавлен интерактивный раздел `Interactive API` со Swagger UI рядом с narrative-документацией.
-- Добавлены локализация навигации и changelog для прозрачного сопровождения изменений.
-
-## Критерии качества и результат
-
-- **Time-to-first-call**: целевое время до первого успешного запроса — до 5 минут.
-- **Покрытие ошибок**: в Quick Start и Troubleshooting описаны типовые `400/404`.
-- **Навигация по ролям**: структура разделов разделена на бизнес, разработку и пользовательские инструкции.
-- **Поддерживаемость**: docs-as-code, CI-деплой, версия документации и changelog.
 
 ## Business Impact (демо-метрики)
 
@@ -87,16 +79,12 @@ Swagger Petstore API позволяет:
 | Time-to-first-call | 20 мин | 5 мин | -75% |
 | Доля ошибок в первом запросе | 42% | 18% | -24 п.п. |
 | Время поиска нужного endpoint | 4.5 мин | 1.5 мин | -67% |
-| Доля успешных checkout (демо) | 72% | 81% | +9 п.п. |
 
 !!! note "Важно"
     Метрики демонстрационные и используются как формат оценки качества документации в портфолио-кейсе.
 
-## Обратная связь
+## Дополнительно
 
-Нашли неточность или хотите улучшить пример?  
-Создайте issue: [Сообщить об ошибке в документации](https://github.com/thankfulfor/petstore-api-docs/issues/new?template=blank_issues)
-
-## Официальный источник
-
-Официальный Swagger UI: [petstore.swagger.io](https://petstore.swagger.io/)
+- [Обо мне / резюме и контакты](about/resume.md)
+- [Игра: Найди ошибку в документации](game/find-doc-bug.md)
+- [QA Checklist](qa-checklist.md)

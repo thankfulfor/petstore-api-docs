@@ -52,10 +52,14 @@ nav:
   - "👥 Пользователям":
       - "Онбординг": users/onboarding.md
       - "Устранение неполадок": users/troubleshooting.md
+  - "📁 Кейсы":
+      - "API Payment Case": cases/api-payment-case.md
   - "ℹ️ О проекте":
       - "Описание": about/index.md
+      - "Резюме и контакты": about/resume.md
       - "Docs as Code": about/docs-as-code.md
       - "Interview Pitch (90 сек)": about/interview-pitch.md
+  - "🎮 Игра": game/find-doc-bug.md
   - "🗂 Версии API": versions/index.md
   - "✅ QA Checklist": qa-checklist.md
   - "📝 Changelog": changelog/index.md
@@ -79,6 +83,7 @@ extra_css:
 extra_javascript:
   - javascripts/i18n-nav.js
   - javascripts/diagram-zoom.js
+  - javascripts/portfolio-funnel.js
   - https://cdn.jsdelivr.net/npm/chart.js
 extra:
   version:
