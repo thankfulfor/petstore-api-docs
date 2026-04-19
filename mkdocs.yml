@@ -6,6 +6,7 @@ nav:
   - Главная: index.md
   - Быстрый старт: getting-started.md
   - Справочник API: api.md
+  - Interactive API: interactive-api.md
   - Версии API: versions.md
   - Changelog: changelog.md
 plugins:
