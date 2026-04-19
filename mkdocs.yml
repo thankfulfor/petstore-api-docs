@@ -60,3 +60,6 @@ extra_css:
 extra_javascript:
   - javascripts/i18n-nav.js
   - https://cdn.jsdelivr.net/npm/chart.js
+extra:
+  version:
+    provider: mike

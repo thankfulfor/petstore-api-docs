@@ -26,10 +26,11 @@ jobs:
           sudo apt-get install -y graphviz plantuml
       - name: Render diagrams
         run: bash scripts/render-diagrams.sh
-      - name: Build site
-        run: mkdocs build
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+      - name: Configure Git author
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Deploy versioned docs with mike
+        run: |
+          mike deploy --push --update-aliases dev latest
+          mike set-default --push latest
