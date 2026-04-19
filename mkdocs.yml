@@ -1,18 +1,55 @@
 site_name: Swagger Petstore API Docs
 site_url: https://thankfulfor.github.io/petstore-api-docs/
+repo_url: https://github.com/thankfulfor/petstore-api-docs
+repo_name: thankfulfor/petstore-api-docs
 theme:
-  name: readthedocs
+  name: material
+  language: ru
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.path
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  palette:
+    - scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Переключить тёмную тему
+    - scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Переключить светлую тему
 nav:
   - Главная: index.md
   - Быстрый старт: getting-started.md
   - Справочник API: api.md
   - Interactive API: interactive-api.md
+  - Бизнес-аналитика:
+      - Обзор: business/index.md
+  - Разработчикам:
+      - Обзор: developers/index.md
+  - Пользователям:
+      - Обзор: users/index.md
+  - О проекте:
+      - Описание: about/index.md
+      - Docs as Code: about/docs-as-code.md
   - Версии API: versions.md
   - Changelog: changelog.md
 plugins:
   - search
   - redoc-tag
+  - mermaid2
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
   - javascripts/i18n-nav.js
+  - https://cdn.jsdelivr.net/npm/chart.js
