@@ -33,6 +33,11 @@ nav:
   - Быстрый старт: getting-started.md
   - Справочник API: api.md
   - Interactive API: interactive-api.md
+  - Сквозные сценарии:
+      - Оформление заказа: scenario-order.md
+      - Возврат / отмена: scenario-return-cancel.md
+      - Онбординг нового магазина: scenario-onboarding-store.md
+      - "Инцидент: сбой оплаты": scenario-payment-incident.md
   - Бизнес-аналитика:
       - Обзор: business/index.md
       - BPMN процесса заказа: business/bpmn-order-flow.md
