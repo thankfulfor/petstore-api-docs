@@ -5,6 +5,10 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 
+concurrency:
+  group: docs-deploy-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -12,6 +16,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -32,7 +38,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Sync gh-pages branch
+        run: |
+          git fetch origin gh-pages || true
       - name: Deploy versioned docs with mike
         run: |
-          mike deploy --push --update-aliases dev latest
-          mike set-default --push latest
+          mike deploy --update-aliases dev latest
+          mike set-default latest
+          git push origin gh-pages
