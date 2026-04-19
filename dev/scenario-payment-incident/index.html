@@ -5,12 +5,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://thankfulfor.github.io/petstore-api-docs/dev/getting-started/" rel="canonical"/>
-<link href=".." rel="prev"/>
-<link href="../api/" rel="next"/>
+<link href="https://thankfulfor.github.io/petstore-api-docs/dev/scenario-payment-incident/" rel="canonical"/>
+<link href="../scenario-onboarding-store/" rel="prev"/>
+<link href="../business/" rel="next"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.14" name="generator"/>
-<title>Быстрый старт - Swagger Petstore API Docs</title>
+<title>Инцидент: сбой оплаты - Swagger Petstore API Docs</title>
 <link href="../assets/stylesheets/main.342714a4.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -24,7 +24,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#getting-started">
+<a class="md-skip" href="#_1">
           Перейти к содержанию
         </a>
 </div>
@@ -50,7 +50,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Быстрый старт
+              Инцидент: сбой оплаты
             
           </span>
 </div>
@@ -125,8 +125,8 @@
 
       </a>
 </li>
-<li class="md-tabs__item md-tabs__item--active">
-<a class="md-tabs__link" href="./">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../getting-started/">
         
   
   
@@ -158,7 +158,7 @@
 
       </a>
 </li>
-<li class="md-tabs__item">
+<li class="md-tabs__item md-tabs__item--active">
 <a class="md-tabs__link" href="../scenario-order/">
           
   
@@ -270,128 +270,13 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-ellipsis">
-    Быстрый старт
-    
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../getting-started/">
 <span class="md-ellipsis">
     Быстрый старт
     
   </span>
 </a>
-<nav aria-label="Содержание" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Содержание
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#base-url">
-<span class="md-ellipsis">
-      Base URL
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
-<span class="md-ellipsis">
-      Формат данных
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#3">
-<span class="md-ellipsis">
-      Быстрый старт за 3 шага
-    </span>
-</a>
-<nav aria-label="Быстрый старт за 3 шага" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#1-api">
-<span class="md-ellipsis">
-      1. Проверить доступность API
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#2-available">
-<span class="md-ellipsis">
-      2. Получить питомцев в статусе available
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#javascript-fetch">
-<span class="md-ellipsis">
-      Пример на JavaScript (fetch)
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#3-id">
-<span class="md-ellipsis">
-      3. Получить питомца по ID
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
-<span class="md-ellipsis">
-      Аутентификация
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
-<span class="md-ellipsis">
-      Ошибки и диагностика
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
-<span class="md-ellipsis">
-      Типовые ошибки и как проверить
-    </span>
-</a>
-<nav aria-label="Типовые ошибки и как проверить" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#400-bad-request">
-<span class="md-ellipsis">
-      400 Bad Request (некорректный параметр)
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#404-not-found">
-<span class="md-ellipsis">
-      404 Not Found (ресурс не найден)
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_5">
-<span class="md-ellipsis">
-      Обратная связь
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../api/">
@@ -409,16 +294,16 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
 <span class="md-ellipsis">
     Сквозные сценарии
     
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="true" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_5">
 <span class="md-nav__icon md-icon"></span>
             Сквозные сценарии
@@ -448,13 +333,78 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../scenario-payment-incident/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Инцидент: сбой оплаты
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     Инцидент: сбой оплаты
     
   </span>
 </a>
+<nav aria-label="Содержание" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      Контекст
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#bpmn">
+<span class="md-ellipsis">
+      BPMN (бизнес)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#api">
+<span class="md-ellipsis">
+      API (технический контракт)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dev-">
+<span class="md-ellipsis">
+      Dev-задачи (что меняем в системе)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#user-guide">
+<span class="md-ellipsis">
+      User guide (действия оператора)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      Дашборд (как измеряем эффект)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      Связанные разделы
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -666,101 +616,51 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#base-url">
-<span class="md-ellipsis">
-      Base URL
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
-<span class="md-ellipsis">
-      Формат данных
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#3">
-<span class="md-ellipsis">
-      Быстрый старт за 3 шага
-    </span>
-</a>
-<nav aria-label="Быстрый старт за 3 шага" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#1-api">
-<span class="md-ellipsis">
-      1. Проверить доступность API
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#2-available">
-<span class="md-ellipsis">
-      2. Получить питомцев в статусе available
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#javascript-fetch">
-<span class="md-ellipsis">
-      Пример на JavaScript (fetch)
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#3-id">
-<span class="md-ellipsis">
-      3. Получить питомца по ID
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#_2">
 <span class="md-ellipsis">
-      Аутентификация
+      Контекст
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#bpmn">
+<span class="md-ellipsis">
+      BPMN (бизнес)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#api">
+<span class="md-ellipsis">
+      API (технический контракт)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dev-">
+<span class="md-ellipsis">
+      Dev-задачи (что меняем в системе)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#user-guide">
+<span class="md-ellipsis">
+      User guide (действия оператора)
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_3">
 <span class="md-ellipsis">
-      Ошибки и диагностика
+      Дашборд (как измеряем эффект)
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_4">
 <span class="md-ellipsis">
-      Типовые ошибки и как проверить
-    </span>
-</a>
-<nav aria-label="Типовые ошибки и как проверить" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#400-bad-request">
-<span class="md-ellipsis">
-      400 Bad Request (некорректный параметр)
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#404-not-found">
-<span class="md-ellipsis">
-      404 Not Found (ресурс не найден)
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_5">
-<span class="md-ellipsis">
-      Обратная связь
+      Связанные разделы
     </span>
 </a>
 </li>
@@ -771,86 +671,85 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="getting-started">Getting Started</h1>
-<h2 id="base-url">Base URL</h2>
-<p>Все примеры в документации используют:</p>
-<p><code>https://petstore.swagger.io/v2</code></p>
-<h2 id="_1">Формат данных</h2>
+<h1 id="_1">Сценарий: Инцидент — сбой оплаты</h1>
+<h2 id="_2">Контекст</h2>
+<p>Во время checkout платежный шлюз возвращает ошибки. Нужно минимизировать потери заказов и быстро восстановить стабильность.</p>
+<h2 id="bpmn">BPMN (бизнес)</h2>
+<div class="mermaid">flowchart LR
+  A[Рост ошибок оплаты] --&gt; B[Алерт в мониторинге]
+  B --&gt; C[Триаж инцидента]
+  C --&gt; D[Переключение на fallback-эквайер]
+  D --&gt; E[Проверка успешных транзакций]
+  E --&gt; F[Коммуникация клиентам]
+  F --&gt; G[Пост-мортем]
+</div>
+<h2 id="api">API (технический контракт)</h2>
+<table>
+<thead>
+<tr>
+<th>Операция</th>
+<th>Метод и путь</th>
+<th>Назначение</th>
+<th>Успех</th>
+<th>Ошибки</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Создать заказ</td>
+<td><code>POST /store/order</code></td>
+<td>Основная операция checkout</td>
+<td><code>201</code></td>
+<td><code>400</code>, <code>402</code>, <code>503</code></td>
+</tr>
+<tr>
+<td>Получить заказ</td>
+<td><code>GET /store/order/{orderId}</code></td>
+<td>Проверить финальный статус</td>
+<td><code>200</code></td>
+<td><code>404</code></td>
+</tr>
+</tbody>
+</table>
+<p>Требования к ошибке оплаты:</p>
 <ul>
-<li>Контент-тип запросов: <code>application/json</code></li>
-<li>Контент-тип ответов: <code>application/json</code></li>
-<li>Кодировка: <code>UTF-8</code></li>
+<li>Код ошибки должен быть машинно-читабельным (<code>PAYMENT_GATEWAY_TIMEOUT</code>, <code>PAYMENT_DECLINED</code>).</li>
+<li>Ответ должен включать <code>traceId</code> для поиска в логах.</li>
 </ul>
-<h2 id="3">Быстрый старт за 3 шага</h2>
-<h3 id="1-api">1. Проверить доступность API</h3>
-<pre><code class="language-bash">curl -X GET "https://petstore.swagger.io/v2/store/inventory"
-</code></pre>
-<p>Ожидаемый ответ <code>200 OK</code>:</p>
-<pre><code class="language-json">{
-  "available": 123,
-  "pending": 42,
-  "sold": 87
-}
-</code></pre>
-<h3 id="2-available">2. Получить питомцев в статусе <code>available</code></h3>
-<pre><code class="language-bash">curl -X GET "https://petstore.swagger.io/v2/pet/findByStatus?status=available"
-</code></pre>
-<p>Ожидаемый ответ <code>200 OK</code> с массивом объектов <code>Pet</code>.</p>
-<h3 id="javascript-fetch">Пример на JavaScript (fetch)</h3>
-<pre><code class="language-javascript">const response = await fetch(
-  "https://petstore.swagger.io/v2/pet/findByStatus?status=available"
-);
-
-if (!response.ok) {
-  throw new Error(`HTTP ${response.status}`);
-}
-
-const pets = await response.json();
-console.log(pets.slice(0, 3));
-</code></pre>
-<h3 id="3-id">3. Получить питомца по ID</h3>
-<pre><code class="language-bash">curl -X GET "https://petstore.swagger.io/v2/pet/1"
-</code></pre>
-<p>Ожидаемый ответ:</p>
+<h2 id="dev-">Dev-задачи (что меняем в системе)</h2>
 <ul>
-<li><code>200</code>, если питомец найден;</li>
-<li><code>404</code>, если питомец не найден.</li>
+<li>Ввести retry policy для временных ошибок эквайера.</li>
+<li>Добавить circuit breaker на интеграцию платежного шлюза.</li>
+<li>Реализовать feature-flag для переключения провайдера оплаты.</li>
+<li>Расширить логирование и метрики по коду причины отказа.</li>
 </ul>
-<h2 id="_2">Аутентификация</h2>
-<p>Для методов только чтения из этого мини-кейса аутентификация не требуется.
-В полном API есть защищенные методы (добавление/изменение/удаление), где используются API key/OAuth.</p>
-<h2 id="_3">Ошибки и диагностика</h2>
-<p>Типичные HTTP-коды:</p>
+<h2 id="user-guide">User guide (действия оператора)</h2>
+<ol>
+<li>Проверить дашборд ошибок оплаты и подтверждение инцидента.</li>
+<li>Включить fallback-канал оплаты по инструкции дежурного.</li>
+<li>Повторно обработать зависшие заказы.</li>
+<li>Уведомить клиентов о восстановлении сервиса.</li>
+<li>Зафиксировать инцидент в журнале и передать в пост-мортем.</li>
+</ol>
+<p>!!! warning "SLA"
+    Время реакции на массовый сбой оплаты — до 15 минут.</p>
+<h2 id="_3">Дашборд (как измеряем эффект)</h2>
 <ul>
-<li><code>200</code>: успешный запрос;</li>
-<li><code>400</code>: некорректный параметр запроса;</li>
-<li><code>404</code>: сущность не найдена;</li>
-<li><code>405</code>: невалидный ввод;</li>
-<li><code>500</code>: внутренняя ошибка сервера.</li>
+<li>Payment error rate.</li>
+<li>Mean time to mitigation (MTTM).</li>
+<li>Процент восстановленных заказов после инцидента.</li>
 </ul>
-<p>Рекомендация для клиентов: логировать <code>status code</code>, <code>request id</code> (если есть) и тело ошибки.</p>
-<h2 id="_4">Типовые ошибки и как проверить</h2>
-<h3 id="400-bad-request"><code>400 Bad Request</code> (некорректный параметр)</h3>
-<p>Проверка:</p>
-<pre><code class="language-bash">curl -i "https://petstore.swagger.io/v2/pet/findByStatus?status=wrong_status"
-</code></pre>
-<p>Что проверить:</p>
+<div class="mermaid">xychart-beta
+  title "Payment Incident Metrics"
+  x-axis [T0, T15, T30, T45, T60]
+  y-axis "Error Rate %" 0 --&gt; 40
+  line [35, 22, 14, 8, 4]
+</div>
+<h2 id="_4">Связанные разделы</h2>
 <ul>
-<li>допустимые значения параметра <code>status</code> (<code>available</code>, <code>pending</code>, <code>sold</code>);</li>
-<li>URL и query-параметры без опечаток.</li>
+<li><a href="../users/troubleshooting/">Устранение неполадок</a></li>
+<li><a href="../changelog/">Changelog</a></li>
 </ul>
-<h3 id="404-not-found"><code>404 Not Found</code> (ресурс не найден)</h3>
-<p>Проверка:</p>
-<pre><code class="language-bash">curl -i "https://petstore.swagger.io/v2/pet/999999999"
-</code></pre>
-<p>Что проверить:</p>
-<ul>
-<li>корректность <code>petId</code>;</li>
-<li>существует ли сущность в системе.</li>
-</ul>
-<h2 id="_5">Обратная связь</h2>
-<p>Если пример не работает или требует уточнений:<br/>
-<a href="https://github.com/thankfulfor/petstore-api-docs/issues/new?template=blank_issues">Сообщить об ошибке в документации</a></p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -910,5 +809,6 @@ console.log(pets.slice(0, 3));
             }
             observer = new MutationObserver(color_scheme_callback);
             observer.observe(document.body, options);
-            })</script></body>
+            })</script><script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
 </html>
