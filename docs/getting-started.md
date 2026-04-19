@@ -38,6 +38,21 @@ curl -X GET "https://petstore.swagger.io/v2/pet/findByStatus?status=available"
 
 Ожидаемый ответ `200 OK` с массивом объектов `Pet`.
 
+### Пример на JavaScript (fetch)
+
+```javascript
+const response = await fetch(
+  "https://petstore.swagger.io/v2/pet/findByStatus?status=available"
+);
+
+if (!response.ok) {
+  throw new Error(`HTTP ${response.status}`);
+}
+
+const pets = await response.json();
+console.log(pets.slice(0, 3));
+```
+
 ### 3. Получить питомца по ID
 
 ```bash
@@ -65,3 +80,31 @@ curl -X GET "https://petstore.swagger.io/v2/pet/1"
 - `500`: внутренняя ошибка сервера.
 
 Рекомендация для клиентов: логировать `status code`, `request id` (если есть) и тело ошибки.
+
+## Типовые ошибки и как проверить
+
+### `400 Bad Request` (некорректный параметр)
+
+Проверка:
+
+```bash
+curl -i "https://petstore.swagger.io/v2/pet/findByStatus?status=wrong_status"
+```
+
+Что проверить:
+
+- допустимые значения параметра `status` (`available`, `pending`, `sold`);
+- URL и query-параметры без опечаток.
+
+### `404 Not Found` (ресурс не найден)
+
+Проверка:
+
+```bash
+curl -i "https://petstore.swagger.io/v2/pet/999999999"
+```
+
+Что проверить:
+
+- корректность `petId`;
+- существует ли сущность в системе.
