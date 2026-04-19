@@ -61,4 +61,4 @@ pie showData
 ## Связанные разделы
 
 - [Сценарий: Оформление заказа](scenario-order.md)
-- [Пользовательский FAQ](users/index.md)
+- [Пользовательские инструкции](users/onboarding.md)

@@ -8,55 +8,68 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.expand
     - navigation.path
     - navigation.top
-    - toc.follow
+    - toc.integrate
     - search.suggest
     - search.highlight
     - content.code.copy
     - content.tabs.link
+    - header.autohide
   palette:
-    - scheme: default
-      primary: blue
-      accent: indigo
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: amber
       toggle:
         icon: material/weather-night
         name: Переключить тёмную тему
-    - scheme: slate
-      primary: blue
-      accent: indigo
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: amber
       toggle:
         icon: material/weather-sunny
         name: Переключить светлую тему
 nav:
-  - Главная: index.md
-  - Быстрый старт: getting-started.md
-  - Справочник API: api.md
-  - Interactive API: interactive-api.md
-  - Сквозные сценарии:
-      - Оформление заказа: scenario-order.md
-      - Возврат / отмена: scenario-return-cancel.md
-      - Онбординг нового магазина: scenario-onboarding-store.md
+  - "🏠 Главная": index.md
+  - "🚀 Быстрый старт": getting-started.md
+  - "🧩 Справочник API": api.md
+  - "🧪 Interactive API": interactive-api.md
+  - "🎯 Сквозные сценарии":
+      - "Оформление заказа": scenario-order.md
+      - "Возврат / отмена": scenario-return-cancel.md
+      - "Онбординг нового магазина": scenario-onboarding-store.md
       - "Инцидент: сбой оплаты": scenario-payment-incident.md
-  - Бизнес-аналитика:
-      - Обзор: business/index.md
-      - BPMN процесса заказа: business/bpmn-order-flow.md
-      - Дашборд продаж: business/sales-dashboard.md
-  - Разработчикам:
-      - Обзор: developers/index.md
-      - C4 Архитектура: developers/architecture-c4.md
-      - Sequence (создание заказа): developers/sequence-create-order.md
-      - UML Class Model: developers/uml-class-model.md
-  - Пользователям:
-      - Обзор: users/index.md
-      - Онбординг: users/onboarding.md
-      - Устранение неполадок: users/troubleshooting.md
-  - О проекте:
-      - Описание: about/index.md
-      - Docs as Code: about/docs-as-code.md
-  - Версии API: versions/index.md
-  - QA Checklist: qa-checklist.md
-  - Changelog: changelog/index.md
+  - "📊 Бизнес-аналитика":
+      - "BPMN процесса заказа": business/bpmn-order-flow.md
+      - "Дашборд продаж": business/sales-dashboard.md
+  - "🛠 Разработчикам":
+      - "C4 Архитектура": developers/architecture-c4.md
+      - "Sequence (создание заказа)": developers/sequence-create-order.md
+      - "UML Class Model": developers/uml-class-model.md
+  - "👥 Пользователям":
+      - "Онбординг": users/onboarding.md
+      - "Устранение неполадок": users/troubleshooting.md
+  - "ℹ️ О проекте":
+      - "Описание": about/index.md
+      - "Docs as Code": about/docs-as-code.md
+      - "Interview Pitch (90 сек)": about/interview-pitch.md
+  - "🗂 Версии API": versions/index.md
+  - "✅ QA Checklist": qa-checklist.md
+  - "📝 Changelog": changelog/index.md
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
 plugins:
   - search
   - redoc-tag
@@ -65,6 +78,7 @@ extra_css:
   - stylesheets/extra.css
 extra_javascript:
   - javascripts/i18n-nav.js
+  - javascripts/diagram-zoom.js
   - https://cdn.jsdelivr.net/npm/chart.js
 extra:
   version:
