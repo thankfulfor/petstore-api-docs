@@ -60,11 +60,11 @@ curl -X POST "https://petstore.swagger.io/v2/store/order" \
 - Среднее время от создания до передачи в доставку.
 
 ```mermaid
-xychart-beta
-  title "Checkout KPI (неделя)"
-  x-axis [Mon, Tue, Wed, Thu, Fri, Sat, Sun]
-  y-axis "Value" 0 --> 100
-  line [72, 75, 77, 79, 81, 76, 74]
+pie showData
+  title Checkout KPI (неделя)
+  "Успешные checkout" : 78
+  "Ошибки оплаты" : 12
+  "Брошенные корзины" : 10
 ```
 
 ## Связанные разделы

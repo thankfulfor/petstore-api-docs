@@ -53,11 +53,11 @@ flowchart LR
 - Процент восстановленных заказов после инцидента.
 
 ```mermaid
-xychart-beta
-  title "Payment Incident Metrics"
-  x-axis [T0, T15, T30, T45, T60]
-  y-axis "Error Rate %" 0 --> 40
-  line [35, 22, 14, 8, 4]
+pie showData
+  title Payment Incident Metrics
+  "Ошибки устранены <30 мин" : 61
+  "Ошибки устранены 30-60 мин" : 27
+  "Ошибки >60 мин" : 12
 ```
 
 ## Связанные разделы

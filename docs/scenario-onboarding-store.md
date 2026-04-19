@@ -49,11 +49,11 @@ flowchart LR
 - Ошибки импорта каталога на 100 карточек.
 
 ```mermaid
-xychart-beta
-  title "Onboarding KPI"
-  x-axis [M1, M2, M3, M4]
-  y-axis "Percent" 0 --> 100
-  line [54, 63, 71, 78]
+pie showData
+  title Onboarding KPI
+  "Завершили с первой попытки" : 68
+  "Потребовалась помощь поддержки" : 22
+  "Не завершили онбординг" : 10
 ```
 
 ## Связанные разделы

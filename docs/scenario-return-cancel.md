@@ -51,11 +51,11 @@ flowchart LR
 - Refund success rate.
 
 ```mermaid
-xychart-beta
-  title "Returns KPI (месяц)"
-  x-axis [W1, W2, W3, W4]
-  y-axis "Hours" 0 --> 72
-  bar [36, 30, 28, 24]
+pie showData
+  title Returns KPI (месяц)
+  "Возвраты обработаны <24ч" : 52
+  "Возвраты обработаны 24-48ч" : 34
+  "Возвраты >48ч" : 14
 ```
 
 ## Связанные разделы
