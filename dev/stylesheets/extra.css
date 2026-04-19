@@ -7,3 +7,66 @@
 .rst-content h6 {
   margin-bottom: 10px;
 }
+
+.diagram-zoom-wrapper {
+  margin: 0.5rem 0 1.25rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.diagram-zoom-controls {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.diagram-zoom-controls button {
+  border: 1px solid #c7c7c7;
+  background: #f8f8f8;
+  border-radius: 6px;
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.diagram-zoom-viewport {
+  overflow: auto;
+  padding: 0.75rem;
+  cursor: grab;
+}
+
+.diagram-zoom-viewport.is-dragging {
+  cursor: grabbing;
+}
+
+.diagram-zoom-viewport svg {
+  max-width: none !important;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .diagram-zoom-wrapper {
+    margin: 0.25rem 0 1rem;
+    border-radius: 6px;
+  }
+
+  .diagram-zoom-controls {
+    gap: 0.35rem;
+    padding: 0.4rem;
+    flex-wrap: wrap;
+  }
+
+  .diagram-zoom-controls button {
+    padding: 0.35rem 0.65rem;
+    font-size: 1rem;
+    min-width: 3rem;
+  }
+
+  .diagram-zoom-viewport {
+    padding: 0.5rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
