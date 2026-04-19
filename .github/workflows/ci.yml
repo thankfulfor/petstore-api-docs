@@ -3,6 +3,7 @@ name: Deploy MkDocs site to GitHub Pages
 on:
   push:
     branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -18,7 +19,13 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install mkdocs mkdocs-redoc-tag
+          pip install -r requirements.txt
+      - name: Install PlantUML dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y graphviz plantuml
+      - name: Render diagrams
+        run: bash scripts/render-diagrams.sh
       - name: Build site
         run: mkdocs build
       - name: Deploy to GitHub Pages
