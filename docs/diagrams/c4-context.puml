@@ -1,14 +1,15 @@
 @startuml
-!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+skinparam componentStyle rectangle
+left to right direction
 
-Person(dev, "Developer", "Integrates with REST API")
-System_Boundary(petstore, "Petstore Platform") {
-  System(api, "Petstore API", "Pet / Store / Order operations")
+actor "Developer" as dev
+rectangle "Petstore Platform" as platform {
+  component "Petstore API\n(Pet / Store / Order)" as api
 }
-System_Ext(pages, "GitHub Pages", "Hosts docs portal")
-System_Ext(actions, "GitHub Actions", "Builds and deploys docs")
+cloud "GitHub Pages\n(Documentation Hosting)" as pages
+node "GitHub Actions\n(Build & Deploy)" as actions
 
-Rel(dev, api, "Uses REST")
-Rel(actions, pages, "Deploys documentation")
-Rel(dev, pages, "Reads docs")
+dev --> api : Uses REST
+actions --> pages : Deploys docs
+dev --> pages : Reads docs portal
 @enduml
