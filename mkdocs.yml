@@ -49,9 +49,9 @@ nav:
   - О проекте:
       - Описание: about/index.md
       - Docs as Code: about/docs-as-code.md
-  - Версии API: versions.md
+  - Версии API: versions/index.md
   - QA Checklist: qa-checklist.md
-  - Changelog: changelog.md
+  - Changelog: changelog/index.md
 plugins:
   - search
   - redoc-tag
