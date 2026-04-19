@@ -17,3 +17,8 @@
     });
   });
 </script>
+
+## Обратная связь
+
+Если в Swagger UI не загружается контракт или есть ошибки в примерах:  
+[Открыть issue по Interactive API](https://github.com/thankfulfor/petstore-api-docs/issues/new?template=blank_issues)

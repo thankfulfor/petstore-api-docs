@@ -24,6 +24,8 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y graphviz plantuml
+      - name: Validate OpenAPI spec
+        run: python -m openapi_spec_validator docs/openapi/openapi.yaml
       - name: Render diagrams
         run: bash scripts/render-diagrams.sh
       - name: Configure Git author

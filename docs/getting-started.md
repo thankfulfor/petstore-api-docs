@@ -108,3 +108,8 @@ curl -i "https://petstore.swagger.io/v2/pet/999999999"
 
 - корректность `petId`;
 - существует ли сущность в системе.
+
+## Обратная связь
+
+Если пример не работает или требует уточнений:  
+[Сообщить об ошибке в документации](https://github.com/thankfulfor/petstore-api-docs/issues/new?template=blank_issues)

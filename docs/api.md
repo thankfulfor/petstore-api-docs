@@ -74,3 +74,8 @@ curl -X GET "https://petstore.swagger.io/v2/store/inventory"
 {% redoc %}
 spec-url: ../openapi/openapi.yaml
 {% endredoc %}
+
+## Обратная связь
+
+Нашли ошибку в контракте или примере endpoint-а:  
+[Открыть issue по API документации](https://github.com/thankfulfor/petstore-api-docs/issues/new?template=blank_issues)
