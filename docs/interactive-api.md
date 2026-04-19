@@ -7,12 +7,33 @@
 <link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist@5/swagger-ui.css" />
 <script src="https://unpkg.com/swagger-ui-dist@5/swagger-ui-bundle.js"></script>
 <script>
-  window.addEventListener('load', function () {
+  async function resolveSpecUrl() {
+    const candidates = [
+      "../openapi/openapi.yaml",
+      "./openapi/openapi.yaml",
+      "../latest/openapi/openapi.yaml",
+      "/petstore-api-docs/latest/openapi/openapi.yaml",
+      "/petstore-api-docs/openapi/openapi.yaml",
+    ];
+
+    for (const candidate of candidates) {
+      try {
+        const response = await fetch(candidate, { method: "GET" });
+        if (response.ok) return candidate;
+      } catch (e) {
+        // Try next candidate
+      }
+    }
+    return candidates[0];
+  }
+
+  window.addEventListener("load", async function () {
+    const specUrl = await resolveSpecUrl();
     window.ui = SwaggerUIBundle({
-      url: '../openapi/openapi.yaml',
-      dom_id: '#swagger-ui',
+      url: specUrl,
+      dom_id: "#swagger-ui",
       deepLinking: true,
-      docExpansion: 'list',
+      docExpansion: "list",
       presets: [SwaggerUIBundle.presets.apis],
     });
   });
