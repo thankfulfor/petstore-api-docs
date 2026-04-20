@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Games on Petstore API Docs</title><link>https://thankfulfor.github.io/petstore-api-docs/game/</link><description>Recent content in Games on Petstore API Docs</description><generator>Hugo</generator><language>ru-ru</language><atom:link href="https://thankfulfor.github.io/petstore-api-docs/game/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/game/find-doc-bug/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/game/find-doc-bug/</guid><description>&lt;h1 id="игра-найди-ошибку-в-документации"&gt;Игра: Найди ошибку в документации&lt;/h1&gt;
+&lt;p&gt;Найдите 4 ошибки в примере ниже и нажмите &lt;strong&gt;Проверить&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class="doc-bug-game" id="docBugGame"&gt;
+&lt;p&gt;&lt;strong&gt;POST /store/order&lt;/strong&gt; создает новый заказ и всегда возвращает &lt;code&gt;200 OK&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Поле &lt;code&gt;quantity&lt;/code&gt; может быть отрицательным, если заказ отменен заранее.&lt;/p&gt;
+&lt;p&gt;Для авторизации используйте заголовок &lt;code&gt;X-Token&lt;/code&gt;, параметр &lt;code&gt;Authorization&lt;/code&gt; не поддерживается.&lt;/p&gt;
+&lt;p&gt;Пример ответа:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{ "id": "abc", "status": 123, "complete": "yes" }&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="doc-bug-controls"&gt;
+&lt;button type="button" id="checkDocBug"&gt;Проверить&lt;/button&gt;
+&lt;button type="button" id="resetDocBug"&gt;Сброс&lt;/button&gt;
+&lt;span id="docBugResult" aria-live="polite"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;h2 id="подсказка"&gt;Подсказка&lt;/h2&gt;
+&lt;p&gt;Ошибки связаны с HTTP-статусом, валидацией данных, авторизацией и типами полей ответа.&lt;/p&gt;</description></item></channel></rss>

@@ -1,35 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="243px" preserveAspectRatio="none" style="width:558px;height:243px;" version="1.1" viewBox="0 0 558 243" width="558px" zoomAndPan="magnify"><defs><filter height="300%" id="fc4rwdtkv1w30" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[d841c4c2f84d4e18d352f800547f43fc]
-cluster platform--><rect fill="#FFFFFF" filter="url(#fc4rwdtkv1w30)" height="105" style="stroke: #000000; stroke-width: 1.5;" width="187" x="342.5" y="24.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="139" x="366.5" y="39.4951">Petstore Platform</text><!--MD5=[e2307af040e3f87d22824e7603ca28ec]
-entity api--><rect fill="#FEFECE" filter="url(#fc4rwdtkv1w30)" height="52.5938" style="stroke: #A80036; stroke-width: 1.5;" width="155" x="358.5" y="60"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="353.5" y="65"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="353.5" y="102.5938"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="84" x="368.5" y="82.9951">Petstore API</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="135" x="368.5" y="99.292">(Pet / Store / Order)</text><!--MD5=[3d99d59a27ec55cd9b0b1490801f78bc]
-entity dev--><ellipse cx="82" cy="59.5" fill="#FEFECE" filter="url(#fc4rwdtkv1w30)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M82,67.5 L82,94.5 M69,75.5 L95,75.5 M82,94.5 L69,109.5 M82,94.5 L95,109.5 " fill="none" filter="url(#fc4rwdtkv1w30)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="71" x="46.5" y="127.9951">Developer</text><!--MD5=[85f4d1a33338ddce045f9b827d37a273]
-entity pages--><path d="M342.9786,167.7715 C346.4416,160.4114 352.4474,161.1789 356.3128,167.3757 C359.3237,160.2907 364.9903,160.2954 368.8615,166.5674 C373.0677,159.7953 379.1494,161.2432 382.8278,167.1488 C386.6228,161.4561 391.0747,160.2948 395.7175,166.2072 C400.9239,159.9479 405.3363,160.7059 409.8775,166.9599 C414.1584,160.5777 421.0177,161.2157 424.8327,167.5096 C428.0548,162.2058 431.8024,161.0248 436.1539,166.3011 C440.6957,159.0219 447.007,159.3049 451.667,166.1714 C456.7022,160.0053 461.0605,160.7481 465.3622,166.9816 C469.0527,160.1582 475.4232,161.7621 478.781,167.3415 C483.0153,161.9471 487.1543,162.2001 491.0142,167.7595 C495.4461,161.6128 499.9974,159.94 505.1792,166.9522 C508.5571,161.421 513.7562,161.5542 517.297,166.7685 C522.1455,160.9216 528.7346,160.9021 531.5459,168.8698 C544.0439,174.1161 546.9792,181.1674 536.8566,191.6802 C545.7354,200.8945 543.9965,211.4444 531.2509,215.5885 C527.035,222.494 523.2286,221.0063 518.7028,215.9125 C515.2114,223.4398 508.889,222.5382 504.3666,217.0479 C500.389,222.9902 495.0458,224.8311 490.442,217.7156 C487.2268,224.4378 481.5274,225.1498 476.7683,219.4096 C473.3453,225.2635 468.2948,224.9995 465.1242,219.1583 C461.464,226.7406 456.9562,226.8468 451.1197,221.5192 C447.714,228.5868 441.7812,228.5919 437.2312,222.7502 C432.1144,229.1956 426.8478,229.703 422.5738,221.8842 C418.2257,226.6952 412.8271,226.6165 409.8962,220.2734 C405.6829,225.5703 400.5859,226.1501 397.4907,219.1457 C391.9952,225.0973 387.0284,224.7007 383.4459,217.1551 C380.641,223.8798 374.8494,222.8286 371.376,217.844 C366.4917,223.5726 360.4043,224.225 356.8868,216.3845 C351.0305,222.3053 345.8666,221.6284 342.254,213.9672 C331.988,209.323 329.0655,201.1939 337.2001,192.2647 C326.9515,180.7982 329.3861,173.6133 342.9786,167.7715 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="94" x="349" y="186.9951">GitHub Pages</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="174" x="349" y="203.292">(Documentation Hosting)</text><!--MD5=[66f9f88c9fb598cb139af963a53d9228]
-entity actions--><polygon fill="#FEFECE" filter="url(#fc4rwdtkv1w30)" points="6,179,16,169,158,169,158,221.5938,148,231.5938,6,231.5938,6,179" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="148" x2="157" y1="179" y2="170"/><line style="stroke: #000000; stroke-width: 1.5;" x1="6" x2="148" y1="179" y2="179"/><line style="stroke: #000000; stroke-width: 1.5;" x1="148" x2="148" y1="179" y2="231.5938"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="102" x="21" y="201.9951">GitHub Actions</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="112" x="21" y="218.292">(Build &amp; Deploy)</text><!--MD5=[180655bf588d13593592f287548d5d02]
-link dev to api--><path d="M117.71,90.11 C172,89.49 278.48,88.28 353.06,87.43 " fill="none" id="dev-&gt;api" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="358.37,87.37,349.3249,83.4731,353.3703,87.4271,349.4163,91.4726,358.37,87.37" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="68" x="212" y="84.5669">Uses REST</text><!--MD5=[acb0f03c5016bf33bf39a040f386354e]
-link actions to pages--><path d="M158.13,202.91 C168.17,203.15 178.34,203.36 188,203.5 C239.55,204.24 252.51,206.05 304,203.5 C312.03,203.1 320.33,202.57 328.68,201.94 " fill="none" id="actions-&gt;pages" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="333.88,201.54,324.6077,198.2197,328.8938,201.9115,325.202,206.1976,333.88,201.54" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="85" x="203.5" y="199.5669">Deploys docs</text><!--MD5=[f4ff0be8832786bc41fa5ed02394338f]
-link dev to pages--><path d="M117.71,100.36 C166.33,114.17 256.79,139.87 328.73,160.31 " fill="none" id="dev-&gt;pages" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="333.87,161.77,326.3102,155.4573,329.0613,160.4002,324.1185,163.1513,333.87,161.77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="114" x="189" y="119.5669">Reads docs portal</text><!--MD5=[ccc259f8d215bf28514481221e02b8eb]
-@startuml
-skinparam componentStyle rectangle
-left to right direction
-
-actor "Developer" as dev
-rectangle "Petstore Platform" as platform {
-  component "Petstore API\n(Pet / Store / Order)" as api
-}
-cloud "GitHub Pages\n(Documentation Hosting)" as pages
-node "GitHub Actions\n(Build & Deploy)" as actions
-
-dev - -> api : Uses REST
-actions - -> pages : Deploys docs
-dev - -> pages : Reads docs portal
-@enduml
-
-PlantUML version 1.2020.02(Sun Mar 01 10:22:07 UTC 2020)
-(GPL source distribution)
-Java Runtime: OpenJDK Runtime Environment
-JVM: OpenJDK 64-Bit Server VM
-Java Version: 17.0.18+8
-Operating System: Linux
-Default Encoding: UTF-8
-Language: en
-Country: null
---></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="140" viewBox="0 0 900 140">
+  <rect width="100%" height="100%" fill="#f5f5f5" stroke="#cccccc"/>
+  <text x="20" y="55" font-size="24" fill="#333" font-family="Arial, sans-serif">Diagram placeholder</text>
+  <text x="20" y="95" font-size="18" fill="#666" font-family="Arial, sans-serif">Generated in CI from docs/diagrams/*.puml</text>
+</svg>

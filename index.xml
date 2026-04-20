@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Petstore API Docs</title><link>https://thankfulfor.github.io/petstore-api-docs/</link><description>Recent content on Petstore API Docs</description><generator>Hugo</generator><language>ru-ru</language><atom:link href="https://thankfulfor.github.io/petstore-api-docs/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/about/</guid><description>&lt;h1 id="о-проекте"&gt;О проекте&lt;/h1&gt;
+&lt;p&gt;Портфолио-портал документации в подходе Docs as Code.&lt;/p&gt;
+&lt;h2 id="для-собеседования"&gt;Для собеседования&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://thankfulfor.github.io/petstore-api-docs/about/interview-pitch/"&gt;Краткий pitch (90 секунд)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://thankfulfor.github.io/petstore-api-docs/about/resume/"&gt;Резюме и контакты&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="дополнительно"&gt;Дополнительно&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://thankfulfor.github.io/petstore-api-docs/cases/api-payment-case/"&gt;Пример кейса: API Payment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://thankfulfor.github.io/petstore-api-docs/game/find-doc-bug/"&gt;Игра: Найди ошибку в документации&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/api/</guid><description>&lt;h1 id="api-reference"&gt;API Reference&lt;/h1&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Текущая версия API в этом кейсе: &lt;code&gt;v2&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id="endpoints-by-resource"&gt;Endpoints By Resource&lt;/h3&gt;
+&lt;h4 id="pet"&gt;Pet&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;GET /pet/findByStatus&lt;/code&gt; - получить питомцев по статусу;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GET /pet/{petId}&lt;/code&gt; - получить питомца по ID.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="store"&gt;Store&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;GET /store/inventory&lt;/code&gt; - получить статистику инвентаря.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="поиск-и-фильтрация"&gt;Поиск и фильтрация&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Используйте глобальный поиск MkDocs (поле поиска в шапке/сайдбаре) для быстрого перехода по терминам и endpoint-ам.&lt;/li&gt;
+&lt;li&gt;В ReDoc используйте встроенный поиск по операциям и параметрам спецификации.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="get-petfindbystatus"&gt;GET /pet/findByStatus&lt;/h2&gt;
+&lt;p&gt;Возвращает массив питомцев по статусу.&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/business/bpmn-order-flow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/business/bpmn-order-flow/</guid><description>&lt;h1 id="bpmn-процесс-оформления-заказа"&gt;BPMN: Процесс оформления заказа&lt;/h1&gt;
+&lt;p&gt;Ниже BPMN-подобная диаграмма процесса от выбора питомца до подтверждения заказа.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="BPMN Order Flow" loading="lazy" src="../diagrams-rendered/bpmn-order-flow.svg"&gt;&lt;/p&gt;
+&lt;p&gt;!!! note &amp;ldquo;Цель&amp;rdquo;
+Показать сквозной бизнес-процесс и точки контроля.&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/business/sales-dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/business/sales-dashboard/</guid><description>&lt;h1 id="дашборд-продаж"&gt;Дашборд продаж&lt;/h1&gt;
+&lt;p&gt;Ниже пример простого дашборда с динамикой заказов.&lt;/p&gt;
+&lt;p&gt;&lt;canvas id="salesChart" height="120"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;script&gt;
+document.addEventListener("DOMContentLoaded", () =&gt; {
+const canvas = document.getElementById("salesChart");
+if (!canvas) return;
+new Chart(canvas, {
+type: "line",
+data: {
+labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+datasets: [{
+label: "Orders",
+data: [12, 19, 15, 26, 31, 28],
+borderColor: "#1e88e5",
+backgroundColor: "rgba(30, 136, 229, 0.15)",
+fill: true,
+tension: 0.35
+}]
+},
+options: {
+responsive: true,
+plugins: { legend: { display: true } }
+}
+});
+});
+&lt;/script&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/cases/api-payment-case/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/cases/api-payment-case/</guid><description>&lt;h1 id="кейс-api-reference-для-платежного-сервиса"&gt;Кейс: API Reference для платежного сервиса&lt;/h1&gt;
+&lt;h2 id="контекст"&gt;Контекст&lt;/h2&gt;
+&lt;p&gt;Нужно было повысить качество API-документации платежного сервиса: сократить время первого успешного запроса и снизить количество ошибок интеграции.&lt;/p&gt;
+&lt;h2 id="что-сделано"&gt;Что сделано&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;введен сценарный Quick Start;&lt;/li&gt;
+&lt;li&gt;добавлен интерактивный Swagger UI;&lt;/li&gt;
+&lt;li&gt;унифицирована структура ошибок и примеров;&lt;/li&gt;
+&lt;li&gt;добавлен changelog и версия документации.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="интерактивное-превью-api"&gt;Интерактивное превью API&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://thankfulfor.github.io/petstore-api-docs/interactive-api/"&gt;Открыть Interactive API&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="до--после"&gt;До / После&lt;/h2&gt;
+&lt;div class="before-after" id="beforeAfterCase1"&gt;
+&lt;img src="https://dummyimage.com/1200x600/efefef/333&amp;text=Before:+flat+structure,+no+examples" alt="Before" class="before-img"&gt;
+&lt;img src="https://dummyimage.com/1200x600/daf2ff/003355&amp;text=After:+scenario+quick+start+and+interactive+api" alt="After" class="after-img"&gt;
+&lt;input type="range" min="0" max="100" value="50" class="ba-slider" aria-label="Сравнение до и после"&gt;
+&lt;/div&gt;
+&lt;h2 id="результат"&gt;Результат&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Time-to-first-call: 20 -&amp;gt; 5 минут.&lt;/li&gt;
+&lt;li&gt;Доля ошибок первого запроса: 42% -&amp;gt; 18%.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="связанные-материалы"&gt;Связанные материалы&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://thankfulfor.github.io/petstore-api-docs/api/"&gt;Справочник API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://thankfulfor.github.io/petstore-api-docs/scenario-payment-incident/"&gt;Сценарий: Инцидент — сбой оплаты&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/changelog/</guid><description>&lt;h1 id="changelog"&gt;Changelog&lt;/h1&gt;
+&lt;p&gt;Все значимые изменения в документации фиксируются на этой странице.&lt;/p&gt;
+&lt;h2 id="2026-04-19"&gt;2026-04-19&lt;/h2&gt;
+&lt;h3 id="added"&gt;Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Добавлена страница &lt;code&gt;Interactive API&lt;/code&gt; со Swagger UI на базе &lt;code&gt;openapi/openapi.yaml&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Миграция портала на тему &lt;code&gt;Material for MkDocs&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Добавлены разделы портала: &lt;code&gt;Бизнес-аналитика&lt;/code&gt;, &lt;code&gt;Разработчикам&lt;/code&gt;, &lt;code&gt;Пользователям&lt;/code&gt;, &lt;code&gt;О проекте&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Добавлены страницы с контентом: BPMN, C4, UML, onboarding, troubleshooting, дашборд продаж.&lt;/li&gt;
+&lt;li&gt;Добавлены исходники диаграмм &lt;code&gt;PlantUML&lt;/code&gt; (&lt;code&gt;docs/diagrams/*.puml&lt;/code&gt;) и скрипт рендера &lt;code&gt;scripts/render-diagrams.sh&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Добавлена страница &lt;code&gt;Docs as Code&lt;/code&gt; с описанием подхода.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="changed"&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Репозиторий и сайт переведены на новое имя: &lt;code&gt;petstore-api-docs&lt;/code&gt; (обновлен &lt;code&gt;site_url&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Усилен &lt;code&gt;Quick Start&lt;/code&gt;: добавлен пример на JavaScript (&lt;code&gt;fetch&lt;/code&gt;) и блок проверки типовых ошибок (&lt;code&gt;400&lt;/code&gt;, &lt;code&gt;404&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Обновлена навигация портала с многоуровневой структурой.&lt;/li&gt;
+&lt;li&gt;CI workflow обновлен: установка зависимостей из &lt;code&gt;requirements.txt&lt;/code&gt;, рендер PlantUML-диаграмм и сборка портала перед деплоем.&lt;/li&gt;
+&lt;li&gt;Добавлены критерии качества и измеримые показатели на главной странице.&lt;/li&gt;
+&lt;li&gt;Добавлены разделы обратной связи на ключевые страницы портала.&lt;/li&gt;
+&lt;li&gt;Добавлен &lt;code&gt;README.md&lt;/code&gt; для быстрого ревью кейса рекрутером/лидом.&lt;/li&gt;
+&lt;li&gt;Добавлен финальный &lt;code&gt;QA Checklist&lt;/code&gt; в документацию.&lt;/li&gt;
+&lt;li&gt;В CI добавлена валидация OpenAPI спецификации перед рендером и деплоем.&lt;/li&gt;
+&lt;li&gt;Улучшен UX портала: обновлены тема/палитра, вкладки навигации, breadcrumbs и интегрированный TOC.&lt;/li&gt;
+&lt;li&gt;Главная страница переработана в формат карточек разделов для быстрого сканирования.&lt;/li&gt;
+&lt;li&gt;Удалены страницы-заглушки из структуры документации.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="fixed"&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Локализация пагинации (&lt;code&gt;Previous&lt;/code&gt;/&lt;code&gt;Next&lt;/code&gt;) стабилизирована с учетом динамической перерисовки темы.&lt;/li&gt;
+&lt;li&gt;Исправлен CSS-отступ заголовков (&lt;code&gt;margin-bottom: 10px&lt;/code&gt;) через &lt;code&gt;docs/stylesheets/extra.css&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Исправлена загрузка OpenAPI в &lt;code&gt;Interactive API&lt;/code&gt; (fallback путей, устранен &lt;code&gt;404&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Исправлены несовместимые диаграммы &lt;code&gt;xychart-beta&lt;/code&gt; в сценариях (замена на совместимый формат).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="qa"&gt;QA&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Release check passed: проверены ключевые страницы &lt;code&gt;latest/&lt;/code&gt; и root (&lt;code&gt;/&lt;/code&gt;), включая &lt;code&gt;Interactive API&lt;/code&gt;, сценарии, версии и changelog.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="2026-04-11"&gt;2026-04-11&lt;/h2&gt;
+&lt;h3 id="added-1"&gt;Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Добавлен раздел &lt;code&gt;Changelog&lt;/code&gt; в структуру документации.&lt;/li&gt;
+&lt;li&gt;Добавлена страница истории изменений для портфолио-кейса.&lt;/li&gt;
+&lt;li&gt;Добавлена страница &lt;code&gt;Версии API&lt;/code&gt; с политикой версионирования и шаблоном для &lt;code&gt;v3&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Добавлен плагин поиска &lt;code&gt;search&lt;/code&gt; в конфигурацию MkDocs.&lt;/li&gt;
+&lt;li&gt;Добавлен кастомный CSS &lt;code&gt;docs/stylesheets/extra.css&lt;/code&gt; для управления отступами заголовков.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="changed-1"&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Обновлена структура &lt;code&gt;API Reference&lt;/code&gt;: endpoints сгруппированы по ресурсам (&lt;code&gt;Pet&lt;/code&gt;, &lt;code&gt;Store&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;В &lt;code&gt;API Reference&lt;/code&gt; добавлен раздел про поиск и фильтрацию в документации.&lt;/li&gt;
+&lt;li&gt;В &lt;code&gt;Getting Started&lt;/code&gt; исправлена разметка списков для корректного отображения по строкам.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="fixed-1"&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Исправлена локализация пагинации (&lt;code&gt;Previous&lt;/code&gt;/&lt;code&gt;Next&lt;/code&gt;) в теме Read the Docs.&lt;/li&gt;
+&lt;li&gt;Улучшен JS-хук локализации, чтобы перевод применялся после динамической перерисовки DOM.&lt;/li&gt;
+&lt;li&gt;Удалены лишние блоки с общими best practices с главной страницы.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="2026-04-10"&gt;2026-04-10&lt;/h2&gt;
+&lt;h3 id="changed-2"&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Проект переведен с плейсхолдерного &lt;code&gt;TaskFlow API&lt;/code&gt; на публичный &lt;code&gt;Swagger Petstore API&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Обновлены &lt;code&gt;Home&lt;/code&gt;, &lt;code&gt;Getting Started&lt;/code&gt;, &lt;code&gt;API Reference&lt;/code&gt; и &lt;code&gt;openapi/openapi.yaml&lt;/code&gt; под реальные публичные эндпоинты.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="added-2"&gt;Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Добавлены русские подписи пунктов меню в навигации документации.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="2026-04-09"&gt;2026-04-09&lt;/h2&gt;
+&lt;h3 id="added-3"&gt;Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Подготовлена базовая структура контента для API-документации: &lt;code&gt;Home&lt;/code&gt;, &lt;code&gt;Getting Started&lt;/code&gt;, &lt;code&gt;API Reference&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Добавлены примеры запросов и ответы для быстрого старта.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="fixed-2"&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Исправлен CI-деплой GitHub Pages: добавлено разрешение &lt;code&gt;contents: write&lt;/code&gt; в workflow.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/developers/architecture-c4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/developers/architecture-c4/</guid><description>&lt;h1 id="c4-контекст-системы"&gt;C4: Контекст системы&lt;/h1&gt;
+&lt;p&gt;&lt;img alt="C4 Context" loading="lazy" src="../diagrams-rendered/c4-context.svg"&gt;&lt;/p&gt;
+&lt;h2 id="ключевые-взаимодействия"&gt;Ключевые взаимодействия&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Разработчик использует API для интеграций.&lt;/li&gt;
+&lt;li&gt;GitHub Actions публикует документацию на GitHub Pages.&lt;/li&gt;
+&lt;li&gt;Портал документации выступает источником контрактов и примеров.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/developers/sequence-create-order/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/developers/sequence-create-order/</guid><description>&lt;h1 id="sequence-создание-заказа"&gt;Sequence: Создание заказа&lt;/h1&gt;
+&lt;p&gt;&lt;img alt="Sequence: Create Order" loading="lazy" src="../diagrams-rendered/sequence-create-order.svg"&gt;&lt;/p&gt;
+&lt;h2 id="поток"&gt;Поток&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Клиент отправляет &lt;code&gt;POST /store/order&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;API передает запрос в сервис заказов.&lt;/li&gt;
+&lt;li&gt;Сервис сохраняет заказ в БД.&lt;/li&gt;
+&lt;li&gt;Клиент получает &lt;code&gt;201 Created&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/developers/uml-class-model/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/developers/uml-class-model/</guid><description>&lt;h1 id="uml-class-model"&gt;UML Class Model&lt;/h1&gt;
+&lt;p&gt;&lt;img alt="Class Model" loading="lazy" src="../diagrams-rendered/class-model.svg"&gt;&lt;/p&gt;
+&lt;h2 id="основные-сущности"&gt;Основные сущности&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Pet&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Order&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;User&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/game/find-doc-bug/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/game/find-doc-bug/</guid><description>&lt;h1 id="игра-найди-ошибку-в-документации"&gt;Игра: Найди ошибку в документации&lt;/h1&gt;
+&lt;p&gt;Найдите 4 ошибки в примере ниже и нажмите &lt;strong&gt;Проверить&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class="doc-bug-game" id="docBugGame"&gt;
+&lt;p&gt;&lt;strong&gt;POST /store/order&lt;/strong&gt; создает новый заказ и всегда возвращает &lt;code&gt;200 OK&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Поле &lt;code&gt;quantity&lt;/code&gt; может быть отрицательным, если заказ отменен заранее.&lt;/p&gt;
+&lt;p&gt;Для авторизации используйте заголовок &lt;code&gt;X-Token&lt;/code&gt;, параметр &lt;code&gt;Authorization&lt;/code&gt; не поддерживается.&lt;/p&gt;
+&lt;p&gt;Пример ответа:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{ "id": "abc", "status": 123, "complete": "yes" }&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="doc-bug-controls"&gt;
+&lt;button type="button" id="checkDocBug"&gt;Проверить&lt;/button&gt;
+&lt;button type="button" id="resetDocBug"&gt;Сброс&lt;/button&gt;
+&lt;span id="docBugResult" aria-live="polite"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;h2 id="подсказка"&gt;Подсказка&lt;/h2&gt;
+&lt;p&gt;Ошибки связаны с HTTP-статусом, валидацией данных, авторизацией и типами полей ответа.&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/getting-started/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/getting-started/</guid><description>&lt;h1 id="getting-started"&gt;Getting Started&lt;/h1&gt;
+&lt;h2 id="base-url"&gt;Base URL&lt;/h2&gt;
+&lt;p&gt;Все примеры в документации используют:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;https://petstore.swagger.io/v2&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id="формат-данных"&gt;Формат данных&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Контент-тип запросов: &lt;code&gt;application/json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Контент-тип ответов: &lt;code&gt;application/json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Кодировка: &lt;code&gt;UTF-8&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="быстрый-старт-за-3-шага"&gt;Быстрый старт за 3 шага&lt;/h2&gt;
+&lt;h3 id="1-проверить-доступность-api"&gt;1. Проверить доступность API&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl -X GET &lt;span class="s2"&gt;&amp;#34;https://petstore.swagger.io/v2/store/inventory&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ожидаемый ответ &lt;code&gt;200 OK&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nt"&gt;&amp;#34;available&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;123&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nt"&gt;&amp;#34;pending&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;42&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nt"&gt;&amp;#34;sold&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;87&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="2-получить-питомцев-в-статусе-available"&gt;2. Получить питомцев в статусе &lt;code&gt;available&lt;/code&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl -X GET &lt;span class="s2"&gt;&amp;#34;https://petstore.swagger.io/v2/pet/findByStatus?status=available&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ожидаемый ответ &lt;code&gt;200 OK&lt;/code&gt; с массивом объектов &lt;code&gt;Pet&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id="пример-на-javascript-fetch"&gt;Пример на JavaScript (fetch)&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kr"&gt;const&lt;/span&gt; &lt;span class="nx"&gt;response&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kr"&gt;await&lt;/span&gt; &lt;span class="nx"&gt;fetch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="s2"&gt;&amp;#34;https://petstore.swagger.io/v2/pet/findByStatus?status=available&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ok&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;throw&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nb"&gt;Error&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sb"&gt;`HTTP &lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;status&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="sb"&gt;`&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kr"&gt;const&lt;/span&gt; &lt;span class="nx"&gt;pets&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kr"&gt;await&lt;/span&gt; &lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;json&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;pets&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;slice&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="3-получить-питомца-по-id"&gt;3. Получить питомца по ID&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl -X GET &lt;span class="s2"&gt;&amp;#34;https://petstore.swagger.io/v2/pet/1&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ожидаемый ответ:&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/interactive-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/interactive-api/</guid><description>&lt;h1 id="interactive-api"&gt;Interactive API&lt;/h1&gt;
+&lt;p&gt;Интерактивная версия API-спецификации Swagger Petstore для быстрого тестирования запросов.&lt;/p&gt;
+&lt;div id="swagger-ui"&gt;&lt;/div&gt;
+&lt;script&gt;
+async function resolveSpecUrl() {
+const candidates = [
+"/petstore-api-docs/openapi/openapi.yaml",
+"/openapi/openapi.yaml"
+];
+for (const candidate of candidates) {
+try {
+const response = await fetch(candidate, { method: "GET" });
+if (response.ok) return candidate;
+} catch (e) {
+// try next
+}
+}
+return candidates[0];
+}
+window.addEventListener("load", async function () {
+const specUrl = await resolveSpecUrl();
+window.ui = SwaggerUIBundle({
+url: specUrl,
+dom_id: "#swagger-ui",
+deepLinking: true,
+docExpansion: "list",
+presets: [SwaggerUIBundle.presets.apis],
+});
+});
+&lt;/script&gt;
+&lt;h2 id="обратная-связь"&gt;Обратная связь&lt;/h2&gt;
+&lt;p&gt;Если в Swagger UI не загружается контракт или есть ошибки в примерах:&lt;br&gt;
+&lt;a href="https://github.com/thankfulfor/petstore-api-docs/issues/new?template=blank_issues"&gt;Открыть issue по Interactive API&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/qa-checklist/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/qa-checklist/</guid><description>&lt;h1 id="финальный-qa-checklist"&gt;Финальный QA Checklist&lt;/h1&gt;
+&lt;p&gt;Перед демонстрацией портфолио проверьте:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; Quick Start выполняется без правок команд.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; Interactive API открывается и загружает &lt;code&gt;openapi.yaml&lt;/code&gt; без &lt;code&gt;404&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; Все внутренние ссылки работают.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; Диаграммы (BPMN, C4, UML) отображаются на страницах.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; Мобильная версия читаема (меню, код-блоки, таблицы).&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; Темная и светлая тема переключаются корректно.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; Последние изменения отражены в &lt;code&gt;Changelog&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; CI workflow зеленый на &lt;code&gt;main&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; Версия &lt;code&gt;latest&lt;/code&gt; доступна в переключателе версий.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="обратная-связь"&gt;Обратная связь&lt;/h2&gt;
+&lt;p&gt;Если нашли проблему в документации:
+&lt;a href="https://github.com/thankfulfor/petstore-api-docs/issues/new?template=blank_issues"&gt;Создать issue&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/scenario-onboarding-store/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/scenario-onboarding-store/</guid><description>&lt;h1 id="сценарий-онбординг-нового-магазина"&gt;Сценарий: Онбординг нового магазина&lt;/h1&gt;
+&lt;h2 id="контекст"&gt;Контекст&lt;/h2&gt;
+&lt;p&gt;Новый партнерский магазин подключается к платформе, получает доступы и публикует первый каталог питомцев.&lt;/p&gt;
+&lt;h2 id="bpmn-бизнес"&gt;BPMN (бизнес)&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;flowchart LR
+A[Запрос на подключение] --&amp;gt; B[Проверка документов]
+B --&amp;gt; C[Создание аккаунта магазина]
+C --&amp;gt; D[Выдача API-ключей]
+D --&amp;gt; E[Импорт каталога]
+E --&amp;gt; F[Тестовый заказ]
+F --&amp;gt; G[Go-Live]
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="api-технический-контракт"&gt;API (технический контракт)&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Операция&lt;/th&gt;
+&lt;th&gt;Метод и путь&lt;/th&gt;
+&lt;th&gt;Назначение&lt;/th&gt;
+&lt;th&gt;Успех&lt;/th&gt;
+&lt;th&gt;Ошибки&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Создать пользователя&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;POST /user&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Регистрация администратора магазина&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;201&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;400&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Добавить питомца&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;POST /pet&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Публикация карточек&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;200&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;400&lt;/code&gt;, &lt;code&gt;422&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Загрузить изображение&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;POST /pet/{petId}/uploadImage&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Контент карточки&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;200&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;404&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="dev-задачи-что-меняем-в-системе"&gt;Dev-задачи (что меняем в системе)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Добавить шаблон онбординга с чеклистом выполнения шагов.&lt;/li&gt;
+&lt;li&gt;Добавить endpoint для массовой загрузки карточек питомцев.&lt;/li&gt;
+&lt;li&gt;Автоматизировать валидацию медиа и обязательных полей.&lt;/li&gt;
+&lt;li&gt;Ввести onboarding status machine: &lt;code&gt;invited -&amp;gt; active -&amp;gt; verified&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="user-guide-действия-оператора"&gt;User guide (действия оператора)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Создать учетную запись магазина и администратора.&lt;/li&gt;
+&lt;li&gt;Сгенерировать и передать API-ключ.&lt;/li&gt;
+&lt;li&gt;Загрузить минимум 10 карточек питомцев.&lt;/li&gt;
+&lt;li&gt;Проверить отображение карточек на витрине.&lt;/li&gt;
+&lt;li&gt;Выполнить тестовый заказ и подтвердить оплату.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;!!! warning &amp;ldquo;Точка контроля&amp;rdquo;
+Не переводите магазин в &lt;code&gt;verified&lt;/code&gt;, пока не выполнен тестовый заказ end-to-end.&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/scenario-order/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/scenario-order/</guid><description>&lt;h1 id="сценарий-оформление-заказа"&gt;Сценарий: Оформление заказа&lt;/h1&gt;
+&lt;h2 id="контекст"&gt;Контекст&lt;/h2&gt;
+&lt;p&gt;Клиент оформляет заказ на питомца через витрину. Система должна корректно провести проверку наличия, оплату, создание заказа и передачу в доставку.&lt;/p&gt;
+&lt;h2 id="bpmn-бизнес"&gt;BPMN (бизнес)&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;flowchart LR
+A[Клиент выбирает питомца] --&amp;gt; B[Проверка статуса available]
+B --&amp;gt;|Да| C[Создание корзины]
+B --&amp;gt;|Нет| X[Показать отсутствие товара]
+C --&amp;gt; D[Ввод данных доставки]
+D --&amp;gt; E[Оплата]
+E --&amp;gt;|Успех| F[Создание заказа]
+E --&amp;gt;|Ошибка| Y[Повтор оплаты или отмена]
+F --&amp;gt; G[Передача в доставку]
+G --&amp;gt; H[Подтверждение клиенту]
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="api-технический-контракт"&gt;API (технический контракт)&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Операция&lt;/th&gt;
+&lt;th&gt;Метод и путь&lt;/th&gt;
+&lt;th&gt;Назначение&lt;/th&gt;
+&lt;th&gt;Успех&lt;/th&gt;
+&lt;th&gt;Ошибки&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Получить питомца&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;GET /pet/{petId}&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Проверка данных карточки&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;200&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;404&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Создать заказ&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;POST /store/order&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Фиксация покупки&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;201&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;400&lt;/code&gt;, &lt;code&gt;422&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Получить заказ&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;GET /store/order/{orderId}&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Проверка статуса&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;200&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;404&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Пример создания заказа:&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/scenario-payment-incident/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/scenario-payment-incident/</guid><description>&lt;h1 id="сценарий-инцидент--сбой-оплаты"&gt;Сценарий: Инцидент — сбой оплаты&lt;/h1&gt;
+&lt;h2 id="контекст"&gt;Контекст&lt;/h2&gt;
+&lt;p&gt;Во время checkout платежный шлюз возвращает ошибки. Нужно минимизировать потери заказов и быстро восстановить стабильность.&lt;/p&gt;
+&lt;h2 id="bpmn-бизнес"&gt;BPMN (бизнес)&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;flowchart LR
+A[Рост ошибок оплаты] --&amp;gt; B[Алерт в мониторинге]
+B --&amp;gt; C[Триаж инцидента]
+C --&amp;gt; D[Переключение на fallback-эквайер]
+D --&amp;gt; E[Проверка успешных транзакций]
+E --&amp;gt; F[Коммуникация клиентам]
+F --&amp;gt; G[Пост-мортем]
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="api-технический-контракт"&gt;API (технический контракт)&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Операция&lt;/th&gt;
+&lt;th&gt;Метод и путь&lt;/th&gt;
+&lt;th&gt;Назначение&lt;/th&gt;
+&lt;th&gt;Успех&lt;/th&gt;
+&lt;th&gt;Ошибки&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Создать заказ&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;POST /store/order&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Основная операция checkout&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;201&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;400&lt;/code&gt;, &lt;code&gt;402&lt;/code&gt;, &lt;code&gt;503&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Получить заказ&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;GET /store/order/{orderId}&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Проверить финальный статус&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;200&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;404&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Требования к ошибке оплаты:&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/scenario-return-cancel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/scenario-return-cancel/</guid><description>&lt;h1 id="сценарий-возврат--отмена"&gt;Сценарий: Возврат / отмена&lt;/h1&gt;
+&lt;h2 id="контекст"&gt;Контекст&lt;/h2&gt;
+&lt;p&gt;Клиент запрашивает отмену или возврат. Система должна корректно проверить статус заказа, зафиксировать решение и инициировать возврат средств.&lt;/p&gt;
+&lt;h2 id="bpmn-бизнес"&gt;BPMN (бизнес)&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;flowchart LR
+A[Клиент обращается в поддержку] --&amp;gt; B[Проверка статуса заказа]
+B --&amp;gt;|До отгрузки| C[Отмена заказа]
+B --&amp;gt;|После отгрузки| D[Оформление возврата]
+C --&amp;gt; E[Инициировать возврат платежа]
+D --&amp;gt; E
+E --&amp;gt; F[Подтверждение возврата]
+F --&amp;gt; G[Обновить статус заказа]
+G --&amp;gt; H[Уведомить клиента]
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="api-технический-контракт"&gt;API (технический контракт)&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Операция&lt;/th&gt;
+&lt;th&gt;Метод и путь&lt;/th&gt;
+&lt;th&gt;Назначение&lt;/th&gt;
+&lt;th&gt;Успех&lt;/th&gt;
+&lt;th&gt;Ошибки&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Получить заказ&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;GET /store/order/{orderId}&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Проверить состояние&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;200&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;404&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Обновить заказ&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;PUT /store/order&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Выставить &lt;code&gt;cancelled&lt;/code&gt;/&lt;code&gt;returned&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;200&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;400&lt;/code&gt;, &lt;code&gt;409&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Удалить заказ&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;DELETE /store/order/{orderId}&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Техническая очистка (по политике)&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;200&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;404&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="dev-задачи-что-меняем-в-системе"&gt;Dev-задачи (что меняем в системе)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ввести явные статусы &lt;code&gt;cancelled&lt;/code&gt;, &lt;code&gt;return_requested&lt;/code&gt;, &lt;code&gt;returned&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Запретить отмену после статуса &lt;code&gt;delivery_in_progress&lt;/code&gt; без флага супервизора.&lt;/li&gt;
+&lt;li&gt;Добавить audit trail для всех изменений статуса заказа.&lt;/li&gt;
+&lt;li&gt;Добавить webhook событие &lt;code&gt;order.refund.completed&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="user-guide-действия-оператора"&gt;User guide (действия оператора)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Найти заказ по &lt;code&gt;orderId&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Проверить, на каком этапе находится доставка.&lt;/li&gt;
+&lt;li&gt;Если возможно, выполнить отмену; иначе оформить возврат.&lt;/li&gt;
+&lt;li&gt;Проверить факт возврата средств.&lt;/li&gt;
+&lt;li&gt;Зафиксировать комментарий причины обращения.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;!!! note &amp;ldquo;Рекомендация&amp;rdquo;
+Используйте единый справочник причин отмены для последующей аналитики.&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/users/onboarding/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/users/onboarding/</guid><description>&lt;h1 id="онбординг"&gt;Онбординг&lt;/h1&gt;
+&lt;h2 id="первый-успешный-запрос"&gt;Первый успешный запрос&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl -X GET &lt;span class="s2"&gt;&amp;#34;https://petstore.swagger.io/v2/pet/findByStatus?status=available&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;=== &amp;ldquo;Успех (200)&amp;rdquo;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```json
+[
+{&amp;quot;id&amp;quot;: 1, &amp;quot;name&amp;quot;: &amp;quot;doggie&amp;quot;, &amp;quot;status&amp;quot;: &amp;quot;available&amp;quot;}
+]
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;=== &amp;ldquo;Ошибка (400)&amp;rdquo;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```json
+{
+&amp;quot;code&amp;quot;: 400,
+&amp;quot;type&amp;quot;: &amp;quot;unknown&amp;quot;,
+&amp;quot;message&amp;quot;: &amp;quot;bad input&amp;quot;
+}
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;!!! warning &amp;ldquo;Частая ошибка&amp;rdquo;
+Неверное значение &lt;code&gt;status&lt;/code&gt; в query-параметре.&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/users/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/users/troubleshooting/</guid><description>&lt;h1 id="устранение-неполадок"&gt;Устранение неполадок&lt;/h1&gt;
+&lt;h2 id="400-bad-request"&gt;&lt;code&gt;400 Bad Request&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Причина: невалидные параметры запроса.&lt;/p&gt;
+&lt;p&gt;Проверка:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl -i &lt;span class="s2"&gt;&amp;#34;https://petstore.swagger.io/v2/pet/findByStatus?status=wrong&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="404-not-found"&gt;&lt;code&gt;404 Not Found&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Причина: ресурс с таким идентификатором не существует.&lt;/p&gt;
+&lt;p&gt;Проверка:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl -i &lt;span class="s2"&gt;&amp;#34;https://petstore.swagger.io/v2/pet/999999999&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/versions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/versions/</guid><description>&lt;h1 id="версии-api"&gt;Версии API&lt;/h1&gt;
+&lt;h2 id="текущая-версия"&gt;Текущая версия&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;v2&lt;/code&gt; (активная): Swagger Petstore API, описанная в текущей документации.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="поддерживаемые-версии-в-документации"&gt;Поддерживаемые версии в документации&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;v2&lt;/code&gt; - рабочая версия (текущая).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;v3&lt;/code&gt; - шаблон для следующей версии (пока в разработке).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="политика-версионирования"&gt;Политика версионирования&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Новая major-версия получает отдельный раздел документации.&lt;/li&gt;
+&lt;li&gt;Для каждой версии фиксируются поддерживаемые endpoints и отличия от предыдущей.&lt;/li&gt;
+&lt;li&gt;При релизе новой версии changelog должен содержать миграционные заметки.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="шаблон-раздела-для-новой-версии-v3"&gt;Шаблон раздела для новой версии (&lt;code&gt;v3&lt;/code&gt;)&lt;/h2&gt;
+&lt;h3 id="base-url"&gt;Base URL&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;https://petstore.swagger.io/v3&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="ключевые-изменения"&gt;Ключевые изменения&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; Добавить список новых endpoints.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; Отметить breaking changes.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; Добавить migration guide &lt;code&gt;v2 -&amp;gt; v3&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>
