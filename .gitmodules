@@ -1,3 +1,3 @@
-[submodule "/Users/zhanna/Projects/taskflow-api-docs/themes/PaperMod"]
-	path = /Users/zhanna/Projects/taskflow-api-docs/themes/PaperMod
+[submodule "themes/PaperMod"]
+	path = themes/PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
