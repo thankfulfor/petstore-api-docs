@@ -1,0 +1,81 @@
+# API Reference
+
+## Overview
+
+Текущая версия API в этом кейсе: `v2`.
+
+### Endpoints By Resource
+
+#### Pet
+
+- `GET /pet/findByStatus` - получить питомцев по статусу;
+- `GET /pet/{petId}` - получить питомца по ID.
+
+#### Store
+
+- `GET /store/inventory` - получить статистику инвентаря.
+
+## Поиск и фильтрация
+
+- Используйте глобальный поиск MkDocs (поле поиска в шапке/сайдбаре) для быстрого перехода по терминам и endpoint-ам.
+- В ReDoc используйте встроенный поиск по операциям и параметрам спецификации.
+
+## GET /pet/findByStatus
+
+Возвращает массив питомцев по статусу.
+
+### Пример запроса
+
+```bash
+curl -X GET "https://petstore.swagger.io/v2/pet/findByStatus?status=available"
+```
+
+### Пример ответа (`200 OK`)
+
+```json
+[
+  {
+    "id": 1,
+    "name": "doggie",
+    "status": "available"
+  }
+]
+```
+
+## GET /pet/{petId}
+
+Возвращает одного питомца по идентификатору.
+
+### Пример запроса
+
+```bash
+curl -X GET "https://petstore.swagger.io/v2/pet/1"
+```
+
+### Ответы
+
+- `200` - питомец найден;
+- `404` - питомец не найден.
+
+## GET /store/inventory
+
+Возвращает количество питомцев по статусам.
+
+### Пример запроса
+
+```bash
+curl -X GET "https://petstore.swagger.io/v2/store/inventory"
+```
+
+## OpenAPI Spec (ReDoc)
+
+Ниже встроена спецификация OpenAPI для полного контрактного референса.
+
+{% redoc %}
+spec-url: /petstore-api-docs/openapi/openapi.yaml
+{% endredoc %}
+
+## Обратная связь
+
+Нашли ошибку в контракте или примере endpoint-а:  
+[Открыть issue по API документации](https://github.com/thankfulfor/petstore-api-docs/issues/new?template=blank_issues)

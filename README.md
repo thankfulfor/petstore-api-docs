@@ -1,41 +1,35 @@
-# Petstore API Docs Portal (Portfolio)
+# Petstore API Docs (Hugo + PaperMod)
 
-Портфолио-проект технического писателя с инженерным бэкграундом: документационный портал на базе Swagger Petstore API.
+Портфолио технического писателя на Hugo с темой PaperMod.
 
-## Что смотреть за 3 минуты
+## Stack
 
-1. **Quick Start**: https://thankfulfor.github.io/petstore-api-docs/latest/getting-started/
-2. **Interactive API**: https://thankfulfor.github.io/petstore-api-docs/latest/interactive-api/
-3. **Architecture (C4/UML)**: https://thankfulfor.github.io/petstore-api-docs/latest/developers/architecture-c4/
-4. **Docs as Code**: https://thankfulfor.github.io/petstore-api-docs/latest/about/docs-as-code/
+- Hugo
+- Theme: PaperMod
+- Mermaid / Swagger UI / Chart.js
+- GitHub Actions + GitHub Pages
 
-## Инженерная ценность
-
-- Docs-as-code: Markdown + OpenAPI + PlantUML в Git.
-- Автосборка и автодеплой через GitHub Actions.
-- Валидация OpenAPI в CI перед публикацией.
-- Версионирование документации через `mike`.
-
-## Локальный запуск
+## Local run
 
 ```bash
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-mkdocs serve
+git submodule update --init --recursive
+hugo server
 ```
 
-Откройте `http://127.0.0.1:8000`.
-
-## Сборка и проверка
+## Build
 
 ```bash
-bash scripts/render-diagrams.sh
-python -m openapi_spec_validator docs/openapi/openapi.yaml
-mkdocs build
+hugo --minify
 ```
 
-## CI/CD
+## Deploy
 
-- Workflow: `.github/workflows/ci.yml`
-- Деплой: GitHub Pages (`gh-pages`) с versioning через `mike`.
+Деплой настроен в `.github/workflows/ci.yml`.
+При пуше в `main` сайт собирается и публикуется в `gh-pages`.
+
+## Key content
+
+- `/interactive-api/`
+- `/scenario-order/`
+- `/about/resume/`
+- `/game/find-doc-bug/`

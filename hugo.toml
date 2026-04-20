@@ -1,0 +1,76 @@
+baseURL = "https://thankfulfor.github.io/petstore-api-docs/"
+languageCode = "ru-ru"
+title = "Petstore API Docs"
+theme = "PaperMod"
+
+[pagination]
+pagerSize = 10
+
+[params]
+defaultTheme = "dark"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowCodeCopyButtons = true
+ShowBreadCrumbs = true
+ShowToc = true
+TocOpen = true
+
+[params.homeInfoParams]
+Title = "Технический писатель, экс-разработчик"
+Content = "Портфолио документации: API Reference, архитектурные документы, инструкции и сквозные сценарии."
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/thankfulfor/petstore-api-docs"
+
+[menu]
+  [[menu.main]]
+  identifier = "quickstart"
+  name = "Быстрый старт"
+  url = "/getting-started/"
+  weight = 10
+
+  [[menu.main]]
+  identifier = "api"
+  name = "Справочник API"
+  url = "/api/"
+  weight = 20
+
+  [[menu.main]]
+  identifier = "interactive"
+  name = "Interactive API"
+  url = "/interactive-api/"
+  weight = 30
+
+  [[menu.main]]
+  identifier = "scenarios"
+  name = "Сценарии"
+  url = "/scenario-order/"
+  weight = 40
+
+  [[menu.main]]
+  identifier = "about"
+  name = "О проекте"
+  url = "/about/"
+  weight = 50
+
+  [[menu.main]]
+  identifier = "versions"
+  name = "Версии"
+  url = "/versions/"
+  weight = 60
+
+  [[menu.main]]
+  identifier = "changelog"
+  name = "Changelog"
+  url = "/changelog/"
+  weight = 70
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
