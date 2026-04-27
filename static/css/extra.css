@@ -351,3 +351,59 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Swagger UI contrast fixes for dark layout */
+#swagger-ui {
+  margin-top: 1rem;
+}
+
+#swagger-ui .swagger-ui,
+#swagger-ui .swagger-ui .wrapper {
+  color: #e8ecf4;
+}
+
+#swagger-ui .swagger-ui .info .title,
+#swagger-ui .swagger-ui .opblock-tag,
+#swagger-ui .swagger-ui .opblock-summary-path,
+#swagger-ui .swagger-ui .opblock-summary-description,
+#swagger-ui .swagger-ui .responses-inner h4,
+#swagger-ui .swagger-ui .responses-inner h5,
+#swagger-ui .swagger-ui .response-col_status,
+#swagger-ui .swagger-ui .response-col_description,
+#swagger-ui .swagger-ui .tab li,
+#swagger-ui .swagger-ui .parameter__name,
+#swagger-ui .swagger-ui .parameter__type,
+#swagger-ui .swagger-ui .model-title,
+#swagger-ui .swagger-ui .model,
+#swagger-ui .swagger-ui label,
+#swagger-ui .swagger-ui .btn,
+#swagger-ui .swagger-ui select {
+  color: #e8ecf4 !important;
+}
+
+#swagger-ui .swagger-ui .opblock {
+  background: #1c2431;
+  border-color: #35547a;
+}
+
+#swagger-ui .swagger-ui .opblock .opblock-summary {
+  border-color: #35547a;
+}
+
+#swagger-ui .swagger-ui .opblock-get .opblock-summary-method {
+  background: #5fa8f0;
+  color: #fff;
+}
+
+#swagger-ui .swagger-ui .opblock .opblock-section-header {
+  background: #111827;
+  box-shadow: none;
+}
+
+#swagger-ui .swagger-ui .scheme-container {
+  background: #f1f3f5;
+}
+
+#swagger-ui .swagger-ui .scheme-container select {
+  color: #1f2937 !important;
+}
