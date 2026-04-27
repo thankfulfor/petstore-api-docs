@@ -64,8 +64,7 @@ body {
   color: var(--content);
 }
 
-.post-content code,
-.post-content pre {
+.post-content code {
   background: var(--code-bg);
 }
 
