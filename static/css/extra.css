@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --theme: #0a0a0a;
+  --theme: #1c1e20;
   --entry: #161616;
   --primary: #e7e7e7;
   --secondary: #b4b4b4;
@@ -30,7 +30,7 @@ body {
 }
 
 .header {
-  background: rgba(10, 10, 10, 0.92);
+  background: rgba(28, 30, 32, 0.92);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(8px);
 }
