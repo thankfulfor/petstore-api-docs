@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Petstore API Docs</title><link>https://thankfulfor.github.io/petstore-api-docs/</link><description>Recent content on Petstore API Docs</description><generator>Hugo</generator><language>ru-ru</language><atom:link href="https://thankfulfor.github.io/petstore-api-docs/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/about/</guid><description>&lt;h1 id="о-проекте"&gt;О проекте&lt;/h1&gt;
-&lt;p&gt;Портфолио-портал документации в подходе Docs as Code.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI Technical Writer Portfolio</title><link>https://thankfulfor.github.io/petstore-api-docs/</link><description>Recent content on AI Technical Writer Portfolio</description><generator>Hugo</generator><language>ru-ru</language><atom:link href="https://thankfulfor.github.io/petstore-api-docs/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/about/</guid><description>&lt;h1 id="о-проекте"&gt;О проекте&lt;/h1&gt;
+&lt;p&gt;Портфолио AI Technical Writer / Product UX Writer.&lt;/p&gt;
+&lt;p&gt;Здесь собраны материалы, которые показывают подход к продуктовой документации, UX-текстам, работе со сценариями и осмысленному использованию AI в редакторских и аналитических задачах.&lt;/p&gt;
 &lt;h2 id="для-собеседования"&gt;Для собеседования&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://thankfulfor.github.io/petstore-api-docs/about/interview-pitch/"&gt;Краткий pitch (90 секунд)&lt;/a&gt;&lt;/li&gt;
@@ -7,7 +8,7 @@
 &lt;/ul&gt;
 &lt;h2 id="дополнительно"&gt;Дополнительно&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://thankfulfor.github.io/petstore-api-docs/cases/api-payment-case/"&gt;Пример кейса: API Payment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://thankfulfor.github.io/petstore-api-docs/cases/api-payment-case/"&gt;Технический пример: документация платежного сценария&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://thankfulfor.github.io/petstore-api-docs/game/find-doc-bug/"&gt;Игра: Найди ошибку в документации&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/api/</guid><description>&lt;h1 id="api-reference"&gt;API Reference&lt;/h1&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
