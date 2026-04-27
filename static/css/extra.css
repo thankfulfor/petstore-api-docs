@@ -12,6 +12,10 @@
   --border: #2e2e2e;
 }
 
+.main {
+  min-height: auto;
+}
+
 body,
 button,
 input,
