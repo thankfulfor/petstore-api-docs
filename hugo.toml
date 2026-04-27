@@ -8,7 +8,7 @@ pagerSize = 10
 
 [params]
 defaultTheme = "dark"
-disableThemeToggle = false
+disableThemeToggle = true
 ShowReadingTime = true
 ShowShareButtons = false
 ShowPostNavLinks = true

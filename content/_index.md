@@ -3,8 +3,8 @@
 Пишу сложные вещи понятным языком: API Reference, архитектурные документы, пошаговые руководства.
 
 <div class="hero-actions" markdown>
-[Связаться](/petstore-api-docs/about/resume/){ .md-button .md-button--primary }
-[Смотреть API кейс](/petstore-api-docs/cases/api-payment-case/){ .md-button }
+<a class="cta-btn cta-primary" href="/petstore-api-docs/about/resume/">Связаться</a>
+<a class="cta-btn" href="/petstore-api-docs/cases/api-payment-case/">Смотреть API кейс</a>
 </div>
 
 ## Выше сгиба: ключевая ценность
@@ -40,28 +40,28 @@
       <h3>API Reference: Payment Gateway v2</h3>
       <p><strong>Задача:</strong> сократить время первого успешного запроса и снизить ошибки интеграции.</p>
       <p><strong>Сложность:</strong> разнородные примеры и неполный контракт ошибок.</p>
-      <a class="case-link" href="cases/api-payment-case.md">Смотреть пример</a>
+      <a class="case-link" href="/petstore-api-docs/cases/api-payment-case/">Смотреть пример</a>
     </article>
 
     <article class="case-card" data-case-card data-case-tags="архитектура" data-case-text="C4 UML архитектура sequence внешние системы">
       <h3>C4 + UML: Документация архитектуры</h3>
       <p><strong>Задача:</strong> объяснить взаимодействие доменных сервисов и внешних интеграций.</p>
       <p><strong>Сложность:</strong> согласовать один язык между аналитиками и разработкой.</p>
-      <a class="case-link" href="developers/architecture-c4.md">Открыть раздел</a>
+      <a class="case-link" href="/petstore-api-docs/developers/architecture-c4/">Открыть раздел</a>
     </article>
 
     <article class="case-card" data-case-card data-case-tags="инструкции" data-case-text="онбординг оператор user guide FAQ оформление заказа">
       <h3>Онбординг оператора зоомагазина</h3>
       <p><strong>Задача:</strong> снизить нагрузку на поддержку по базовым операциям.</p>
       <p><strong>Сложность:</strong> объяснить процесс без жаргона и лишней теории.</p>
-      <a class="case-link" href="users/onboarding.md">Открыть раздел</a>
+      <a class="case-link" href="/petstore-api-docs/users/onboarding/">Открыть раздел</a>
     </article>
 
     <article class="case-card" data-case-card data-case-tags="api архитектура инструкции" data-case-text="инцидент сбой оплаты BPMN API Dev User KPI">
       <h3>Сквозной сценарий: Инцидент оплаты</h3>
       <p><strong>Задача:</strong> описать единый процесс реакции от алерта до пост‑мортема.</p>
       <p><strong>Сложность:</strong> связать BPMN, контракт API, Dev-задачи и KPI в одном документе.</p>
-      <a class="case-link" href="scenario-payment-incident.md">Открыть сценарий</a>
+      <a class="case-link" href="/petstore-api-docs/scenario-payment-incident/">Открыть сценарий</a>
     </article>
   </div>
 </div>
