@@ -1,6 +1,6 @@
 baseURL = "https://thankfulfor.github.io/petstore-api-docs/"
 languageCode = "ru-ru"
-title = "Petstore API Docs"
+title = "AI Technical Writer Portfolio"
 theme = "PaperMod"
 
 [pagination]
@@ -18,8 +18,8 @@ ShowToc = true
 TocOpen = true
 
 [params.homeInfoParams]
-Title = "Технический писатель, экс-разработчик"
-Content = "Портфолио документации: API Reference, архитектурные документы, инструкции и сквозные сценарии."
+Title = "AI Technical Writer / Product UX Writer"
+Content = "Портфолио: AI Technical Writing, продуктовая документация, UX-тексты, сценарии и техническая база."
 
 [[params.socialIcons]]
 name = "github"
@@ -28,32 +28,32 @@ url = "https://github.com/thankfulfor/petstore-api-docs"
 [menu]
   [[menu.main]]
   identifier = "quickstart"
-  name = "Быстрый старт"
+  name = "Подход"
   url = "/getting-started/"
   weight = 10
 
   [[menu.main]]
-  identifier = "api"
-  name = "Справочник API"
-  url = "/api/"
+  identifier = "about"
+  name = "Обо мне"
+  url = "/about/"
   weight = 20
-
-  [[menu.main]]
-  identifier = "interactive"
-  name = "Interactive API"
-  url = "/interactive-api/"
-  weight = 30
 
   [[menu.main]]
   identifier = "scenarios"
   name = "Сценарии"
   url = "/scenario-order/"
+  weight = 30
+
+  [[menu.main]]
+  identifier = "api"
+  name = "Технический пример"
+  url = "/api/"
   weight = 40
 
   [[menu.main]]
-  identifier = "about"
-  name = "О проекте"
-  url = "/about/"
+  identifier = "interactive"
+  name = "Интерактивный пример"
+  url = "/interactive-api/"
   weight = 50
 
   [[menu.main]]

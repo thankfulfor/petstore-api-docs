@@ -1,6 +1,6 @@
-# Petstore API Docs (Hugo + PaperMod)
+# AI Technical Writer Portfolio (Hugo + PaperMod)
 
-Портфолио технического писателя на Hugo с темой PaperMod.
+Портфолио AI Technical Writer / Product UX Writer на Hugo с темой PaperMod.
 
 ## Stack
 
@@ -29,7 +29,8 @@ hugo --minify
 
 ## Key content
 
-- `/interactive-api/`
-- `/scenario-order/`
+- `/about/interview-pitch/`
 - `/about/resume/`
+- `/scenario-order/`
+- `/interactive-api/`
 - `/game/find-doc-bug/`
