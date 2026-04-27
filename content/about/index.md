@@ -8,6 +8,7 @@
 
 - [Краткий pitch (90 секунд)](/petstore-api-docs/about/interview-pitch/)
 - [Резюме и контакты](/petstore-api-docs/about/resume/)
+- [Рабочие артефакты: Jira, сценарии, благодарности](/petstore-api-docs/about/work-samples/)
 
 ## Дополнительно
 
