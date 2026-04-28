@@ -26,13 +26,30 @@
 &lt;p&gt;Работаю на стыке продукта, разработки, дизайна и QA: превращаю неструктурированные вводные, обсуждения, макеты и технические ограничения в понятную документацию, требования, пользовательские сценарии и UX-тексты.&lt;/p&gt;
 &lt;p&gt;Моя сильная сторона - быстро разбираться в сложной продуктовой логике и фиксировать ее так, чтобы команде было проще разрабатывать, тестировать, поддерживать и развивать продукт. Описываю сценарии, edge cases, состояния интерфейсов, ошибки, уведомления, onboarding, FAQ, troubleshooting, release notes и внутренние инструкции.&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/portfolio/ai-in-workflow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/portfolio/ai-in-workflow/</guid><description>&lt;h1 id="ии-в-моей-работе"&gt;ИИ в моей работе&lt;/h1&gt;
 &lt;p&gt;Как я использую ИИ в цикле документации без потери качества и контроля.&lt;/p&gt;
+&lt;h2 id="кейс"&gt;Кейс&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://thankfulfor.github.io/portfolio/ai-workflow-case/"&gt;AI Workflow Case&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="применение"&gt;Применение&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Черновики структуры&lt;/li&gt;
 &lt;li&gt;Вычитка и переформулирование&lt;/li&gt;
 &lt;li&gt;Проверка консистентности терминов&lt;/li&gt;
 &lt;li&gt;Генерация вариантов UX-текста&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title/><link>https://thankfulfor.github.io/portfolio/api-overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/portfolio/api-overview/</guid><description>&lt;h1 id="обзор-api"&gt;Обзор API&lt;/h1&gt;
+&lt;/ul&gt;</description></item><item><title/><link>https://thankfulfor.github.io/portfolio/ai-workflow-case/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/portfolio/ai-workflow-case/</guid><description>&lt;h1 id="ai-workflow-case"&gt;AI Workflow Case&lt;/h1&gt;
+&lt;p&gt;Этот кейс показывает, как я использую AI-инструменты в документации без передачи им ответственности за факты, терминологию и продуктовую логику.&lt;/p&gt;
+&lt;h2 id="принцип"&gt;Принцип&lt;/h2&gt;
+&lt;p&gt;AI помогает ускорять черновую работу, но финальное решение остается за автором.&lt;/p&gt;
+&lt;p&gt;Я использую AI для:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;структурирования неоформленных материалов;&lt;/li&gt;
+&lt;li&gt;поиска нестыковок в сценариях;&lt;/li&gt;
+&lt;li&gt;подготовки вариантов формулировок;&lt;/li&gt;
+&lt;li&gt;сокращения длинных описаний;&lt;/li&gt;
+&lt;li&gt;проверки единообразия терминов;&lt;/li&gt;
+&lt;li&gt;подготовки вопросов к разработке, дизайну или QA.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Я не использую AI как источник истины. Факты проверяются по требованиям, макетам, задачам, API-контрактам и решениям команды.&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/portfolio/api-overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/portfolio/api-overview/</guid><description>&lt;h1 id="обзор-api"&gt;Обзор API&lt;/h1&gt;
 &lt;p&gt;Раздел описывает структуру API-документации: цели, аудиторию, стандарт описания и формат примеров.&lt;/p&gt;
 &lt;h2 id="внутри-раздела"&gt;Внутри раздела&lt;/h2&gt;
 &lt;ul&gt;
@@ -146,7 +163,131 @@ plugins: { legend: { display: true } }
 &lt;li&gt;&lt;code&gt;Pet&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Order&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;User&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title/><link>https://thankfulfor.github.io/portfolio/game/find-doc-bug/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/portfolio/game/find-doc-bug/</guid><description>&lt;h1 id="игра-найди-ошибку-в-документации"&gt;Игра: Найди ошибку в документации&lt;/h1&gt;
+&lt;/ul&gt;</description></item><item><title/><link>https://thankfulfor.github.io/portfolio/docs-as-code-pipeline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/portfolio/docs-as-code-pipeline/</guid><description>&lt;h1 id="docs-as-code-pipeline"&gt;Docs as Code Pipeline&lt;/h1&gt;
+&lt;p&gt;Эта страница описывает пример пайплайна доставки документации: от Markdown-файла до опубликованного портала.&lt;/p&gt;
+&lt;h2 id="что-решает-пайплайн"&gt;Что решает пайплайн&lt;/h2&gt;
+&lt;p&gt;Docs as Code нужен, когда документация должна обновляться вместе с продуктом:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;изменения проходят review;&lt;/li&gt;
+&lt;li&gt;история правок хранится в Git;&lt;/li&gt;
+&lt;li&gt;сборка проверяется автоматически;&lt;/li&gt;
+&lt;li&gt;публикация не зависит от ручной выгрузки файлов;&lt;/li&gt;
+&lt;li&gt;ошибки в ссылках, спецификациях и структуре ловятся до релиза.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="архитектура-пайплайна"&gt;Архитектура пайплайна&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;flowchart LR
+A[&amp;#34;Markdown / OpenAPI&amp;#34;] --&amp;gt; B[&amp;#34;Git branch&amp;#34;]
+B --&amp;gt; C[&amp;#34;Pull request&amp;#34;]
+C --&amp;gt; D[&amp;#34;Checks: build, links, OpenAPI&amp;#34;]
+D --&amp;gt; E[&amp;#34;Review&amp;#34;]
+E --&amp;gt; F[&amp;#34;Merge&amp;#34;]
+F --&amp;gt; G[&amp;#34;Static build&amp;#34;]
+G --&amp;gt; H[&amp;#34;GitHub Pages&amp;#34;]
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="минимальный-набор-проверок"&gt;Минимальный набор проверок&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Проверка&lt;/th&gt;
+&lt;th&gt;Зачем нужна&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Build&lt;/td&gt;
+&lt;td&gt;Документация собирается без ошибок&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Link check&lt;/td&gt;
+&lt;td&gt;Нет битых внутренних ссылок&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;OpenAPI validation&lt;/td&gt;
+&lt;td&gt;API-контракт синтаксически корректен&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Markdown lint&lt;/td&gt;
+&lt;td&gt;Единый стиль разметки&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spell / terms check&lt;/td&gt;
+&lt;td&gt;Меньше терминологических расхождений&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="пример-github-actions"&gt;Пример GitHub Actions&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;docs&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="nt"&gt;on&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;push&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;branches&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="l"&gt;main]&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;pull_request&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="nt"&gt;jobs&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;build&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;runs-on&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;ubuntu-latest&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;steps&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;- &lt;span class="nt"&gt;uses&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;actions/checkout@v4&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;- &lt;span class="nt"&gt;uses&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;peaceiris/actions-hugo@v3&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;with&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;hugo-version&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;0.150.0&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;extended&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;- &lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;Build docs&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;run&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;hugo --minify&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="docops-ценность"&gt;DocOps-ценность&lt;/h2&gt;
+&lt;p&gt;Такой процесс помогает не просто &amp;ldquo;написать страницу&amp;rdquo;, а управлять жизненным циклом документации:&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/portfolio/documentation-workflow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/portfolio/documentation-workflow/</guid><description>&lt;h1 id="documentation-workflow"&gt;Documentation Workflow&lt;/h1&gt;
+&lt;p&gt;Эта страница показывает, как я вижу рабочий процесс документации в продуктовой команде: от задачи в трекере до публикации и обратной связи.&lt;/p&gt;
+&lt;h2 id="цель-процесса"&gt;Цель процесса&lt;/h2&gt;
+&lt;p&gt;Сделать документацию частью разработки, а не отдельной активностью после релиза.&lt;/p&gt;
+&lt;p&gt;Хороший workflow помогает:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;фиксировать договоренности письменно;&lt;/li&gt;
+&lt;li&gt;снижать количество повторных уточнений;&lt;/li&gt;
+&lt;li&gt;связывать документацию с задачами и релизами;&lt;/li&gt;
+&lt;li&gt;проверять контент до публикации;&lt;/li&gt;
+&lt;li&gt;поддерживать базу знаний в актуальном состоянии.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="роли"&gt;Роли&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Роль&lt;/th&gt;
+&lt;th&gt;Что дает в процесс&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Product / Analyst&lt;/td&gt;
+&lt;td&gt;Контекст задачи, бизнес-правила, ограничения&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Designer&lt;/td&gt;
+&lt;td&gt;Макеты, состояния интерфейса, UX-логика&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Developer&lt;/td&gt;
+&lt;td&gt;Технические ограничения, API, edge cases&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;QA&lt;/td&gt;
+&lt;td&gt;Проверочные сценарии и регрессионные риски&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Technical Writer / DocOps&lt;/td&gt;
+&lt;td&gt;Структура, текст, workflow, публикация&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="поток-работы"&gt;Поток работы&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;flowchart LR
+A[&amp;#34;Задача в трекере&amp;#34;] --&amp;gt; B[&amp;#34;Сбор контекста&amp;#34;]
+B --&amp;gt; C[&amp;#34;Карта сценариев&amp;#34;]
+C --&amp;gt; D[&amp;#34;Черновик документации&amp;#34;]
+D --&amp;gt; E[&amp;#34;Review: продукт, dev, QA&amp;#34;]
+E --&amp;gt; F[&amp;#34;Правки и финальная вычитка&amp;#34;]
+F --&amp;gt; G[&amp;#34;Публикация&amp;#34;]
+G --&amp;gt; H[&amp;#34;Обратная связь и обновления&amp;#34;]
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="definition-of-ready"&gt;Definition of Ready&lt;/h2&gt;
+&lt;p&gt;Документационная задача готова к работе, если есть:&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/portfolio/game/find-doc-bug/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/portfolio/game/find-doc-bug/</guid><description>&lt;h1 id="игра-найди-ошибку-в-документации"&gt;Игра: Найди ошибку в документации&lt;/h1&gt;
 &lt;p&gt;Найдите 4 ошибки в примере ниже и нажмите &lt;strong&gt;Проверить&lt;/strong&gt;.&lt;/p&gt;
 &lt;div class="doc-bug-game" id="docBugGame"&gt;
 &lt;p&gt;&lt;strong&gt;POST /store/order&lt;/strong&gt; создает новый заказ и всегда возвращает &lt;code&gt;200 OK&lt;/code&gt;.&lt;/p&gt;
@@ -230,6 +371,11 @@ presets: [SwaggerUIBundle.presets.apis],
 &lt;p&gt;Если в Swagger UI не загружается контракт или есть ошибки в примерах:&lt;br&gt;
 &lt;a href="https://github.com/thankfulfor/petstore-api-docs/issues/new?template=blank_issues"&gt;Открыть issue по Interactive API&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/portfolio/process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/portfolio/process/</guid><description>&lt;h1 id="процессы-и-методология"&gt;Процессы и методология&lt;/h1&gt;
 &lt;p&gt;Как организован процесс Docs as Code: от запроса до публикации.&lt;/p&gt;
+&lt;h2 id="кейсы"&gt;Кейсы&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://thankfulfor.github.io/portfolio/documentation-workflow/"&gt;Documentation Workflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://thankfulfor.github.io/portfolio/docs-as-code-pipeline/"&gt;Docs as Code Pipeline&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="этапы"&gt;Этапы&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Сбор требований&lt;/li&gt;
@@ -548,8 +694,36 @@ G --&amp;gt; H[Уведомить клиента]
 &lt;p&gt;Причина: ресурс с таким идентификатором не существует.&lt;/p&gt;
 &lt;p&gt;Проверка:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl -i &lt;span class="s2"&gt;&amp;#34;https://petstore.swagger.io/v2/pet/999999999&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://thankfulfor.github.io/portfolio/ux-writing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/portfolio/ux-writing/</guid><description>&lt;h1 id="ux-писательство"&gt;UX-писательство&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://thankfulfor.github.io/portfolio/ux-writing-case/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/portfolio/ux-writing-case/</guid><description>&lt;h1 id="ux-writing-case"&gt;UX Writing Case&lt;/h1&gt;
+&lt;p&gt;Кейс показывает подход к UX-текстам: от проблемы пользователя до проверяемой формулировки в интерфейсе.&lt;/p&gt;
+&lt;h2 id="задача"&gt;Задача&lt;/h2&gt;
+&lt;p&gt;Пользователь выполняет действие, но не понимает, что произошло дальше: система показывает техническое сообщение, не объясняет причину и не дает следующий шаг.&lt;/p&gt;
+&lt;p&gt;Цель UX-текста:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;снизить тревожность;&lt;/li&gt;
+&lt;li&gt;объяснить ситуацию простым языком;&lt;/li&gt;
+&lt;li&gt;дать понятное действие;&lt;/li&gt;
+&lt;li&gt;сохранить единый tone of voice;&lt;/li&gt;
+&lt;li&gt;не скрывать ограничение продукта.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="до"&gt;До&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Ошибка выполнения операции.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Проблемы:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;неясно, что именно не получилось;&lt;/li&gt;
+&lt;li&gt;нет причины;&lt;/li&gt;
+&lt;li&gt;нет следующего шага;&lt;/li&gt;
+&lt;li&gt;текст звучит как системная ошибка, а не помощь пользователю.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="после"&gt;После&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Не удалось сохранить изменения.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Проверьте соединение и попробуйте еще раз. Если ошибка повторится, обратитесь в поддержку.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Что изменилось:&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/portfolio/ux-writing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/portfolio/ux-writing/</guid><description>&lt;h1 id="ux-писательство"&gt;UX-писательство&lt;/h1&gt;
 &lt;p&gt;Раздел про UX-контент: микро-копирайтинг, ошибки, системные сообщения и tone of voice.&lt;/p&gt;
+&lt;h2 id="кейс"&gt;Кейс&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://thankfulfor.github.io/portfolio/ux-writing-case/"&gt;UX Writing Case&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="что-демонстрируется"&gt;Что демонстрируется&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Тексты интерфейса&lt;/li&gt;
