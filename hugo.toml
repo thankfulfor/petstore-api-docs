@@ -53,6 +53,13 @@ url = "https://github.com/thankfulfor/petstore-api-docs"
   weight = 40
 
   [[menu.main]]
+  identifier = "api-explained-case"
+  name = "Что такое API"
+  url = "/api-explained-case/"
+  parent = "api-docs"
+  weight = 45
+
+  [[menu.main]]
   identifier = "quickstart"
   name = "Быстрый старт"
   url = "/getting-started/"
@@ -74,6 +81,13 @@ url = "https://github.com/thankfulfor/petstore-api-docs"
   weight = 70
 
   [[menu.main]]
+  identifier = "screenshot-guide-case"
+  name = "Инструкция: скриншоты"
+  url = "/screenshot-guide-case/"
+  parent = "user-guides"
+  weight = 72
+
+  [[menu.main]]
   identifier = "architecture"
   name = "Архитектура и диаграммы"
   url = "/architecture/"
@@ -92,6 +106,20 @@ url = "https://github.com/thankfulfor/petstore-api-docs"
   url = "/ux-writing-case/"
   parent = "ux-writing"
   weight = 95
+
+  [[menu.main]]
+  identifier = "email-change-case"
+  name = "UX: смена почты"
+  url = "/email-change-ux-case/"
+  parent = "ux-writing"
+  weight = 96
+
+  [[menu.main]]
+  identifier = "release-banner-case"
+  name = "UX: релизный баннер"
+  url = "/release-banner-case/"
+  parent = "ux-writing"
+  weight = 97
 
   [[menu.main]]
   identifier = "ai-workflow"

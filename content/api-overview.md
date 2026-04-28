@@ -4,5 +4,6 @@
 
 ## Внутри раздела
 
+- [Кейс: объяснить API простыми словами](/portfolio/api-explained-case/)
 - [Быстрый старт](/portfolio/getting-started/)
 - [Интерактивное API](/portfolio/interactive-api/)

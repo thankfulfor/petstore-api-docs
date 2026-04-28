@@ -5,6 +5,8 @@
 ## Кейс
 
 - [UX Writing Case](/portfolio/ux-writing-case/)
+- [Кейс: UX-текст для смены почты](/portfolio/email-change-ux-case/)
+- [Кейс: баннер о релизе](/portfolio/release-banner-case/)
 
 ## Что демонстрируется
 
