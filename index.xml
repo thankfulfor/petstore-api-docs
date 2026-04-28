@@ -277,56 +277,102 @@ F --&amp;gt; G[Go-Live]
 &lt;li&gt;Выполнить тестовый заказ и подтвердить оплату.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;!!! warning &amp;ldquo;Точка контроля&amp;rdquo;
-Не переводите магазин в &lt;code&gt;verified&lt;/code&gt;, пока не выполнен тестовый заказ end-to-end.&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/scenario-order/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/scenario-order/</guid><description>&lt;h1 id="сценарий-оформление-заказа"&gt;Сценарий: Оформление заказа&lt;/h1&gt;
+Не переводите магазин в &lt;code&gt;verified&lt;/code&gt;, пока не выполнен тестовый заказ end-to-end.&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/scenario-order/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/scenario-order/</guid><description>&lt;h1 id="сценарий-проверка-интерфейсного-состояния"&gt;Сценарий: Проверка интерфейсного состояния&lt;/h1&gt;
 &lt;h2 id="контекст"&gt;Контекст&lt;/h2&gt;
-&lt;p&gt;Клиент оформляет заказ на питомца через витрину. Система должна корректно провести проверку наличия, оплату, создание заказа и передачу в доставку.&lt;/p&gt;
-&lt;h2 id="bpmn-бизнес"&gt;BPMN (бизнес)&lt;/h2&gt;
+&lt;p&gt;Пользователь меняет важную настройку в личном кабинете. Команде нужно заранее описать, какие состояния интерфейса появляются до сохранения, после успешного сохранения и при ошибке, чтобы текст, дизайн, разработка и QA не разъехались.&lt;/p&gt;
+&lt;h2 id="карта-сценария"&gt;Карта сценария&lt;/h2&gt;
 &lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;flowchart LR
-A[Клиент выбирает питомца] --&amp;gt; B[Проверка статуса available]
-B --&amp;gt;|Да| C[Создание корзины]
-B --&amp;gt;|Нет| X[Показать отсутствие товара]
-C --&amp;gt; D[Ввод данных доставки]
-D --&amp;gt; E[Оплата]
-E --&amp;gt;|Успех| F[Создание заказа]
-E --&amp;gt;|Ошибка| Y[Повтор оплаты или отмена]
-F --&amp;gt; G[Передача в доставку]
-G --&amp;gt; H[Подтверждение клиенту]
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="api-технический-контракт"&gt;API (технический контракт)&lt;/h2&gt;
+A[Пользователь открывает настройки] --&amp;gt; B[Система загружает текущие параметры]
+B --&amp;gt; C[Пользователь меняет значение]
+C --&amp;gt; D[Показать несохраненные изменения]
+D --&amp;gt; E[Пользователь нажимает Сохранить]
+E --&amp;gt; F{Ответ сервера}
+F --&amp;gt;|Успех| G[Показать подтверждение]
+F --&amp;gt;|Ошибка валидации| H[Подсветить поле и объяснить ошибку]
+F --&amp;gt;|Техническая ошибка| I[Показать сообщение и предложить повтор]
+G --&amp;gt; J[Обновить состояние интерфейса]
+H --&amp;gt; C
+I --&amp;gt; E
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="что-нужно-зафиксировать-в-задаче"&gt;Что нужно зафиксировать в задаче&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;Операция&lt;/th&gt;
-&lt;th&gt;Метод и путь&lt;/th&gt;
-&lt;th&gt;Назначение&lt;/th&gt;
-&lt;th&gt;Успех&lt;/th&gt;
-&lt;th&gt;Ошибки&lt;/th&gt;
+&lt;th&gt;Зона&lt;/th&gt;
+&lt;th&gt;Что описать&lt;/th&gt;
+&lt;th&gt;Зачем&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;Получить питомца&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;GET /pet/{petId}&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Проверка данных карточки&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;200&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;404&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Состояния&lt;/td&gt;
+&lt;td&gt;Загрузка, несохраненные изменения, успех, ошибка валидации, техническая ошибка&lt;/td&gt;
+&lt;td&gt;Чтобы UX-тексты и интерфейс не зависели от догадок&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Создать заказ&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;POST /store/order&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Фиксация покупки&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;201&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;400&lt;/code&gt;, &lt;code&gt;422&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Ограничения&lt;/td&gt;
+&lt;td&gt;Какие поля обязательны, какие значения недопустимы, что делать при конфликте данных&lt;/td&gt;
+&lt;td&gt;Чтобы разработка и QA одинаково понимали бизнес-логику&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Получить заказ&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;GET /store/order/{orderId}&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Проверка статуса&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;200&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;404&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Сообщения&lt;/td&gt;
+&lt;td&gt;Текст ошибки, подтверждение сохранения, подсказка для повторной попытки&lt;/td&gt;
+&lt;td&gt;Чтобы пользователь понимал, что произошло и что делать дальше&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Проверки&lt;/td&gt;
+&lt;td&gt;Успешное сохранение, повтор после ошибки, уход со страницы с несохраненными изменениями&lt;/td&gt;
+&lt;td&gt;Чтобы не потерять edge cases перед релизом&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Пример создания заказа:&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/scenario-payment-incident/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/scenario-payment-incident/</guid><description>&lt;h1 id="сценарий-инцидент--сбой-оплаты"&gt;Сценарий: Инцидент — сбой оплаты&lt;/h1&gt;
+&lt;h2 id="пример-ux-текстов"&gt;Пример UX-текстов&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Состояние&lt;/th&gt;
+&lt;th&gt;Текст&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Успешное сохранение&lt;/td&gt;
+&lt;td&gt;Изменения сохранены&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ошибка валидации&lt;/td&gt;
+&lt;td&gt;Проверьте значение в поле и попробуйте еще раз&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Техническая ошибка&lt;/td&gt;
+&lt;td&gt;Не удалось сохранить изменения. Повторите попытку&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Уход со страницы&lt;/td&gt;
+&lt;td&gt;Есть несохраненные изменения. Уйти без сохранения?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="вопросы-к-команде"&gt;Вопросы к команде&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Нужно ли автосохранение или пользователь явно нажимает кнопку?&lt;/li&gt;
+&lt;li&gt;Что происходит, если настройки меняются в другой вкладке?&lt;/li&gt;
+&lt;li&gt;Нужно ли блокировать кнопку сохранения во время запроса?&lt;/li&gt;
+&lt;li&gt;Кто видит системные ошибки: пользователь, поддержка, администратор?&lt;/li&gt;
+&lt;li&gt;Где фиксируем событие для аналитики и логов?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="проверки-для-qa"&gt;Проверки для QA&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Изменить значение и убедиться, что появляется состояние несохраненных изменений.&lt;/li&gt;
+&lt;li&gt;Сохранить корректное значение и проверить подтверждение.&lt;/li&gt;
+&lt;li&gt;Ввести некорректное значение и проверить текст ошибки.&lt;/li&gt;
+&lt;li&gt;Смоделировать техническую ошибку и проверить возможность повторить действие.&lt;/li&gt;
+&lt;li&gt;Попробовать уйти со страницы до сохранения и проверить предупреждение.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="связанные-разделы"&gt;Связанные разделы&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://thankfulfor.github.io/petstore-api-docs/users/troubleshooting/"&gt;UX-тексты и troubleshooting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://thankfulfor.github.io/petstore-api-docs/scenario-payment-incident/"&gt;Сценарий: Инцидент - сбой оплаты&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title/><link>https://thankfulfor.github.io/petstore-api-docs/scenario-payment-incident/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/petstore-api-docs/scenario-payment-incident/</guid><description>&lt;h1 id="сценарий-инцидент--сбой-оплаты"&gt;Сценарий: Инцидент — сбой оплаты&lt;/h1&gt;
 &lt;h2 id="контекст"&gt;Контекст&lt;/h2&gt;
 &lt;p&gt;Во время checkout платежный шлюз возвращает ошибки. Нужно минимизировать потери заказов и быстро восстановить стабильность.&lt;/p&gt;
 &lt;h2 id="bpmn-бизнес"&gt;BPMN (бизнес)&lt;/h2&gt;
