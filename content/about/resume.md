@@ -17,7 +17,6 @@ AI Technical Writer / Product UX Writer с инженерным бэкграун
 - GitHub: [github.com/thankfulfor/petstore-api-docs](https://github.com/thankfulfor/petstore-api-docs)
 - Technical Writing Portfolio: [Notion](https://www.notion.so/thankfulfor/Technical-Writing-Portfolio-334b383ddebb80c6b0d3e9c4fa93385f?t=new)
 - UX Writing Portfolio: [Notion](https://www.notion.so/thankfulfor/UX-Writing-Portfolio-fbdc12df00d640ff8064802bcca525df)
-- Рабочие артефакты: [Jira-задачи, сценарии и благодарности](/petstore-api-docs/about/work-samples/)
 
 ## Опыт работы
 
@@ -91,4 +90,4 @@ Web-разработчик / Технический писатель
 
 - Русский - родной
 
-> Оптимальный порядок просмотра: Главная -> Interview Pitch -> Рабочие артефакты -> UX Writing Portfolio -> Technical Writing Portfolio -> техническое портфолио на этом сайте.
+> Оптимальный порядок просмотра: Главная -> Interview Pitch -> UX Writing Portfolio -> Technical Writing Portfolio -> техническое портфолио на этом сайте.

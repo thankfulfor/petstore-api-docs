@@ -5,7 +5,6 @@
 <div class="hero-actions" markdown>
 <a class="cta-btn cta-primary" href="/petstore-api-docs/about/resume/">Связаться</a>
 <a class="cta-btn" href="/petstore-api-docs/about/interview-pitch/">Короткий pitch</a>
-<a class="cta-btn" href="/petstore-api-docs/about/work-samples/">Рабочие артефакты</a>
 </div>
 
 ## Чем я полезна команде
@@ -32,7 +31,6 @@
 <button class="is-active" data-case-tag="all" type="button">Все</button>
 <button data-case-tag="ux" type="button">UX-тексты</button>
 <button data-case-tag="ai" type="button">AI-подход</button>
-<button data-case-tag="jira" type="button">Jira-задачи</button>
 <button data-case-tag="сценарии" type="button">Сценарии</button>
 <button data-case-tag="инструкции" type="button">Пошаговые руководства</button>
 <button data-case-tag="api" type="button">Техническая база</button>
@@ -45,13 +43,6 @@
 <p><strong>Задача:</strong> быстрее превращать разрозненные вводные в требования, сценарии и тексты интерфейса.</p>
 <p><strong>Сложность:</strong> сохранить точность, продуктовый контекст и ответственность за финальный текст.</p>
 <a class="case-link" href="/petstore-api-docs/about/interview-pitch/">Смотреть pitch</a>
-</article>
-
-<article class="case-card" data-case-card data-case-tags="jira сценарии ux" data-case-text="Jira постановки задачи требования сценарии edge cases QA">
-<h3>Постановки задач и сценарии</h3>
-<p><strong>Задача:</strong> превратить обсуждения, макеты и ограничения в понятные задачи для разработки и QA.</p>
-<p><strong>Сложность:</strong> заранее описать сценарии, состояния, зависимости и edge cases.</p>
-<a class="case-link" href="/petstore-api-docs/about/work-samples/">Открыть артефакты</a>
 </article>
 
 <article class="case-card" data-case-card data-case-tags="ux инструкции" data-case-text="UX Writing интерфейсные состояния ошибки уведомления плейсхолдеры onboarding">
@@ -90,6 +81,5 @@
 ## Дополнительно
 
 - [Обо мне / резюме и контакты](/petstore-api-docs/about/resume/)
-- [Рабочие артефакты: Jira, сценарии, благодарности](/petstore-api-docs/about/work-samples/)
 - [Игра: Найди ошибку в документации](/petstore-api-docs/game/find-doc-bug/)
 - [QA Checklist](/petstore-api-docs/qa-checklist/)

@@ -39,40 +39,34 @@ url = "https://github.com/thankfulfor/petstore-api-docs"
   weight = 20
 
   [[menu.main]]
-  identifier = "work-samples"
-  name = "Артефакты"
-  url = "/about/work-samples/"
-  weight = 30
-
-  [[menu.main]]
   identifier = "scenarios"
   name = "Сценарии"
   url = "/scenario-order/"
-  weight = 40
+  weight = 30
 
   [[menu.main]]
   identifier = "api"
   name = "Технический пример"
   url = "/api/"
-  weight = 50
+  weight = 40
 
   [[menu.main]]
   identifier = "interactive"
   name = "Интерактивный пример"
   url = "/interactive-api/"
-  weight = 60
+  weight = 50
 
   [[menu.main]]
   identifier = "versions"
   name = "Версии"
   url = "/versions/"
-  weight = 70
+  weight = 60
 
   [[menu.main]]
   identifier = "changelog"
   name = "Changelog"
   url = "/changelog/"
-  weight = 80
+  weight = 70
 
 [markup]
   [markup.goldmark]
