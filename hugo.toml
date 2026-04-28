@@ -87,16 +87,44 @@ url = "https://github.com/thankfulfor/petstore-api-docs"
   weight = 90
 
   [[menu.main]]
+  identifier = "ux-writing-case"
+  name = "UX Writing Case"
+  url = "/ux-writing-case/"
+  parent = "ux-writing"
+  weight = 95
+
+  [[menu.main]]
   identifier = "ai-workflow"
   name = "ИИ в моей работе"
   url = "/ai-in-workflow/"
   weight = 100
 
   [[menu.main]]
+  identifier = "ai-workflow-case"
+  name = "AI Workflow Case"
+  url = "/ai-workflow-case/"
+  parent = "ai-workflow"
+  weight = 105
+
+  [[menu.main]]
   identifier = "process"
   name = "Процессы и методология"
   url = "/process/"
   weight = 110
+
+  [[menu.main]]
+  identifier = "documentation-workflow"
+  name = "Documentation Workflow"
+  url = "/documentation-workflow/"
+  parent = "process"
+  weight = 112
+
+  [[menu.main]]
+  identifier = "docs-as-code-pipeline"
+  name = "Docs as Code Pipeline"
+  url = "/docs-as-code-pipeline/"
+  parent = "process"
+  weight = 114
 
   [[menu.main]]
   identifier = "about"

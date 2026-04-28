@@ -2,6 +2,11 @@
 
 Как организован процесс Docs as Code: от запроса до публикации.
 
+## Кейсы
+
+- [Documentation Workflow](/portfolio/documentation-workflow/)
+- [Docs as Code Pipeline](/portfolio/docs-as-code-pipeline/)
+
 ## Этапы
 
 1. Сбор требований
