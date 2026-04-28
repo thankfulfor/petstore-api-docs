@@ -1,6 +1,6 @@
-baseURL = "https://thankfulfor.github.io/petstore-api-docs/"
+baseURL = "https://thankfulfor.github.io/portfolio/"
 languageCode = "ru-ru"
-title = "AI Technical Writer Portfolio"
+title = "Portfolio — Technical Writing"
 theme = "PaperMod"
 
 [pagination]
@@ -18,8 +18,8 @@ ShowToc = true
 TocOpen = true
 
 [params.homeInfoParams]
-Title = "AI Technical Writer / Product UX Writer"
-Content = "Портфолио: AI Technical Writing, продуктовая документация, UX-тексты, сценарии и техническая база."
+Title = "Портфолио технического писателя"
+Content = "Документация API, пользовательские руководства, UX-писательство и процессная методология."
 
 [[params.socialIcons]]
 name = "github"
@@ -27,46 +27,82 @@ url = "https://github.com/thankfulfor/petstore-api-docs"
 
 [menu]
   [[menu.main]]
-  identifier = "quickstart"
-  name = "Подход"
-  url = "/getting-started/"
+  identifier = "home"
+  name = "Главная"
+  url = "/"
   weight = 10
 
   [[menu.main]]
-  identifier = "about"
-  name = "Обо мне"
-  url = "/about/"
+  identifier = "tech-docs"
+  name = "Техническая документация"
+  url = "/api-overview/"
   weight = 20
 
   [[menu.main]]
-  identifier = "scenarios"
-  name = "Сценарии"
-  url = "/scenario-order/"
+  identifier = "api-docs"
+  name = "Документация API"
+  url = "/api-overview/"
+  parent = "tech-docs"
   weight = 30
 
   [[menu.main]]
-  identifier = "api"
-  name = "Технический пример"
-  url = "/api/"
+  identifier = "api-overview"
+  name = "Обзор"
+  url = "/api-overview/"
+  parent = "api-docs"
   weight = 40
 
   [[menu.main]]
-  identifier = "interactive"
-  name = "Интерактивный пример"
-  url = "/interactive-api/"
+  identifier = "quickstart"
+  name = "Быстрый старт"
+  url = "/getting-started/"
+  parent = "api-docs"
   weight = 50
 
   [[menu.main]]
-  identifier = "versions"
-  name = "Версии"
-  url = "/versions/"
+  identifier = "interactive-api"
+  name = "Интерактивное API"
+  url = "/interactive-api/"
+  parent = "api-docs"
   weight = 60
 
   [[menu.main]]
-  identifier = "changelog"
-  name = "Changelog"
-  url = "/changelog/"
+  identifier = "user-guides"
+  name = "Пользовательские руководства"
+  url = "/user-guides/"
+  parent = "tech-docs"
   weight = 70
+
+  [[menu.main]]
+  identifier = "architecture"
+  name = "Архитектура и диаграммы"
+  url = "/architecture/"
+  parent = "tech-docs"
+  weight = 80
+
+  [[menu.main]]
+  identifier = "ux-writing"
+  name = "UX-писательство"
+  url = "/ux-writing/"
+  weight = 90
+
+  [[menu.main]]
+  identifier = "ai-workflow"
+  name = "ИИ в моей работе"
+  url = "/ai-in-workflow/"
+  weight = 100
+
+  [[menu.main]]
+  identifier = "process"
+  name = "Процессы и методология"
+  url = "/process/"
+  weight = 110
+
+  [[menu.main]]
+  identifier = "about"
+  name = "Обо мне и контакты"
+  url = "/about-page/"
+  weight = 120
 
 [markup]
   [markup.goldmark]
