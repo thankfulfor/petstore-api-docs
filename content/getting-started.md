@@ -112,4 +112,4 @@ curl -i "https://petstore.swagger.io/v2/pet/999999999"
 ## Обратная связь
 
 Если пример не работает или требует уточнений:  
-[Сообщить об ошибке в документации](https://github.com/thankfulfor/petstore-api-docs/issues/new?template=blank_issues)
+[Сообщить об ошибке в документации](https://github.com/thankfulfor/portfolio/issues/new?template=blank_issues)

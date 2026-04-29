@@ -15,4 +15,4 @@
 ## Обратная связь
 
 Если нашли проблему в документации:
-[Создать issue](https://github.com/thankfulfor/petstore-api-docs/issues/new?template=blank_issues)
+[Создать issue](https://github.com/thankfulfor/portfolio/issues/new?template=blank_issues)

@@ -57,5 +57,5 @@ flowchart LR
 
 ## Связанные разделы
 
-- [UX-тексты и troubleshooting](/petstore-api-docs/users/troubleshooting/)
-- [Сценарий: Инцидент - сбой оплаты](/petstore-api-docs/scenario-payment-incident/)
+- [UX-тексты и troubleshooting](/portfolio/users/troubleshooting/)
+- [Сценарий: Инцидент - сбой оплаты](/portfolio/scenario-payment-incident/)

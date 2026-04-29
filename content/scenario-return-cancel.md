@@ -60,5 +60,5 @@ pie showData
 
 ## Связанные разделы
 
-- [Сценарий: Оформление заказа](/petstore-api-docs/scenario-order/)
-- [Пользовательские инструкции](/petstore-api-docs/users/onboarding/)
+- [Сценарий: Оформление заказа](/portfolio/scenario-order/)
+- [Пользовательские инструкции](/portfolio/users/onboarding/)

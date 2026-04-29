@@ -62,5 +62,5 @@ pie showData
 
 ## Связанные разделы
 
-- [Устранение неполадок](/petstore-api-docs/users/troubleshooting/)
-- [Changelog](/petstore-api-docs/changelog/)
+- [Устранение неполадок](/portfolio/users/troubleshooting/)
+- [Changelog](/portfolio/changelog/)

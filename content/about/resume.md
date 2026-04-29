@@ -14,9 +14,9 @@ AI Technical Writer / Product UX Writer с инженерным бэкграун
 
 - Email: [thankfulfor@ya.ru](mailto:thankfulfor@ya.ru)
 - Telegram: [@fuckinuseless](https://t.me/fuckinuseless)
-- GitHub: [github.com/thankfulfor/petstore-api-docs](https://github.com/thankfulfor/petstore-api-docs)
-- Technical Writing Portfolio: [Notion](https://www.notion.so/thankfulfor/Technical-Writing-Portfolio-334b383ddebb80c6b0d3e9c4fa93385f?t=new)
-- UX Writing Portfolio: [Notion](https://www.notion.so/thankfulfor/UX-Writing-Portfolio-fbdc12df00d640ff8064802bcca525df)
+- LinkedIn: [linkedin.com/in/narsiya](https://www.linkedin.com/in/narsiya/)
+- GitHub: [github.com/thankfulfor/portfolio](https://github.com/thankfulfor/portfolio)
+- Портфолио: [thankfulfor.github.io/portfolio](https://thankfulfor.github.io/portfolio/)
 
 ## Опыт работы
 

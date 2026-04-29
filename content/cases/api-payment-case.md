@@ -13,7 +13,7 @@
 
 ## Интерактивное превью API
 
-- [Открыть Interactive API](/petstore-api-docs/interactive-api/)
+- [Открыть Interactive API](/portfolio/interactive-api/)
 
 ## До / После
 
@@ -30,5 +30,5 @@
 
 ## Связанные материалы
 
-- [Справочник API](/petstore-api-docs/api/)
-- [Сценарий: Инцидент — сбой оплаты](/petstore-api-docs/scenario-payment-incident/)
+- [Справочник API](/portfolio/api/)
+- [Сценарий: Инцидент — сбой оплаты](/portfolio/scenario-payment-incident/)

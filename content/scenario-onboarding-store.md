@@ -58,5 +58,5 @@ pie showData
 
 ## Связанные разделы
 
-- [Онбординг пользователя](/petstore-api-docs/users/onboarding/)
-- [О проекте](/petstore-api-docs/about/)
+- [Онбординг пользователя](/portfolio/users/onboarding/)
+- [О проекте](/portfolio/about/)

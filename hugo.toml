@@ -24,7 +24,7 @@ Content = "Документация API, пользовательские рук
 
 [[params.socialIcons]]
 name = "github"
-url = "https://github.com/thankfulfor/petstore-api-docs"
+url = "https://github.com/thankfulfor/portfolio"
 
 [menu]
   [[menu.main]]

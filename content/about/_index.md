@@ -6,10 +6,10 @@
 
 ## Для собеседования
 
-- [Краткий pitch (90 секунд)](/petstore-api-docs/about/interview-pitch/)
-- [Резюме и контакты](/petstore-api-docs/about/resume/)
+- [Краткий pitch (90 секунд)](/portfolio/about/interview-pitch/)
+- [Резюме и контакты](/portfolio/about/resume/)
 
 ## Дополнительно
 
-- [Технический пример: документация платежного сценария](/petstore-api-docs/cases/api-payment-case/)
-- [Игра: Найди ошибку в документации](/petstore-api-docs/game/find-doc-bug/)
+- [Технический пример: документация платежного сценария](/portfolio/cases/api-payment-case/)
+- [Игра: Найди ошибку в документации](/portfolio/game/find-doc-bug/)

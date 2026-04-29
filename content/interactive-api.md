@@ -7,7 +7,7 @@
 <script>
   async function resolveSpecUrl() {
     const candidates = [
-      "/petstore-api-docs/openapi/openapi.yaml",
+      "/portfolio/openapi/openapi.yaml",
       "/openapi/openapi.yaml"
     ];
 
@@ -38,4 +38,4 @@
 ## Обратная связь
 
 Если в Swagger UI не загружается контракт или есть ошибки в примерах:  
-[Открыть issue по Interactive API](https://github.com/thankfulfor/petstore-api-docs/issues/new?template=blank_issues)
+[Открыть issue по Interactive API](https://github.com/thankfulfor/portfolio/issues/new?template=blank_issues)
