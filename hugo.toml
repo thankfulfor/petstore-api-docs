@@ -1,5 +1,6 @@
 baseURL = "https://thankfulfor.github.io/portfolio/"
 languageCode = "ru-ru"
+defaultContentLanguage = "ru"
 title = "Portfolio — Technical Writing"
 theme = "PaperMod"
 
