@@ -138,7 +138,7 @@ plugins: { legend: { display: true } }
 &lt;/ul&gt;
 &lt;h2 id="интерактивное-превью-api"&gt;Интерактивное превью API&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://thankfulfor.github.io/portfolio/petstore-api-docs/interactive-api/"&gt;Открыть Interactive API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://thankfulfor.github.io/portfolio/interactive-api/"&gt;Открыть Interactive API&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="до--после"&gt;До / После&lt;/h2&gt;
 &lt;div class="before-after" id="beforeAfterCase1"&gt;
@@ -153,8 +153,8 @@ plugins: { legend: { display: true } }
 &lt;/ul&gt;
 &lt;h2 id="связанные-материалы"&gt;Связанные материалы&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://thankfulfor.github.io/portfolio/petstore-api-docs/api/"&gt;Справочник API&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://thankfulfor.github.io/portfolio/petstore-api-docs/scenario-payment-incident/"&gt;Сценарий: Инцидент — сбой оплаты&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://thankfulfor.github.io/portfolio/api/"&gt;Справочник API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://thankfulfor.github.io/portfolio/scenario-payment-incident/"&gt;Сценарий: Инцидент — сбой оплаты&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description></item><item><title/><link>https://thankfulfor.github.io/portfolio/developers/architecture-c4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/portfolio/developers/architecture-c4/</guid><description>&lt;h1 id="c4-контекст-системы"&gt;C4: Контекст системы&lt;/h1&gt;
 &lt;p&gt;&lt;img alt="C4 Context" loading="lazy" src="../diagrams-rendered/c4-context.svg"&gt;&lt;/p&gt;
 &lt;h2 id="ключевые-взаимодействия"&gt;Ключевые взаимодействия&lt;/h2&gt;
@@ -369,7 +369,7 @@ G --&amp;gt; H[&amp;#34;Обратная связь и обновления&amp;
 &lt;script&gt;
 async function resolveSpecUrl() {
 const candidates = [
-"/petstore-api-docs/openapi/openapi.yaml",
+"/portfolio/openapi/openapi.yaml",
 "/openapi/openapi.yaml"
 ];
 for (const candidate of candidates) {
@@ -395,7 +395,7 @@ presets: [SwaggerUIBundle.presets.apis],
 &lt;/script&gt;
 &lt;h2 id="обратная-связь"&gt;Обратная связь&lt;/h2&gt;
 &lt;p&gt;Если в Swagger UI не загружается контракт или есть ошибки в примерах:&lt;br&gt;
-&lt;a href="https://github.com/thankfulfor/petstore-api-docs/issues/new?template=blank_issues"&gt;Открыть issue по Interactive API&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/portfolio/process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/portfolio/process/</guid><description>&lt;h1 id="процессы-и-методология"&gt;Процессы и методология&lt;/h1&gt;
+&lt;a href="https://github.com/thankfulfor/portfolio/issues/new?template=blank_issues"&gt;Открыть issue по Interactive API&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/portfolio/process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/portfolio/process/</guid><description>&lt;h1 id="процессы-и-методология"&gt;Процессы и методология&lt;/h1&gt;
 &lt;p&gt;Как организован процесс Docs as Code: от запроса до публикации.&lt;/p&gt;
 &lt;h2 id="кейсы"&gt;Кейсы&lt;/h2&gt;
 &lt;ul&gt;
@@ -424,7 +424,7 @@ presets: [SwaggerUIBundle.presets.apis],
 &lt;/ul&gt;
 &lt;h2 id="обратная-связь"&gt;Обратная связь&lt;/h2&gt;
 &lt;p&gt;Если нашли проблему в документации:
-&lt;a href="https://github.com/thankfulfor/petstore-api-docs/issues/new?template=blank_issues"&gt;Создать issue&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/portfolio/release-banner-case/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/portfolio/release-banner-case/</guid><description>&lt;h1 id="кейс-баннер-о-релизе"&gt;Кейс: баннер о релизе&lt;/h1&gt;
+&lt;a href="https://github.com/thankfulfor/portfolio/issues/new?template=blank_issues"&gt;Создать issue&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://thankfulfor.github.io/portfolio/release-banner-case/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/portfolio/release-banner-case/</guid><description>&lt;h1 id="кейс-баннер-о-релизе"&gt;Кейс: баннер о релизе&lt;/h1&gt;
 &lt;p&gt;Кейс показывает, как писать предупреждение о технических работах так, чтобы пользователь понимал влияние на свои задачи.&lt;/p&gt;
 &lt;h2 id="задача"&gt;Задача&lt;/h2&gt;
 &lt;p&gt;Нужно предупредить пользователей портала: завтра в 9:00 команда выкатывает релиз, и примерно два часа часть функций может работать нестабильно или быть недоступна.&lt;/p&gt;
@@ -594,8 +594,8 @@ I --&amp;gt; E
 &lt;/ol&gt;
 &lt;h2 id="связанные-разделы"&gt;Связанные разделы&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://thankfulfor.github.io/portfolio/petstore-api-docs/users/troubleshooting/"&gt;UX-тексты и troubleshooting&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://thankfulfor.github.io/portfolio/petstore-api-docs/scenario-payment-incident/"&gt;Сценарий: Инцидент - сбой оплаты&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://thankfulfor.github.io/portfolio/users/troubleshooting/"&gt;UX-тексты и troubleshooting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://thankfulfor.github.io/portfolio/scenario-payment-incident/"&gt;Сценарий: Инцидент - сбой оплаты&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description></item><item><title/><link>https://thankfulfor.github.io/portfolio/scenario-payment-incident/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/portfolio/scenario-payment-incident/</guid><description>&lt;h1 id="сценарий-инцидент--сбой-оплаты"&gt;Сценарий: Инцидент — сбой оплаты&lt;/h1&gt;
 &lt;h2 id="контекст"&gt;Контекст&lt;/h2&gt;
 &lt;p&gt;Во время checkout платежный шлюз возвращает ошибки. Нужно минимизировать потери заказов и быстро восстановить стабильность.&lt;/p&gt;
@@ -845,12 +845,19 @@ G --&amp;gt; H[Уведомить клиента]
 &lt;li&gt;&lt;input disabled="" type="checkbox"&gt; Добавить migration guide &lt;code&gt;v2 -&amp;gt; v3&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;</description></item><item><title>Changelog</title><link>https://thankfulfor.github.io/portfolio/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thankfulfor.github.io/portfolio/changelog/</guid><description>&lt;h1 id="changelog"&gt;Changelog&lt;/h1&gt;
 &lt;p&gt;Все значимые изменения в документации фиксируются на этой странице.&lt;/p&gt;
+&lt;h2 id="2026-04-29"&gt;2026-04-29&lt;/h2&gt;
+&lt;h3 id="changed"&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;В контактном блоке ссылка на закрытое резюме на HH заменена на публичный профиль LinkedIn.&lt;/li&gt;
+&lt;li&gt;Внутренние ссылки обновлены под текущий адрес сайта: &lt;code&gt;/portfolio/&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Ссылка на GitHub-репозиторий обновлена после переименования проекта в &lt;code&gt;portfolio&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="2026-04-28"&gt;2026-04-28&lt;/h2&gt;
 &lt;h3 id="added"&gt;Added&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Для страницы &lt;code&gt;Changelog&lt;/code&gt; добавлен front matter с &lt;code&gt;ShowToc: false&lt;/code&gt;, чтобы убрать шумный TOC в боковой панели.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="changed"&gt;Changed&lt;/h3&gt;
+&lt;h3 id="changed-1"&gt;Changed&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Обновлена палитра портала: базовый фон сменен на &lt;code&gt;#1c1e20&lt;/code&gt; для более мягкого тёмного тона.&lt;/li&gt;
 &lt;li&gt;Главная страница адаптирована под Hugo/PaperMod: заменен MkDocs-синтаксис кнопок на HTML-кнопки (&lt;code&gt;cta-btn&lt;/code&gt;), исправлены ссылки карточек.&lt;/li&gt;
@@ -873,7 +880,7 @@ G --&amp;gt; H[Уведомить клиента]
 &lt;li&gt;Добавлены исходники диаграмм &lt;code&gt;PlantUML&lt;/code&gt; (&lt;code&gt;docs/diagrams/*.puml&lt;/code&gt;) и скрипт рендера &lt;code&gt;scripts/render-diagrams.sh&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Добавлена страница &lt;code&gt;Docs as Code&lt;/code&gt; с описанием подхода.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="changed-1"&gt;Changed&lt;/h3&gt;
+&lt;h3 id="changed-2"&gt;Changed&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Репозиторий и сайт переведены на новое имя: &lt;code&gt;petstore-api-docs&lt;/code&gt; (обновлен &lt;code&gt;site_url&lt;/code&gt;).&lt;/li&gt;
 &lt;li&gt;Усилен &lt;code&gt;Quick Start&lt;/code&gt;: добавлен пример на JavaScript (&lt;code&gt;fetch&lt;/code&gt;) и блок проверки типовых ошибок (&lt;code&gt;400&lt;/code&gt;, &lt;code&gt;404&lt;/code&gt;).&lt;/li&gt;
@@ -908,7 +915,7 @@ G --&amp;gt; H[Уведомить клиента]
 &lt;li&gt;Добавлен плагин поиска &lt;code&gt;search&lt;/code&gt; в конфигурацию MkDocs.&lt;/li&gt;
 &lt;li&gt;Добавлен кастомный CSS &lt;code&gt;docs/stylesheets/extra.css&lt;/code&gt; для управления отступами заголовков.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="changed-2"&gt;Changed&lt;/h3&gt;
+&lt;h3 id="changed-3"&gt;Changed&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Обновлена структура &lt;code&gt;API Reference&lt;/code&gt;: endpoints сгруппированы по ресурсам (&lt;code&gt;Pet&lt;/code&gt;, &lt;code&gt;Store&lt;/code&gt;).&lt;/li&gt;
 &lt;li&gt;В &lt;code&gt;API Reference&lt;/code&gt; добавлен раздел про поиск и фильтрацию в документации.&lt;/li&gt;
@@ -921,7 +928,7 @@ G --&amp;gt; H[Уведомить клиента]
 &lt;li&gt;Удалены лишние блоки с общими best practices с главной страницы.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="2026-04-10"&gt;2026-04-10&lt;/h2&gt;
-&lt;h3 id="changed-3"&gt;Changed&lt;/h3&gt;
+&lt;h3 id="changed-4"&gt;Changed&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Проект переведен с плейсхолдерного &lt;code&gt;TaskFlow API&lt;/code&gt; на публичный &lt;code&gt;Swagger Petstore API&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Обновлены &lt;code&gt;Home&lt;/code&gt;, &lt;code&gt;Getting Started&lt;/code&gt;, &lt;code&gt;API Reference&lt;/code&gt; и &lt;code&gt;openapi/openapi.yaml&lt;/code&gt; под реальные публичные эндпоинты.&lt;/li&gt;
