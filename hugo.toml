@@ -19,8 +19,8 @@ ShowToc = true
 TocOpen = true
 
 [params.homeInfoParams]
-Title = "Портфолио технического писателя"
-Content = "Документация API, пользовательские руководства, UX-писательство и процессная методология."
+Title = "Портфолио: Technical Writer / DocOps / UX Writer"
+Content = "Продуктовая документация, UX-тексты, Docs as Code, AI-assisted workflow и документационные процессы."
 
 [[params.socialIcons]]
 name = "github"
@@ -97,13 +97,13 @@ url = "https://github.com/thankfulfor/portfolio"
 
   [[menu.main]]
   identifier = "ux-writing"
-  name = "UX-писательство"
+  name = "UX-портфолио"
   url = "/ux-writing/"
   weight = 90
 
   [[menu.main]]
   identifier = "ux-writing-case"
-  name = "UX Writing Case"
+  name = "Ошибки и алерты"
   url = "/ux-writing-case/"
   parent = "ux-writing"
   weight = 95
@@ -116,11 +116,32 @@ url = "https://github.com/thankfulfor/portfolio"
   weight = 96
 
   [[menu.main]]
+  identifier = "ux-onboarding-case"
+  name = "UX: онбординг"
+  url = "/ux-onboarding-case/"
+  parent = "ux-writing"
+  weight = 97
+
+  [[menu.main]]
+  identifier = "ux-form-audit-case"
+  name = "UX: аудит формы"
+  url = "/ux-form-audit-case/"
+  parent = "ux-writing"
+  weight = 98
+
+  [[menu.main]]
   identifier = "release-banner-case"
   name = "UX: релизный баннер"
   url = "/release-banner-case/"
   parent = "ux-writing"
-  weight = 97
+  weight = 99
+
+  [[menu.main]]
+  identifier = "ux-portfolio-checklist"
+  name = "Чеклист UX-текста"
+  url = "/ux-portfolio-checklist/"
+  parent = "ux-writing"
+  weight = 100
 
   [[menu.main]]
   identifier = "ai-workflow"
