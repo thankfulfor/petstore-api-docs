@@ -1,50 +1,7 @@
 {{- if (.Param "ShowBreadCrumbs") -}}
-{{- $current := . -}}
-{{- $currentMenu := "" -}}
-{{- range site.Menus.main -}}
-  {{- if eq ($current.RelPermalink | strings.TrimSuffix "/") (.URL | relLangURL | strings.TrimSuffix "/") -}}
-    {{- $currentMenu = . -}}
-  {{- end -}}
-{{- end -}}
-
 <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
-  <a href="{{ "" | relLangURL }}">Главная</a>
-
-  {{- if $currentMenu -}}
-    {{- $chain := slice $currentMenu -}}
-    {{- $parentID := $currentMenu.Parent -}}
-    {{- range seq 1 5 -}}
-      {{- if $parentID -}}
-        {{- $parent := "" -}}
-        {{- range site.Menus.main -}}
-          {{- if eq .Identifier $parentID -}}
-            {{- $parent = . -}}
-          {{- end -}}
-        {{- end -}}
-        {{- if $parent -}}
-          {{- $chain = $chain | append $parent -}}
-          {{- $parentID = $parent.Parent -}}
-        {{- else -}}
-          {{- $parentID = "" -}}
-        {{- end -}}
-      {{- end -}}
-    {{- end -}}
-
-    {{- range after 1 (reverse $chain) -}}
-      <span class="breadcrumb-separator">/</span>
-      {{- if eq .URL $currentMenu.URL -}}
-        <span>{{ .Name }}</span>
-      {{- else -}}
-        <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
-      {{- end -}}
-    {{- end -}}
-  {{- else -}}
-    {{- with .Parent -}}
-      {{- if not .IsHome -}}
-        <span class="breadcrumb-separator">/</span>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      {{- end -}}
-    {{- end -}}
+  <a href="{{ site.Home.RelPermalink }}">Главная</a>
+  {{- if not .IsHome -}}
     <span class="breadcrumb-separator">/</span>
     <span>{{ .Title }}</span>
   {{- end -}}
