@@ -5,7 +5,12 @@ env/
 
 # Сгенерированный сайт MkDocs
 site/
+public/
 .cache/
+.hugo_build.lock
+
+# Локальные бинарники
+bin/
 
 # Python
 __pycache__/
