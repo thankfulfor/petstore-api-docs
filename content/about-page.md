@@ -5,4 +5,5 @@
 ## Контакты
 
 - GitHub: [thankfulfor](https://github.com/thankfulfor)
-- Email: `your-email@example.com`
+- Email: [thankfulfor@ya.ru](mailto:thankfulfor@ya.ru)
+- Telegram: [@fuckinuseless](https://t.me/fuckinuseless)
