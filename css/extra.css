@@ -33,6 +33,23 @@ body {
   color: var(--content);
 }
 
+.breadcrumbs {
+  color: #aeb7c4;
+  font-size: 0.85rem;
+}
+
+.breadcrumbs a {
+  color: #d8dee8;
+}
+
+.breadcrumbs span {
+  color: #aeb7c4;
+}
+
+.breadcrumb-separator {
+  margin: 0 0.35rem;
+}
+
 .header {
   background: rgba(28, 30, 32, 0.92);
   border-bottom: 1px solid var(--border);
@@ -406,6 +423,17 @@ body {
 
 #swagger-ui .swagger-ui .scheme-container select {
   color: #1f2937 !important;
+}
+
+#swagger-ui .swagger-ui .info p,
+#swagger-ui .swagger-ui .info li,
+#swagger-ui .swagger-ui .info .base-url {
+  color: #c9d4e6 !important;
+}
+
+#swagger-ui .swagger-ui .scheme-container label {
+  color: #1f2937 !important;
+  font-weight: 700;
 }
 
 #swagger-ui .swagger-ui section.models,
