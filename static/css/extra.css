@@ -283,6 +283,10 @@ body {
   display: none;
 }
 
+.first-entry {
+  display: none;
+}
+
 .diagram-zoom-wrapper {
   margin: 0.5rem 0 1.25rem;
   border: 1px solid #2e2e2e;
