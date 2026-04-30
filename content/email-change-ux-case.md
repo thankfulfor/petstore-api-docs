@@ -4,9 +4,13 @@
 
 ## Проблема
 
-![Вариант экрана 1](/portfolio/images/ux/frame-35.png)
+![Вариант экрана 1](/portfolio/images/ux/frame-22.png)
 
-![Вариант экрана 2](/portfolio/images/ux/frame-34.png)
+![Вариант экрана 2](/portfolio/images/ux/frame-26.png)
+
+![Вариант экрана 3](/portfolio/images/ux/frame-27.png)
+
+![Вариант экрана 4](/portfolio/images/ux/frame-28.png)
 
 ![Текущее модальное окно с пометками](/portfolio/images/ux/group-4-annotated.png)
 
