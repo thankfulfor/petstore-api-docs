@@ -56,6 +56,10 @@ body {
   backdrop-filter: blur(8px);
 }
 
+.logo {
+  display: none;
+}
+
 .nav a,
 #menu a,
 .logo a,
