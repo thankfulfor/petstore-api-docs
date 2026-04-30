@@ -60,6 +60,14 @@ body {
   display: none;
 }
 
+.header .header-nav {
+  justify-content: center;
+}
+
+.header #menu {
+  margin-inline-start: 0;
+}
+
 .nav a,
 #menu a,
 .logo a,
