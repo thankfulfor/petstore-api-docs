@@ -2,6 +2,7 @@
 title: UX Writing
 url: /ux/
 ShowToc: false
+layout: landing-min
 ---
 
 # UX Writing / Product Writing
