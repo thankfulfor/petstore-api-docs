@@ -34,16 +34,16 @@ url = "https://github.com/thankfulfor/portfolio"
   weight = 10
 
   [[menu.main]]
-  identifier = "tech-docs"
-  name = "Техническая документация"
-  url = "/api-overview/"
+  identifier = "tech-writing"
+  name = "Tech Writing"
+  url = "/technical-writing/"
   weight = 20
 
   [[menu.main]]
   identifier = "api-docs"
   name = "Документация API"
   url = "/api-overview/"
-  parent = "tech-docs"
+  parent = "tech-writing"
   weight = 30
 
   [[menu.main]]
@@ -78,7 +78,7 @@ url = "https://github.com/thankfulfor/portfolio"
   identifier = "user-guides"
   name = "Пользовательские руководства"
   url = "/user-guides/"
-  parent = "tech-docs"
+  parent = "tech-writing"
   weight = 70
 
   [[menu.main]]
@@ -92,7 +92,7 @@ url = "https://github.com/thankfulfor/portfolio"
   identifier = "architecture"
   name = "Архитектура и диаграммы"
   url = "/architecture/"
-  parent = "tech-docs"
+  parent = "tech-writing"
   weight = 80
 
   [[menu.main]]

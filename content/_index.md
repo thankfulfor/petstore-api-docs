@@ -2,25 +2,20 @@
 title: Главная
 ---
 
-# Портфолио: Technical Writer / DocOps / UX Writer
+# Портфолио: два карьерных трека
 
-Сайт с примерами продуктовой документации, UX-текстов, документационных процессов и AI-assisted workflow.
+Я развиваю два направления: **Technical Writing / DocOps** и **UX Writing / Product Writing**.
 
-Мой фокус: сокращать хаос в документации и интерфейсных текстах, потому что я понимаю продукт, код, пользователей и AI-инструменты.
+## Выберите трек
 
-## Разделы
-
-| Раздел | Что смотреть |
-|---|---|
-| [Техническая документация](/portfolio/api-overview/) | API, quickstart, интерактивная OpenAPI-спецификация |
-| [UX-портфолио](/portfolio/ux-writing/) | UX-тексты, ошибки, onboarding, формы, release banners |
-| [ИИ в моей работе](/portfolio/ai-in-workflow/) | Как я использую AI для анализа сценариев и черновиков |
-| [Процессы и методология](/portfolio/process/) | Documentation workflow, Docs as Code, pipeline |
-| [Обо мне и контакты](/portfolio/about-page/) | Профиль, контакты, LinkedIn, GitHub |
+| Трек | Для каких задач | Смотреть |
+|---|---|---|
+| Technical Writing / DocOps | Архитектура, API, интеграции, схемы, runbook, docs-as-code | [Перейти в Tech Writing](/portfolio/technical-writing/) |
+| UX Writing / Product Writing | Интерфейсные тексты, сценарии, ошибки, onboarding, consistency | [Перейти в UX Writing](/portfolio/ux-writing/) |
 
 ## Быстрые ссылки
 
-- [UX-кейс: смена почты](/portfolio/email-change-ux-case/)
-- [UX-кейс: онбординг нового пользователя](/portfolio/ux-onboarding-case/)
-- [UX-кейс: аудит формы](/portfolio/ux-form-audit-case/)
-- [Чеклист UX-текста](/portfolio/ux-portfolio-checklist/)
+- [Technical Writer : DocOps (PDF)](/portfolio/about/resume/)
+- [UX Writer : Product Writer (PDF)](/portfolio/about/resume/)
+- [Кейс: объяснить API простыми словами](/portfolio/api-explained-case/)
+- [Кейс: смена почты](/portfolio/email-change-ux-case/)
