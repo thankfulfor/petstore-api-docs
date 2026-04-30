@@ -2,9 +2,8 @@
 title: Tech Writing
 url: /tech/
 ShowToc: false
+layout: landing-min
 ---
-
-# Technical Writing / Documentation Engineering
 
 - Понятная архитектурная документация
 - API и интеграции без лишних созвонов
