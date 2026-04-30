@@ -1,0 +1,13 @@
+{{- define "main" }}
+<article class="post-single landing-min">
+  <div class="post-content md-content">
+    {{- if .Content -}}
+      {{- if not (.Param "disableAnchoredHeadings") -}}
+        {{- partial "anchored_headings.html" .Content -}}
+      {{- else -}}
+        {{ .Content }}
+      {{- end -}}
+    {{- end -}}
+  </div>
+</article>
+{{- end }}
