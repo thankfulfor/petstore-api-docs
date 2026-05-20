@@ -13,7 +13,7 @@ layout: landing-min
 | [Документация API](/portfolio/api-overview/) | endpoint'ы, примеры, ошибки |
 | [Сценарий: создание заказа](/portfolio/scenario-order/) | сквозной flow UI → API → backend |
 | [Инцидент: сбой оплаты](/portfolio/scenario-payment-incident/) | диагностика, шаги восстановления |
-| [Release Notes](/portfolio/release-notes/) | формат релизных заметок: для пользователей, поддержки и команды |
+| [Release Notes](/portfolio/release-notes/) | разные подходы к написанию release notes |
 | [Knowledge Base](/portfolio/knowledge-base/) | структура базы знаний и процесс актуализации |
 | [Docs as Code pipeline](/portfolio/docs-as-code-pipeline/) | процесс обновления и review документации |
 
