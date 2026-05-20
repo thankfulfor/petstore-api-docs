@@ -14,6 +14,6 @@ ShowToc: false
   </a>
   <a class="track-card" href="/portfolio/ux/">
     <h3>UX-писатель</h3>
-    <p>UX Writing / Product Writing</p>
+    <p>UX-тексты / продуктовые тексты</p>
   </a>
 </div>
