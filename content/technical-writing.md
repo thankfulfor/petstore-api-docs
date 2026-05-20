@@ -5,7 +5,7 @@ ShowToc: false
 layout: landing-min
 ---
 
-## Кейсы
+## Статьи
 
 | Кейс | Что внутри |
 |---|---|
