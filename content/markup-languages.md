@@ -111,4 +111,4 @@ npm install</code></pre></td>
   </tbody>
 </table>
 
-На практике техническому писателю полезно уверенно знать Markdown и reStructuredText, понимать возможности AsciiDoc и DITA, а также узнавать DocBook, MDX и man-страницы в существующих проектах.
+На практике техническому писателю нужно уверенно писать в Markdown и reStructuredText, понимать AsciiDoc и DITA, узнавать DocBook, MDX и man-страницы в существующих проектах.
