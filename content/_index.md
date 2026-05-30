@@ -4,61 +4,61 @@ ShowToc: false
 ---
 
 <section class="portfolio-hero">
-  <p class="portfolio-eyebrow">Product Technical Writer</p>
-  <h1>I turn scattered product knowledge into maintainable documentation systems.</h1>
-  <p class="portfolio-lead">I work with tickets, chats, Figma, Confluence, code, and team discussions — then turn them into documentation people can find, trust, and maintain.</p>
+  <p class="portfolio-eyebrow">Технический писатель продукта</p>
+  <h1>Превращаю разрозненные знания о продукте в поддерживаемую систему документации.</h1>
+  <p class="portfolio-lead">Работаю с задачами, чатами, Figma, Confluence, кодом и обсуждениями команды, а затем собираю документацию, которую легко найти, проверить и обновлять.</p>
   <div class="hero-actions">
-    <a class="cta-btn cta-primary" href="#documentation-map">View Documentation Map</a>
-    <a class="cta-btn" href="#cases">View Cases</a>
+    <a class="cta-btn cta-primary" href="#documentation-map">Открыть карту документации</a>
+    <a class="cta-btn" href="#cases">Открыть кейсы</a>
   </div>
 </section>
 
 <section class="thinking-map" id="documentation-map">
-  <p class="portfolio-eyebrow">How I think about documentation</p>
-  <h2>Documentation starts with people, sources, and ownership — not with a blank page.</h2>
-  <div class="map-flow"><div class="map-column"><h3>People</h3><ul><li>Users</li><li>Support</li><li>Product</li><li>QA</li><li>Engineering</li></ul></div><div class="map-arrow">↓</div><div class="map-column"><h3>Knowledge Sources</h3><ul><li>Tickets</li><li>Chats</li><li>Figma</li><li>Confluence</li><li>Code</li><li>Interviews</li></ul></div><div class="map-arrow">↓</div><div class="map-column"><h3>Documentation System</h3><ul><li>Help Center</li><li>Knowledge Base</li><li>Internal Docs</li><li>FAQ</li><li>Troubleshooting</li></ul></div></div>
+  <p class="portfolio-eyebrow">Как я думаю о документации</p>
+  <h2>Документация начинается с людей, источников и ответственности, а не с пустой страницы.</h2>
+  <div class="map-flow"><div class="map-column"><h3>Люди</h3><ul><li>Пользователи</li><li>Поддержка</li><li>Продукт</li><li>QA</li><li>Разработка</li></ul></div><div class="map-arrow">↓</div><div class="map-column"><h3>Источники знаний</h3><ul><li>Задачи</li><li>Чаты</li><li>Figma</li><li>Confluence</li><li>Код</li><li>Интервью</li></ul></div><div class="map-arrow">↓</div><div class="map-column"><h3>Система документации</h3><ul><li>Help Center</li><li>База знаний</li><li>Внутренние документы</li><li>FAQ</li><li>Troubleshooting</li></ul></div></div>
 </section>
 
 <section class="portfolio-map">
-  <h2>Portfolio map</h2>
+  <h2>Карта портфолио</h2>
   <div class="map-grid">
     <article class="map-card">
-      <h3>Product Documentation</h3>
+      <h3>Продуктовая документация</h3>
       <ul>
-        <li>User scenarios</li>
+        <li>Пользовательские сценарии</li>
         <li>Edge cases</li>
-        <li>Product logic</li>
+        <li>Продуктовая логика</li>
       </ul>
     </article>
     <article class="map-card">
-      <h3>Knowledge Base</h3>
+      <h3>База знаний</h3>
       <ul>
-        <li>Information architecture</li>
-        <li>Taxonomy</li>
+        <li>Информационная архитектура</li>
+        <li>Таксономия</li>
         <li>Source of truth</li>
       </ul>
     </article>
     <article class="map-card">
-      <h3>Support Documentation</h3>
+      <h3>Документация для поддержки</h3>
       <ul>
         <li>FAQ</li>
-        <li>Troubleshooting</li>
-        <li>Internal guides</li>
+        <li>Инструкции по диагностике</li>
+        <li>Внутренние гайды</li>
       </ul>
     </article>
     <article class="map-card">
-      <h3>AI-ready Documentation</h3>
+      <h3>AI-ready документация</h3>
       <ul>
-        <li>Terminology</li>
-        <li>Ownership</li>
-        <li>Content lifecycle</li>
+        <li>Терминология</li>
+        <li>Владение</li>
+        <li>Жизненный цикл контента</li>
       </ul>
     </article>
   </div>
 </section>
 
 <section id="cases">
-  <h2>Cases</h2>
+  <h2>Кейсы</h2>
 <div class="track-grid">
   <a class="track-card" href="/portfolio/email-change-ux-case/">
     <h3>Дополнительная почта</h3>
