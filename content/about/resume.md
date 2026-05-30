@@ -19,7 +19,6 @@ ShowToc: false
 - Telegram: [@fuckinuseless](https://t.me/fuckinuseless)
 - LinkedIn: [linkedin.com/in/narsiya](https://www.linkedin.com/in/narsiya/)
 - GitHub: [github.com/thankfulfor/portfolio](https://github.com/thankfulfor/portfolio)
-- Портфолио: [thankfulfor.github.io/portfolio](https://thankfulfor.github.io/portfolio/)
 
 ## Какую ссылку давать
 
