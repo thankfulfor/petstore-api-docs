@@ -61,10 +61,6 @@ body {
   backdrop-filter: blur(8px);
 }
 
-.logo {
-  display: none;
-}
-
 .header .header-nav {
   max-width: calc(var(--main-width) + var(--gap) * 2);
   justify-content: flex-start;
