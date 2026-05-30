@@ -289,10 +289,12 @@ body {
 
 h1 {
   font-size: 2rem !important;
+  font-weight: 300;
 }
 
 h2 {
   font-size: 1.5rem !important;
+  font-weight: 300;
 }
 
 .track-card p {
