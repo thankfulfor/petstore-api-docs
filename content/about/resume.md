@@ -19,9 +19,3 @@ ShowToc: false
 - Telegram: [@fuckinuseless](https://t.me/fuckinuseless)
 - LinkedIn: [linkedin.com/in/narsiya](https://www.linkedin.com/in/narsiya/)
 - GitHub: [github.com/thankfulfor/portfolio](https://github.com/thankfulfor/portfolio)
-
-## Какую ссылку давать
-
-Для вакансий UX-редактора, продуктового редактора, Product Writer, UX Writer и Content Designer лучше давать ссылку на редакторское резюме.
-
-Для вакансий технического писателя, API Writer, DocOps, документационного инженера и автора технической документации лучше давать ссылку на техническое резюме.
